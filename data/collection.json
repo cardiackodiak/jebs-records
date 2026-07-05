@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "artist": "Fleetwood Mac",
+    "title": "Rumours",
+    "year": 1977,
+    "genres": ["Rock", "Pop Rock"],
+    "cover": "images/placeholder-cover.svg",
+    "note": "A living-room classic. Easy to put on and let play."
+  },
+  {
+    "id": 2,
+    "artist": "Steely Dan",
+    "title": "Aja",
+    "year": 1977,
+    "genres": ["Jazz Rock", "Pop Rock"],
+    "cover": "images/placeholder-cover.svg",
+    "note": "Best after the room settles down."
+  },
+  {
+    "id": 3,
+    "artist": "Boston",
+    "title": "Boston",
+    "year": 1976,
+    "genres": ["Rock", "Classic Rock"],
+    "cover": "images/placeholder-cover.svg",
+    "note": "A good turn-it-up choice."
+  }
+]

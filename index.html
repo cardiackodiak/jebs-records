@@ -7,88 +7,21 @@
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
-  <div class="app-shell">
-    <header class="site-header">
-      <div>
-        <p class="eyebrow">Collected one album at a time</p>
-        <h1>Jeb's Records</h1>
+  <main class="page">
+    <h1>Jeb's Records</h1>
+
+    <section class="now">
+      <p class="label">Now Spinning</p>
+      <img id="now-cover" src="https://upload.wikimedia.org/wikipedia/en/f/fb/FMacRumours.PNG" alt="Rumours album cover" />
+
+      <h2 id="now-artist">Fleetwood Mac</h2>
+      <p id="now-title">Rumours</p>
+
+      <div class="actions">
+        <button>Browse Collection</button>
+        <button>Search Collection</button>
       </div>
-      <nav class="top-nav" aria-label="Main navigation">
-        <button class="nav-button is-active" data-view="now">Now Spinning</button>
-        <button class="nav-button" data-view="browse">Browse</button>
-        <button class="nav-button" data-view="recommends">Jeb Recommends</button>
-        <button class="nav-button" data-view="surprise">Surprise Me</button>
-      </nav>
-    </header>
-
-    <main>
-      <section id="view-now" class="view is-visible" aria-labelledby="now-heading">
-        <div class="now-layout">
-          <div class="now-art-frame">
-            <img id="now-cover" src="images/placeholder-cover.svg" alt="Album cover" />
-          </div>
-          <div class="now-copy">
-            <p class="section-label">Now Spinning</p>
-            <h2 id="now-title">Choose a record</h2>
-            <p id="now-artist" class="artist-name">Browse the stacks or let fate decide.</p>
-            <div id="now-meta" class="meta-row"></div>
-            <p id="now-note" class="listening-note">When an album is selected, it will appear here as the living-room display.</p>
-            <div class="action-row">
-              <button class="primary-action" data-view-link="browse">Browse Collection</button>
-              <button class="secondary-action" id="surprise-from-now">Surprise Me</button>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="view-browse" class="view" aria-labelledby="browse-heading">
-        <div class="view-heading">
-          <div>
-            <p class="section-label">The Collection</p>
-            <h2 id="browse-heading">Browse the Stacks</h2>
-          </div>
-          <input id="search-input" class="search-input" type="search" placeholder="Search artist or album" />
-        </div>
-        <div id="album-grid" class="album-grid"></div>
-      </section>
-
-      <section id="view-recommends" class="view" aria-labelledby="recommends-heading">
-        <div class="view-heading">
-          <div>
-            <p class="section-label">Hand-picked</p>
-            <h2 id="recommends-heading">Jeb Recommends</h2>
-          </div>
-        </div>
-        <div id="favorites-grid" class="album-grid"></div>
-      </section>
-
-      <section id="view-surprise" class="view" aria-labelledby="surprise-heading">
-        <div class="surprise-panel">
-          <p class="section-label">For tonight</p>
-          <h2 id="surprise-heading">Let fate pick the next side.</h2>
-          <button class="primary-action large" id="surprise-button">Choose a Record</button>
-          <div id="surprise-result" class="surprise-result"></div>
-        </div>
-      </section>
-    </main>
-
-    <footer>
-      <span id="collection-count">Loading collection…</span>
-      <span>Jeb's Records</span>
-    </footer>
-  </div>
-
-  <template id="album-card-template">
-    <article class="album-card" tabindex="0">
-      <img class="album-cover" src="images/placeholder-cover.svg" alt="" />
-      <div class="album-card-copy">
-        <h3 class="album-title"></h3>
-        <p class="album-artist"></p>
-        <p class="album-meta"></p>
-      </div>
-    </article>
-  </template>
-
-  <script src="js/app.js"></script>
+    </section>
+  </main>
 </body>
 </html>

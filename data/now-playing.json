@@ -1,3 +1,6 @@
 {
-  "id": 1
+  "id": "rumours",
+  "title": "Rumours",
+  "artist": "Fleetwood Mac",
+  "cover": "https://upload.wikimedia.org/wikipedia/en/f/fb/FMacRumours.PNG"
 }

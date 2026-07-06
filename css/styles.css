@@ -47,6 +47,7 @@ h1 {
 }
 
 .now img {
+  display: block;
   width: min(500px, 82vw);
   aspect-ratio: 1;
   object-fit: cover;
@@ -97,4 +98,10 @@ button {
 button:hover {
   background: rgba(255,255,255,.08);
   border-color: rgba(255,255,255,.18);
+}
+
+#now-cover,
+#now-artist,
+#now-title {
+  transition: opacity .35s ease;
 }

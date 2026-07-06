@@ -118,7 +118,11 @@ button:hover {
 #now-cover,
 #now-artist,
 #now-title {
-  transition: opacity .35s ease;
+  transition: opacity .35s ease, transform .6s ease;
+}
+
+.is-ambient #now-cover {
+  transform: scale(1.04);
 }
 
 .is-ambient .label,

@@ -120,3 +120,14 @@ button:hover {
 #now-title {
   transition: opacity .35s ease;
 }
+
+.is-ambient .label,
+.is-ambient .actions {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.label,
+.actions {
+  transition: opacity .5s ease;
+}

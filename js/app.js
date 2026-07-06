@@ -29,3 +29,23 @@ setTimeout(() => {
 }
 
 setTimeout(loadNowPlaying, 250);
+
+let ambientTimer;
+
+function enterAmbient() {
+  document.body.classList.add("is-ambient");
+}
+
+function exitAmbient() {
+  document.body.classList.remove("is-ambient");
+
+  clearTimeout(ambientTimer);
+
+  ambientTimer = setTimeout(enterAmbient, 60000);
+}
+
+["mousemove", "keydown", "click", "touchstart"].forEach(event =>
+  window.addEventListener(event, exitAmbient)
+);
+
+exitAmbient();

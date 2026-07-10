@@ -1,18 +1,21 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Jeb's Records</title>
   <link rel="stylesheet" href="css/styles.css" />
 </head>
+
 <body>
   <main class="page">
     <h1>Jeb's Records</h1>
 
     <section class="now">
       <p class="label">Now Spinning</p>
-      <img id="now-cover" src="https://upload.wikimedia.org/wikipedia/en/f/fb/FMacRumours.PNG" alt="Rumours album cover" />
+      <img id="now-cover" src="https://upload.wikimedia.org/wikipedia/en/f/fb/FMacRumours.PNG"
+        alt="Rumours album cover" />
 
       <h2 id="now-artist">Loading…</h2>
       <p id="now-title">Loading…</p>
@@ -25,17 +28,22 @@
 
   </main>
 
-<section id="browse-overlay" class="overlay" aria-hidden="true">
-  <div class="overlay-header">
-    <h2>Browse Collection</h2>
-    <button id="close-browse" class="close-button">Close</button>
-  </div>
+  <section id="browse-overlay" class="overlay" aria-hidden="true">
+    <div class="overlay-header">
+      <div>
+        <h2>Browse Collection</h2>
+        <input id="search-input" type="search" placeholder="Search artist or album..." />
+      </div>
 
-<div id="album-grid" class="album-grid"></div>
+      <button id="close-browse" class="close-button">Close</button>
+    </div>
 
-</section>
+    <div id="album-grid" class="album-grid"></div>
+
+  </section>
 
 
   <script src="js/app.js"></script>
 </body>
+
 </html>

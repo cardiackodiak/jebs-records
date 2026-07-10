@@ -6,6 +6,8 @@ const browseOverlay = document.getElementById("browse-overlay");
 const browseButton = document.querySelector(".actions button");
 const closeBrowseButton = document.getElementById("close-browse");
 const grid = document.getElementById("album-grid");
+const searchInput = document.getElementById("search-input");
+let collection = [];
 
 let ambientTimer;
 
@@ -45,8 +47,14 @@ function closeBrowse() {
 
 async function loadCollection() {
   const response = await fetch("data/collection.json");
-  const records = await response.json();
+  collection = await response.json();
 
+  grid.innerHTML = "";
+
+  renderCollection(collection);
+}
+
+function renderCollection(records) {
   grid.innerHTML = "";
 
   records.forEach(record => {
@@ -84,6 +92,17 @@ closeBrowseButton.addEventListener("click", closeBrowse);
 ["mousemove", "keydown", "click", "touchstart"].forEach(event =>
   window.addEventListener(event, exitAmbient)
 );
+
+searchInput.addEventListener("input", () => {
+  const search = searchInput.value.trim().toLowerCase();
+
+  const filtered = collection.filter(record =>
+    record.artist.toLowerCase().includes(search) ||
+    record.title.toLowerCase().includes(search)
+  );
+
+  renderCollection(filtered);
+});
 
 setTimeout(loadNowPlaying, 250);
 loadCollection();

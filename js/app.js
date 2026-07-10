@@ -25,10 +25,18 @@ function fadeToRecord(record) {
     cover.style.opacity = 1;
     artist.style.opacity = 1;
     title.style.opacity = 1;
+    localStorage.setItem("nowPlaying", JSON.stringify(record));
   }, 180);
 }
 
 async function loadNowPlaying() {
+  const savedRecord = localStorage.getItem("nowPlaying");
+
+  if (savedRecord) {
+    fadeToRecord(JSON.parse(savedRecord));
+    return;
+  }
+
   const response = await fetch("data/now-playing.json");
   const record = await response.json();
 
@@ -104,6 +112,6 @@ searchInput.addEventListener("input", () => {
   renderCollection(filtered);
 });
 
-setTimeout(loadNowPlaying, 250);
+loadNowPlaying();
 loadCollection();
 exitAmbient();

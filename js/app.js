@@ -7,13 +7,14 @@ const browseButton = document.querySelector(".actions button");
 const closeBrowseButton = document.getElementById("close-browse");
 const grid = document.getElementById("album-grid");
 const searchInput = document.getElementById("search-input");
+const albumCount = document.getElementById("album-count");
 let collection = [];
 
 let ambientTimer;
 
 function fadeToRecord(record) {
   localStorage.setItem("nowPlaying", JSON.stringify(record));
-  
+
   cover.style.opacity = 0;
   artist.style.opacity = 0;
   title.style.opacity = 0;
@@ -47,6 +48,13 @@ async function loadNowPlaying() {
 function openBrowse() {
   browseOverlay.classList.add("is-open");
   document.body.classList.add("overlay-open");
+
+  searchInput.value = "";
+  renderCollection(collection);
+
+  setTimeout(() => {
+    searchInput.focus();
+  }, 50);
 }
 
 function closeBrowse() {
@@ -59,6 +67,10 @@ async function loadCollection() {
   collection = await response.json();
 
   grid.innerHTML = "";
+  albumCount.textContent =
+  records.length === collection.length
+    ? `${records.length} albums`
+    : `${records.length} match${records.length === 1 ? "" : "es"}`;
 
   renderCollection(collection);
 }
@@ -116,3 +128,9 @@ searchInput.addEventListener("input", () => {
 loadNowPlaying();
 loadCollection();
 exitAmbient();
+
+window.addEventListener("keydown", event => {
+  if (event.key === "Escape" && browseOverlay.classList.contains("is-open")) {
+    closeBrowse();
+  }
+});

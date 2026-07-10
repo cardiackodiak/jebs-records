@@ -12,6 +12,8 @@ let collection = [];
 let ambientTimer;
 
 function fadeToRecord(record) {
+  localStorage.setItem("nowPlaying", JSON.stringify(record));
+  
   cover.style.opacity = 0;
   artist.style.opacity = 0;
   title.style.opacity = 0;
@@ -25,7 +27,6 @@ function fadeToRecord(record) {
     cover.style.opacity = 1;
     artist.style.opacity = 1;
     title.style.opacity = 1;
-    localStorage.setItem("nowPlaying", JSON.stringify(record));
   }, 180);
 }
 

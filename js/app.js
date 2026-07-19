@@ -3,14 +3,18 @@ const artist = document.getElementById("now-artist");
 const title = document.getElementById("now-title");
 
 const browseOverlay = document.getElementById("browse-overlay");
-const browseButton = document.querySelector(".actions button");
+const browseButton = document.getElementById("browse-button");
 const closeBrowseButton = document.getElementById("close-browse");
 const grid = document.getElementById("album-grid");
 const searchInput = document.getElementById("search-input");
 const albumCount = document.getElementById("album-count");
-let collection = [];
 
+let collection = [];
 let ambientTimer;
+
+// --------------------
+// Now Playing
+// --------------------
 
 function fadeToRecord(record) {
   localStorage.setItem("nowPlaying", JSON.stringify(record));
@@ -32,56 +36,87 @@ function fadeToRecord(record) {
 }
 
 async function loadNowPlaying() {
-  const savedRecord = localStorage.getItem("nowPlaying");
+  try {
+    const savedRecord = localStorage.getItem("nowPlaying");
 
-  if (savedRecord) {
-    fadeToRecord(JSON.parse(savedRecord));
-    return;
+    if (savedRecord) {
+      fadeToRecord(JSON.parse(savedRecord));
+      return;
+    }
+
+    const response = await fetch("data/now-playing.json");
+
+    if (!response.ok) {
+      throw new Error(`Unable to load Now Playing: ${response.status}`);
+    }
+
+    const record = await response.json();
+    fadeToRecord(record);
+  } catch (error) {
+    console.error(error);
   }
-
-  const response = await fetch("data/now-playing.json");
-  const record = await response.json();
-
-  fadeToRecord(record);
 }
+
+// --------------------
+// Browse Collection
+// --------------------
 
 function openBrowse() {
   browseOverlay.classList.add("is-open");
+  browseOverlay.setAttribute("aria-hidden", "false");
   document.body.classList.add("overlay-open");
 
   searchInput.value = "";
   renderCollection(collection);
 
   setTimeout(() => {
-    searchInput.focus();
+    const firstCard = grid.querySelector(".album-card");
+
+    if (firstCard) {
+      firstCard.focus();
+    } else {
+      searchInput.focus();
+    }
   }, 50);
 }
 
 function closeBrowse() {
   browseOverlay.classList.remove("is-open");
+  browseOverlay.setAttribute("aria-hidden", "true");
   document.body.classList.remove("overlay-open");
+
+  browseButton.focus();
 }
 
 async function loadCollection() {
-  const response = await fetch("data/collection.json");
-  collection = await response.json();
+  try {
+    const response = await fetch("data/collection.json");
 
-  grid.innerHTML = "";
-  albumCount.textContent =
-  records.length === collection.length
-    ? `${records.length} albums`
-    : `${records.length} match${records.length === 1 ? "" : "es"}`;
+    if (!response.ok) {
+      throw new Error(`Unable to load collection: ${response.status}`);
+    }
 
-  renderCollection(collection);
+    collection = await response.json();
+    renderCollection(collection);
+  } catch (error) {
+    console.error(error);
+    albumCount.textContent = "Unable to load collection";
+  }
 }
 
 function renderCollection(records) {
   grid.innerHTML = "";
 
+  albumCount.textContent =
+    records.length === collection.length
+      ? `${records.length} albums`
+      : `${records.length} match${records.length === 1 ? "" : "es"}`;
+
   records.forEach(record => {
     const card = document.createElement("article");
-    card.className = "album-card";
 
+    card.className = "album-card";
+    card.tabIndex = 0;
     card.innerHTML = `
       <img src="${record.cover}" alt="${record.title} album cover">
       <h3>${record.artist}</h3>
@@ -97,6 +132,105 @@ function renderCollection(records) {
   });
 }
 
+function handleSearchInput() {
+  const search = searchInput.value.trim().toLowerCase();
+
+  const filtered = collection.filter(record =>
+    record.artist.toLowerCase().includes(search) ||
+    record.title.toLowerCase().includes(search)
+  );
+
+  renderCollection(filtered);
+}
+
+// --------------------
+// Keyboard / Remote Input
+// --------------------
+
+function handleBrowseKeys(event) {
+  if (!browseOverlay.classList.contains("is-open")) return;
+
+  if (event.key === "Escape") {
+    event.preventDefault();
+    closeBrowse();
+    return;
+  }
+
+  if (document.activeElement === searchInput) {
+    if (event.key === "ArrowDown") {
+      const firstCard = grid.querySelector(".album-card");
+
+      if (firstCard) {
+        event.preventDefault();
+        firstCard.focus();
+      }
+    }
+
+    return;
+  }
+
+  const cards = [...grid.querySelectorAll(".album-card")];
+  const currentIndex = cards.indexOf(document.activeElement);
+
+  if (currentIndex === -1) return;
+
+  const columnCount = getComputedStyle(grid)
+    .gridTemplateColumns
+    .split(" ")
+    .filter(Boolean)
+    .length;
+
+  switch (event.key) {
+    case "Enter":
+    case " ":
+      event.preventDefault();
+      cards[currentIndex].click();
+      return;
+
+    case "ArrowRight":
+      event.preventDefault();
+      cards[currentIndex + 1]?.focus();
+      return;
+
+    case "ArrowLeft":
+      event.preventDefault();
+      cards[currentIndex - 1]?.focus();
+      return;
+
+    case "ArrowDown":
+      event.preventDefault();
+      cards[currentIndex + columnCount]?.focus();
+      return;
+
+    case "ArrowUp":
+      event.preventDefault();
+
+      if (currentIndex - columnCount >= 0) {
+        cards[currentIndex - columnCount].focus();
+      } else {
+        searchInput.focus();
+      }
+
+      return;
+  }
+
+  if (
+    event.key.length === 1 &&
+    !event.ctrlKey &&
+    !event.metaKey &&
+    !event.altKey
+  ) {
+    event.preventDefault();
+    searchInput.value = event.key;
+    searchInput.focus();
+    handleSearchInput();
+  }
+}
+
+// --------------------
+// Ambient Mode
+// --------------------
+
 function enterAmbient() {
   document.body.classList.add("is-ambient");
 }
@@ -107,30 +241,23 @@ function exitAmbient() {
   ambientTimer = setTimeout(enterAmbient, 60000);
 }
 
+// --------------------
+// Event Listeners
+// --------------------
+
 browseButton.addEventListener("click", openBrowse);
 closeBrowseButton.addEventListener("click", closeBrowse);
+searchInput.addEventListener("input", handleSearchInput);
+window.addEventListener("keydown", handleBrowseKeys);
 
-["mousemove", "keydown", "click", "touchstart"].forEach(event =>
-  window.addEventListener(event, exitAmbient)
-);
-
-searchInput.addEventListener("input", () => {
-  const search = searchInput.value.trim().toLowerCase();
-
-  const filtered = collection.filter(record =>
-    record.artist.toLowerCase().includes(search) ||
-    record.title.toLowerCase().includes(search)
-  );
-
-  renderCollection(filtered);
+["mousemove", "keydown", "click", "touchstart"].forEach(eventName => {
+  window.addEventListener(eventName, exitAmbient);
 });
+
+// --------------------
+// Startup
+// --------------------
 
 loadNowPlaying();
 loadCollection();
 exitAmbient();
-
-window.addEventListener("keydown", event => {
-  if (event.key === "Escape" && browseOverlay.classList.contains("is-open")) {
-    closeBrowse();
-  }
-});

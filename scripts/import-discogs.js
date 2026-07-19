@@ -26,42 +26,60 @@ function wait(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
 
-async function fetchArtwork(releaseId) {
+async function fetchReleaseData(releaseId) {
   try {
     const { data: release } = await api.get(`/releases/${releaseId}`);
+
+    let cover =
+      release.images?.find(image => image.type === "primary")?.uri ??
+      release.images?.[0]?.uri ??
+      release.cover_image ??
+      release.thumb ??
+      "images/placeholder-cover.svg";
+
+    let thumb =
+      release.images?.find(image => image.type === "primary")?.uri150 ??
+      release.images?.[0]?.uri150 ??
+      release.thumb ??
+      cover;
 
     // Prefer the master release image for cleaner, canonical artwork.
     if (release.master_id) {
       await wait(1100);
 
       try {
-        const { data: master } = await api.get(`/masters/${release.master_id}`);
+        const { data: master } = await api.get(
+          `/masters/${release.master_id}`
+        );
 
         const masterImage =
           master.images?.find(image => image.type === "primary") ??
           master.images?.[0];
 
         if (masterImage?.uri) {
-          return masterImage.uri;
+          cover = masterImage.uri;
+          thumb = masterImage.uri150 ?? master.thumb ?? cover;
         }
       } catch (error) {
-        console.warn(`Could not load master artwork for ${releaseId}`);
+        console.warn(
+          `Could not load master artwork for ${releaseId}; using release artwork.`
+        );
       }
     }
 
-    const releaseImage =
-      release.images?.find(image => image.type === "primary") ??
-      release.images?.[0];
-
-    return (
-      releaseImage?.uri ??
-      release.cover_image ??
-      release.thumb ??
-      "images/placeholder-cover.svg"
-    );
+    return {
+      releaseData: release,
+      cover,
+      thumb
+    };
   } catch (error) {
     console.warn(`Could not load release ${releaseId}`);
-    return "images/placeholder-cover.svg";
+
+    return {
+      releaseData: {},
+      cover: "images/placeholder-cover.svg",
+      thumb: "images/placeholder-cover.svg"
+    };
   }
 }
 
@@ -83,20 +101,27 @@ async function importCollection() {
       `[${index + 1}/${rows.length}] ${item.Artist} — ${item.Title}`
     );
 
-    const cover = await fetchArtwork(item.release_id);
+    const { releaseData, cover, thumb } =
+      await fetchReleaseData(item.release_id);
 
     records.push({
       id: `${item.release_id}-${index + 1}`,
       releaseId: item.release_id,
+      masterId: releaseData.master_id ?? null,
       artist: item.Artist,
       title: item.Title,
       year: item.Released,
+      country: releaseData.country ?? "",
+      genres: releaseData.genres ?? [],
+      styles: releaseData.styles ?? [],
+      labels: releaseData.labels?.map(label => label.name) ?? [],
       label: item.Label,
       format: item.Format,
       rating: item.Rating,
       dateAdded: item["Date Added"],
       notes: item["Collection Notes"],
-      cover
+      cover,
+      thumb
     });
 
     await wait(1100);

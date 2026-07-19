@@ -71,40 +71,35 @@ function openBrowse() {
 
   searchInput.value = "";
   buildAlbumGrid(collection);
-  renderCollection(collection);
 
-  setTimeout(() => {
+  requestAnimationFrame(() => {
+    requestAnimationFrame(() => {
+      let target = null;
 
-    let target = null;
+      if (currentRecord) {
+        target = [...grid.querySelectorAll(".album-card")].find(card =>
+          card.dataset.artist === currentRecord.artist &&
+          card.dataset.title === currentRecord.title
+        );
+      }
 
-    if (currentRecord) {
-      target = [...grid.querySelectorAll(".album-card")].find(card =>
-        card.dataset.artist === currentRecord.artist &&
-        card.dataset.title === currentRecord.title
-      );
-    }
+      if (!target) {
+        target = grid.querySelector(".album-card");
+      }
 
-    if (!target) {
-      target = grid.querySelector(".album-card");
-    }
+      if (target) {
+        target.focus({ preventScroll: true });
 
-    if (target) {
-
-      target.focus();
-
-      target.scrollIntoView({
-        behavior: "smooth",
-        block: "center",
-        inline: "center"
-      });
-
-    } else {
-
-      searchInput.focus();
-
-    }
-
-  }, 50);
+        target.scrollIntoView({
+          behavior: "auto",
+          block: "center",
+          inline: "center"
+        });
+      } else {
+        searchInput.focus();
+      }
+    });
+  });
 }
 
 function closeBrowse() {

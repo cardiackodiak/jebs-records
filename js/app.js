@@ -10,6 +10,8 @@ const searchInput = document.getElementById("search-input");
 const albumCount = document.getElementById("album-count");
 
 let collection = [];
+let albumCards = [];
+let currentRecord = null;
 let ambientTimer;
 
 // --------------------
@@ -17,6 +19,7 @@ let ambientTimer;
 // --------------------
 
 function fadeToRecord(record) {
+  currentRecord = record;
   localStorage.setItem("nowPlaying", JSON.stringify(record));
 
   cover.style.opacity = 0;
@@ -67,16 +70,40 @@ function openBrowse() {
   document.body.classList.add("overlay-open");
 
   searchInput.value = "";
+  buildAlbumGrid(collection);
   renderCollection(collection);
 
   setTimeout(() => {
-    const firstCard = grid.querySelector(".album-card");
 
-    if (firstCard) {
-      firstCard.focus();
-    } else {
-      searchInput.focus();
+    let target = null;
+
+    if (currentRecord) {
+      target = [...grid.querySelectorAll(".album-card")].find(card =>
+        card.dataset.artist === currentRecord.artist &&
+        card.dataset.title === currentRecord.title
+      );
     }
+
+    if (!target) {
+      target = grid.querySelector(".album-card");
+    }
+
+    if (target) {
+
+      target.focus();
+
+      target.scrollIntoView({
+        behavior: "smooth",
+        block: "center",
+        inline: "center"
+      });
+
+    } else {
+
+      searchInput.focus();
+
+    }
+
   }, 50);
 }
 
@@ -97,15 +124,15 @@ async function loadCollection() {
     }
 
     collection = await response.json();
-    renderCollection(collection);
   } catch (error) {
     console.error(error);
     albumCount.textContent = "Unable to load collection";
   }
 }
 
-function renderCollection(records) {
+function buildAlbumGrid(records) {
   grid.innerHTML = "";
+  albumCards = [];
 
   albumCount.textContent =
     records.length === collection.length
@@ -116,6 +143,8 @@ function renderCollection(records) {
     const card = document.createElement("article");
 
     card.className = "album-card";
+    card.dataset.artist = record.artist;
+    card.dataset.title = record.title;
     card.tabIndex = 0;
     card.innerHTML = `
       <img src="${record.cover}" alt="${record.title} album cover">
@@ -129,18 +158,35 @@ function renderCollection(records) {
     });
 
     grid.appendChild(card);
+    albumCards.push({
+      element: card,
+      record
+    });
   });
 }
 
 function handleSearchInput() {
+
   const search = searchInput.value.trim().toLowerCase();
 
-  const filtered = collection.filter(record =>
-    record.artist.toLowerCase().includes(search) ||
-    record.title.toLowerCase().includes(search)
-  );
+  let visibleCount = 0;
 
-  renderCollection(filtered);
+  albumCards.forEach(card => {
+
+    const visible =
+      card.record.artist.toLowerCase().includes(search) ||
+      card.record.title.toLowerCase().includes(search);
+
+    card.element.style.display = visible ? "" : "none";
+
+    if (visible) visibleCount++;
+
+  });
+
+  albumCount.textContent =
+    visibleCount === collection.length
+      ? `${visibleCount} albums`
+      : `${visibleCount} match${visibleCount === 1 ? "" : "es"}`;
 }
 
 // --------------------

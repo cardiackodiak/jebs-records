@@ -224,9 +224,35 @@ button:hover {
   font-size: 1.2rem;
 }
 
-.album-card p {
-  margin: 0;
-  color: var(--muted);
+.album-card {
+  background: #222;
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+
+  transition:
+    transform .32s cubic-bezier(.22, .61, .36, 1),
+    box-shadow .32s cubic-bezier(.22, .61, .36, 1),
+    filter .32s cubic-bezier(.22, .61, .36, 1);
+
+  outline: none;
+}
+
+.album-card:focus {
+  transform: scale(1.08);
+
+  box-shadow:
+    0 0 0 3px #ffffff,
+    0 18px 40px rgba(0, 0, 0, .65);
+
+  filter: brightness(1.15);
+
+  z-index: 20;
+  position: relative;
+}
+
+.album-grid {
+  overflow: visible;
 }
 
 body.overlay-open {

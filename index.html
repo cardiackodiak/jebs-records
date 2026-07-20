@@ -21,24 +21,44 @@
 
       <div class="actions">
         <button id="browse-button">Browse Collection</button>
-        <button id="search-button">Search Collection</button>
       </div>
     </section>
 
   </main>
 
   <section id="browse-overlay" class="overlay" aria-hidden="true">
-    <div class="overlay-header">
-      <div>
-        <h2>Browse Collection</h2>
-        <p id="album-count" class="album-count"></p>
-        <input id="search-input" type="search" placeholder="Search artist or album..." />
+
+    <div id="browse-background"></div>
+
+    <div class="overlay-content">
+
+      <div class="overlay-header">
+
+        <div class="browse-info">
+          <div class="browse-label">Browsing</div>
+
+          <h2 id="browse-artist"></h2>
+          <p id="browse-title"></p>
+
+          <div id="browse-meta"></div>
+        </div>
+
+        <div class="browse-actions">
+          <input id="search-input" type="search" placeholder="Search artist or album...">
+
+          <button id="close-browse" class="close-button">
+            Close
+          </button>
+
+          <p id="album-count" class="album-count">
+          </p>
+        </div>
+
       </div>
 
-      <button id="close-browse" class="close-button">Close</button>
-    </div>
+      <div id="album-grid" class="album-grid"></div>
 
-    <div id="album-grid" class="album-grid"></div>
+    </div>
 
   </section>
 

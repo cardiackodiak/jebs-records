@@ -8,11 +8,43 @@ const closeBrowseButton = document.getElementById("close-browse");
 const grid = document.getElementById("album-grid");
 const searchInput = document.getElementById("search-input");
 const albumCount = document.getElementById("album-count");
+const browseBackground = document.getElementById("browse-background");
+const browseArtist = document.getElementById("browse-artist");
+const browseTitle = document.getElementById("browse-title");
+const browseMeta = document.getElementById("browse-meta");
 
 let collection = [];
 let albumCards = [];
+let selectedIndex = 0;
 let currentRecord = null;
+let selectedRecord = null;
 let ambientTimer;
+
+// --------------------
+// Preview Updater
+// --------------------
+
+
+function updateBrowsePreview() {
+
+  if (!selectedRecord) return;
+
+  browseArtist.textContent = selectedRecord.artist;
+  browseTitle.textContent = selectedRecord.title;
+
+  const meta = [];
+
+  if (selectedRecord.year)
+    meta.push(selectedRecord.year);
+
+  if (selectedRecord.genre)
+    meta.push(selectedRecord.genre);
+
+  if (selectedRecord.label)
+    meta.push(selectedRecord.label);
+
+  browseMeta.textContent = meta.join(" • ");
+}
 
 // --------------------
 // Now Playing
@@ -108,6 +140,10 @@ function closeBrowse() {
   document.body.classList.remove("overlay-open");
 
   browseButton.focus();
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
 }
 
 async function loadCollection() {
@@ -182,6 +218,53 @@ function handleSearchInput() {
     visibleCount === collection.length
       ? `${visibleCount} albums`
       : `${visibleCount} match${visibleCount === 1 ? "" : "es"}`;
+
+  const visible = getVisibleCards();
+
+  if (
+    visible.length &&
+    document.activeElement !== searchInput
+  ) {
+    selectedIndex = 0;
+    updateSelection();
+  }
+}
+
+function getVisibleCards() {
+  return albumCards.filter(card =>
+    card.element.style.display !== "none"
+  );
+}
+
+function updateSelection() {
+  const visible = getVisibleCards();
+
+  if (!visible.length) return;
+
+  selectedIndex = Math.max(
+    0,
+    Math.min(selectedIndex, visible.length - 1)
+  );
+
+  const selectedElement =
+    visible[selectedIndex].element;
+
+  selectedElement.focus({
+    preventScroll: true
+  });
+
+  selectedRecord =
+    visible[selectedIndex].record;
+
+  updateBrowseBackground();
+  updateBrowsePreview();
+
+  selectedElement.scrollIntoView({
+    block: "center",
+    inline: "nearest",
+    behavior: "smooth"
+  });
+
 }
 
 // --------------------
@@ -210,10 +293,17 @@ function handleBrowseKeys(event) {
     return;
   }
 
-  const cards = [...grid.querySelectorAll(".album-card")];
-  const currentIndex = cards.indexOf(document.activeElement);
+  const visible = getVisibleCards();
 
-  if (currentIndex === -1) return;
+  if (!visible.length) return;
+
+  selectedIndex = visible.findIndex(card =>
+    card.element === document.activeElement
+  );
+
+  if (selectedIndex === -1) {
+    selectedIndex = 0;
+  }
 
   const columnCount = getComputedStyle(grid)
     .gridTemplateColumns
@@ -225,33 +315,68 @@ function handleBrowseKeys(event) {
     case "Enter":
     case " ":
       event.preventDefault();
-      cards[currentIndex].click();
+      visible[selectedIndex].element.click();
       return;
 
     case "ArrowRight":
       event.preventDefault();
-      cards[currentIndex + 1]?.focus();
+
+      if (selectedIndex < visible.length - 1) {
+        selectedIndex++;
+      } else {
+        selectedIndex = 0;
+      }
+
+      updateSelection();
       return;
 
     case "ArrowLeft":
       event.preventDefault();
-      cards[currentIndex - 1]?.focus();
+
+      if (selectedIndex > 0) {
+        selectedIndex--;
+      } else {
+        selectedIndex = visible.length - 1;
+      }
+
+      updateSelection();
       return;
 
     case "ArrowDown":
       event.preventDefault();
-      cards[currentIndex + columnCount]?.focus();
+
+      if (selectedIndex + columnCount < visible.length) {
+        selectedIndex += columnCount;
+      } else {
+        selectedIndex = selectedIndex % columnCount;
+        if (selectedIndex >= visible.length) {
+          selectedIndex = visible.length - 1;
+        }
+      }
+
+      updateSelection();
       return;
 
     case "ArrowUp":
       event.preventDefault();
 
-      if (currentIndex - columnCount >= 0) {
-        cards[currentIndex - columnCount].focus();
+      if (selectedIndex - columnCount >= 0) {
+        selectedIndex -= columnCount;
       } else {
-        searchInput.focus();
+        let lastRow =
+          visible.length -
+          (visible.length % columnCount || columnCount);
+
+        let candidate = lastRow + selectedIndex;
+
+        if (candidate >= visible.length) {
+          candidate -= columnCount;
+        }
+
+        selectedIndex = candidate;
       }
 
+      updateSelection();
       return;
   }
 
@@ -265,6 +390,7 @@ function handleBrowseKeys(event) {
     searchInput.value = event.key;
     searchInput.focus();
     handleSearchInput();
+
   }
 }
 
@@ -302,3 +428,14 @@ window.addEventListener("keydown", handleBrowseKeys);
 loadNowPlaying();
 loadCollection();
 exitAmbient();
+
+// --------------------
+// Background Updater
+// --------------------
+
+function updateBrowseBackground() {
+  if (!selectedRecord || !selectedRecord.cover) return;
+
+  browseBackground.style.backgroundImage =
+    `url("${selectedRecord.cover}")`;
+}

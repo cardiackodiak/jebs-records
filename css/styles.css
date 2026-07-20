@@ -6,6 +6,12 @@
   --border: rgba(255, 255, 255, .14);
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -92,7 +98,7 @@ h2 {
   display: grid;
   gap: .65rem;
   margin: 2.25rem auto 0;
-  width: min(380px, 100%);
+  width: min(300px, 100%);
 }
 
 button {
@@ -152,32 +158,70 @@ button:hover {
   display: flex;
   flex-direction: column;
 
-  overflow-y: auto;
+  background: rgba(12, 12, 12, .96);
 
   opacity: 0;
-  pointer-events: none;
-  transition: opacity .5s ease;
+  visibility: hidden;
 
-  padding: 2rem;
-
-  background: rgba(24, 28, 33, .96);
-  backdrop-filter: blur(10px);
+  transition:
+    opacity .35s ease,
+    visibility .35s ease;
 
   z-index: 1000;
+
+  overflow: clip;
 }
 
 .overlay.is-open {
   opacity: 1;
-  pointer-events: auto;
+  visibility: visible;
 }
 
 .overlay-header {
-  width: min(1200px, 100%);
+  width: min(1400px, 100%);
   margin: 0 auto 2rem;
 
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.browse-info {
+  display: flex;
+  flex-direction: column;
+  gap: .35rem;
+}
+
+.browse-label {
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: .18em;
+  font-size: .8rem;
+}
+
+#browse-artist {
+  margin: 0;
+  font-size: 2.2rem;
+}
+
+#browse-title {
+  margin: 0;
+  color: var(--muted);
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
+#browse-meta {
+  color: var(--muted);
+  margin-top: .4rem;
+}
+
+.browse-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: .75rem;
+  width: 420px;
 }
 
 .close-button {
@@ -191,17 +235,18 @@ button:hover {
 
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-
+  grid-auto-rows: max-content;
+  align-items: start;
+  align-content: start;
   gap: 2rem;
 
-  padding: 1rem 0 3rem;
-}
+  flex: 1;
+  min-height: 0;
 
-.album-card {
-  cursor: pointer;
-  transition: transform .18s ease;
+  overflow-y: auto;
+  overflow-x: hidden;
 
-  text-align: center;
+  padding: 2rem 20px 3rem;
 }
 
 .album-card:hover {
@@ -225,34 +270,34 @@ button:hover {
 }
 
 .album-card {
+  align-self: start;
+  min-width: 0;
+
   background: #222;
   border-radius: 12px;
   overflow: hidden;
+
   cursor: pointer;
+  text-align: center;
+  outline: none;
 
   transition:
     transform .32s cubic-bezier(.22, .61, .36, 1),
     box-shadow .32s cubic-bezier(.22, .61, .36, 1),
     filter .32s cubic-bezier(.22, .61, .36, 1);
-
-  outline: none;
 }
 
 .album-card:focus {
-  transform: scale(1.08);
+  transform: scale(1.03);
 
   box-shadow:
-    0 0 0 3px #ffffff,
-    0 18px 40px rgba(0, 0, 0, .65);
+    0 0 0 4px #ffffff,
+    0 20px 45px rgba(0, 0, 0, .7);
 
-  filter: brightness(1.15);
+  filter: brightness(1.18);
 
   z-index: 20;
   position: relative;
-}
-
-.album-grid {
-  overflow: visible;
 }
 
 body.overlay-open {
@@ -286,4 +331,40 @@ body.overlay-open {
   margin: .35rem 0 0;
   color: var(--muted);
   font-size: .95rem;
+}
+
+#browse-background {
+  position: absolute;
+  inset: 0;
+
+  background-position: center;
+  background-size: cover;
+
+  filter: blur(80px);
+  transform: scale(1.15);
+
+  opacity: .22;
+
+  pointer-events: none;
+}
+
+.overlay-content {
+  width: min(1700px, 100%);
+  height: 100%;
+  margin: 0 auto;
+  padding: 40px;
+
+  display: flex;
+  flex-direction: column;
+
+  overflow: clip;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+.album-grid {
+  scroll-behavior: smooth;
 }

@@ -16,6 +16,14 @@ const browseBackground = document.getElementById("browse-background");
 const browseArtist = document.getElementById("browse-artist");
 const browseTitle = document.getElementById("browse-title");
 const browseMeta = document.getElementById("browse-meta");
+const browseEmpty = document.getElementById("browse-empty");
+const browseEmptyTitle = document.getElementById("browse-empty-title");
+const browseEmptyMessage = document.getElementById("browse-empty-message");
+
+const appStatus = document.getElementById("app-status");
+const appStatusText = document.getElementById("app-status-text");
+
+const PLACEHOLDER_COVER = "images/placeholder-cover.svg";
 
 let collection = [];
 let albumCards = [];
@@ -23,7 +31,100 @@ let selectedIndex = 0;
 let currentRecord = null;
 let selectedRecord = null;
 let detailsVisible = false;
+let collectionLoaded = false;
 let ambientTimer;
+
+const browseState = {
+  selectedRecordKey: null,
+  scrollTop: 0
+};
+
+// --------------------
+// App State / Diagnostics
+// --------------------
+
+function reportDiagnostic(level, message, detail) {
+  const logger =
+    level === "error"
+      ? console.error
+      : level === "warn"
+        ? console.warn
+        : console.info;
+
+  if (detail !== undefined) {
+    logger(`[Jeb's Records] ${message}`, detail);
+  } else {
+    logger(`[Jeb's Records] ${message}`);
+  }
+}
+
+function setAppStatus(message, state = "loading") {
+  appStatusText.textContent = message;
+
+  document.body.classList.remove(
+    "app-loading",
+    "app-ready",
+    "app-warning",
+    "app-error"
+  );
+
+  document.body.classList.add(`app-${state}`);
+}
+
+function getRecordKey(record) {
+  if (!record) return "";
+
+  return String(
+    record.id ||
+    record.releaseId ||
+    `${record.artist || ""}::${record.title || ""}`
+  );
+}
+
+function applyArtwork(image, source, altText = "") {
+  const requestedSource = source || PLACEHOLDER_COVER;
+
+  image.dataset.requestedSource = requestedSource;
+  image.alt = altText;
+
+  image.onerror = () => {
+    if (image.dataset.fallbackApplied === "true") {
+      image.onerror = null;
+      return;
+    }
+
+    image.dataset.fallbackApplied = "true";
+    image.classList.add("is-placeholder");
+    image.src = PLACEHOLDER_COVER;
+
+    reportDiagnostic(
+      "warn",
+      "Artwork failed to load; using placeholder.",
+      requestedSource
+    );
+  };
+
+  image.onload = () => {
+    if (image.src.endsWith(PLACEHOLDER_COVER)) {
+      image.classList.add("is-placeholder");
+    } else {
+      image.classList.remove("is-placeholder");
+      delete image.dataset.fallbackApplied;
+    }
+  };
+
+  image.src = requestedSource;
+}
+
+function showBrowseEmpty(titleText, messageText) {
+  browseEmptyTitle.textContent = titleText;
+  browseEmptyMessage.textContent = messageText;
+  browseEmpty.hidden = false;
+}
+
+function hideBrowseEmpty() {
+  browseEmpty.hidden = true;
+}
 
 // --------------------
 // Preview Updater
@@ -248,23 +349,43 @@ function scrollLinerNotes(direction) {
 // --------------------
 
 function fadeToRecord(record) {
+  if (!record) {
+    reportDiagnostic("warn", "No record was available to display.");
+    return;
+  }
+
   currentRecord = record;
-  localStorage.setItem("nowPlaying", JSON.stringify(record));
+
+  try {
+    localStorage.setItem("nowPlaying", JSON.stringify(record));
+  } catch (error) {
+    reportDiagnostic(
+      "warn",
+      "Could not save the current record.",
+      error
+    );
+  }
 
   cover.style.opacity = 0;
   artist.style.opacity = 0;
   title.style.opacity = 0;
 
   setTimeout(() => {
-    cover.src = record.cover;
-    cover.alt = `${record.title} album cover`;
-    artist.textContent = record.artist;
-    title.textContent = record.title;
+    applyArtwork(
+      cover,
+      record.cover,
+      `${record.title || "Record"} album cover`
+    );
+
+    artist.textContent = record.artist || "Unknown Artist";
+    title.textContent = record.title || "Untitled";
     updateNowDetails(record);
 
     cover.style.opacity = 1;
     artist.style.opacity = 1;
     title.style.opacity = 1;
+
+    setAppStatus("", "ready");
   }, 180);
 }
 
@@ -285,31 +406,166 @@ function findCollectionRecord(record) {
 }
 
 async function loadNowPlaying() {
-  try {
-    const savedRecord = localStorage.getItem("nowPlaying");
+  let savedRecord = null;
 
-    if (savedRecord) {
-      const parsedRecord = JSON.parse(savedRecord);
-      fadeToRecord(findCollectionRecord(parsedRecord) || parsedRecord);
-      return;
+  try {
+    const savedValue = localStorage.getItem("nowPlaying");
+
+    if (savedValue) {
+      savedRecord = JSON.parse(savedValue);
+    }
+  } catch (error) {
+    reportDiagnostic(
+      "warn",
+      "Saved Now Playing data was invalid and has been cleared.",
+      error
+    );
+
+    localStorage.removeItem("nowPlaying");
+  }
+
+  if (savedRecord) {
+    if (!collectionLoaded) {
+      fadeToRecord(savedRecord);
+      return true;
     }
 
-    const response = await fetch("data/now-playing.json");
+    const collectionMatch = findCollectionRecord(savedRecord);
+
+    if (collectionMatch) {
+      fadeToRecord(collectionMatch);
+      return true;
+    }
+
+    reportDiagnostic(
+      "warn",
+      "Saved Now Playing record is no longer in the collection.",
+      savedRecord
+    );
+
+    localStorage.removeItem("nowPlaying");
+  }
+
+  try {
+    const response = await fetch("data/now-playing.json", {
+      cache: "no-store"
+    });
 
     if (!response.ok) {
-      throw new Error(`Unable to load Now Playing: ${response.status}`);
+      throw new Error(`HTTP ${response.status}`);
     }
 
     const record = await response.json();
-    fadeToRecord(findCollectionRecord(record) || record);
+    const collectionMatch = findCollectionRecord(record);
+
+    if (collectionMatch) {
+      fadeToRecord(collectionMatch);
+      return true;
+    }
+
+    if (!collectionLoaded && record) {
+      fadeToRecord(record);
+      return true;
+    }
+
+    reportDiagnostic(
+      "warn",
+      "The default Now Playing record was not found in the collection.",
+      record
+    );
   } catch (error) {
-    console.error(error);
+    reportDiagnostic(
+      "warn",
+      "Could not load data/now-playing.json.",
+      error
+    );
   }
+
+  if (collection.length) {
+    reportDiagnostic(
+      "info",
+      "Using the first collection record as Now Playing."
+    );
+
+    fadeToRecord(collection[0]);
+    return true;
+  }
+
+  setAppStatus(
+    collectionLoaded
+      ? "No records in collection"
+      : "Collection unavailable",
+    collectionLoaded ? "warning" : "error"
+  );
+
+  return false;
 }
 
 // --------------------
 // Browse Collection
 // --------------------
+
+function captureBrowseState() {
+  const focusedCard = document.activeElement?.closest?.(".album-card");
+  const focusedEntry = albumCards.find(entry =>
+    entry.element === focusedCard
+  );
+
+  const record = focusedEntry?.record || selectedRecord;
+
+  if (record) {
+    browseState.selectedRecordKey = getRecordKey(record);
+  }
+
+  browseState.scrollTop = grid.scrollTop;
+}
+
+function restoreBrowseSelection() {
+  const cards = [...grid.querySelectorAll(".album-card")];
+
+  let target = cards.find(card =>
+    card.dataset.recordKey === browseState.selectedRecordKey
+  );
+
+  if (!target && currentRecord) {
+    const currentKey = getRecordKey(currentRecord);
+
+    target = cards.find(card =>
+      card.dataset.recordKey === currentKey
+    );
+  }
+
+  if (!target) {
+    target = cards[0] || null;
+  }
+
+  if (!target) {
+    searchInput.focus();
+    return;
+  }
+
+  target.focus({ preventScroll: true });
+
+  const visible = getVisibleCards();
+  selectedIndex = Math.max(
+    0,
+    visible.findIndex(entry => entry.element === target)
+  );
+
+  selectedRecord = visible[selectedIndex]?.record || null;
+  updateBrowseBackground();
+  updateBrowsePreview();
+
+  if (browseState.scrollTop > 0) {
+    grid.scrollTop = browseState.scrollTop;
+  } else {
+    target.scrollIntoView({
+      behavior: "auto",
+      block: "center",
+      inline: "nearest"
+    });
+  }
+}
 
 function openBrowse() {
   hideDetails();
@@ -321,41 +577,18 @@ function openBrowse() {
   buildAlbumGrid(collection);
 
   requestAnimationFrame(() => {
-    requestAnimationFrame(() => {
-      let target = null;
-
-      if (currentRecord) {
-        target = [...grid.querySelectorAll(".album-card")].find(card =>
-          card.dataset.artist === currentRecord.artist &&
-          card.dataset.title === currentRecord.title
-        );
-      }
-
-      if (!target) {
-        target = grid.querySelector(".album-card");
-      }
-
-      if (target) {
-        target.focus({ preventScroll: true });
-
-        target.scrollIntoView({
-          behavior: "auto",
-          block: "center",
-          inline: "center"
-        });
-      } else {
-        searchInput.focus();
-      }
-    });
+    requestAnimationFrame(restoreBrowseSelection);
   });
 }
 
 function closeBrowse() {
+  captureBrowseState();
+
   browseOverlay.classList.remove("is-open");
   browseOverlay.setAttribute("aria-hidden", "true");
   document.body.classList.remove("overlay-open");
 
-  browseButton.focus();
+  browseButton.focus({ preventScroll: true });
   window.scrollTo({
     top: 0,
     behavior: "smooth"
@@ -363,48 +596,117 @@ function closeBrowse() {
 }
 
 async function loadCollection() {
+  setAppStatus("Loading collection", "loading");
+
   try {
-    const response = await fetch("data/collection.json");
+    const response = await fetch("data/collection.json", {
+      cache: "no-store"
+    });
 
     if (!response.ok) {
-      throw new Error(`Unable to load collection: ${response.status}`);
+      throw new Error(`HTTP ${response.status}`);
     }
 
-    collection = await response.json();
+    const loadedCollection = await response.json();
+
+    if (!Array.isArray(loadedCollection)) {
+      throw new TypeError("collection.json must contain an array.");
+    }
+
+    collection = loadedCollection.filter(record =>
+      record &&
+      typeof record === "object" &&
+      record.artist &&
+      record.title
+    );
+
+    collectionLoaded = true;
+
+    reportDiagnostic(
+      "info",
+      `Loaded ${collection.length} collection records.`
+    );
+
+    return true;
   } catch (error) {
-    console.error(error);
-    albumCount.textContent = "Unable to load collection";
+    collection = [];
+    collectionLoaded = false;
+
+    reportDiagnostic(
+      "error",
+      "Collection failed to load.",
+      error
+    );
+
+    setAppStatus("Collection unavailable", "error");
+    return false;
   }
 }
 
 function buildAlbumGrid(records) {
-  grid.innerHTML = "";
+  grid.querySelectorAll(".album-card").forEach(card => card.remove());
   albumCards = [];
+  selectedRecord = null;
+
+  const safeRecords = Array.isArray(records) ? records : [];
 
   albumCount.textContent =
-    records.length === collection.length
-      ? `${records.length} albums`
-      : `${records.length} match${records.length === 1 ? "" : "es"}`;
+    safeRecords.length === collection.length
+      ? `${safeRecords.length} albums`
+      : `${safeRecords.length} match${safeRecords.length === 1 ? "" : "es"}`;
 
-  records.forEach(record => {
+  if (!safeRecords.length) {
+    showBrowseEmpty(
+      collectionLoaded
+        ? "No records found"
+        : "Collection unavailable",
+      collectionLoaded
+        ? "Try a different search."
+        : "Check data/collection.json and reload the app."
+    );
+
+    browseArtist.textContent = "";
+    browseTitle.textContent = "";
+    browseMeta.textContent = "";
+    browseBackground.style.backgroundImage = "";
+    return;
+  }
+
+  hideBrowseEmpty();
+
+  safeRecords.forEach(record => {
     const card = document.createElement("article");
+    const image = document.createElement("img");
+    const artistName = document.createElement("h3");
+    const albumTitle = document.createElement("p");
 
     card.className = "album-card";
     card.dataset.artist = record.artist;
     card.dataset.title = record.title;
+    card.dataset.recordKey = getRecordKey(record);
     card.tabIndex = 0;
-    card.innerHTML = `
-      <img src="${record.cover}" alt="${record.title} album cover">
-      <h3>${record.artist}</h3>
-      <p>${record.title}</p>
-    `;
+
+    applyArtwork(
+      image,
+      record.cover,
+      `${record.title} album cover`
+    );
+
+    artistName.textContent = record.artist;
+    albumTitle.textContent = record.title;
+
+    card.append(image, artistName, albumTitle);
 
     card.addEventListener("click", () => {
+      browseState.selectedRecordKey = getRecordKey(record);
+      browseState.scrollTop = grid.scrollTop;
+
       fadeToRecord(record);
       closeBrowse();
     });
 
     grid.appendChild(card);
+
     albumCards.push({
       element: card,
       record
@@ -413,13 +715,10 @@ function buildAlbumGrid(records) {
 }
 
 function handleSearchInput() {
-
   const search = searchInput.value.trim().toLowerCase();
-
   let visibleCount = 0;
 
   albumCards.forEach(card => {
-
     const visible =
       card.record.artist.toLowerCase().includes(search) ||
       card.record.title.toLowerCase().includes(search);
@@ -427,13 +726,35 @@ function handleSearchInput() {
     card.element.style.display = visible ? "" : "none";
 
     if (visible) visibleCount++;
-
   });
 
   albumCount.textContent =
     visibleCount === collection.length
       ? `${visibleCount} albums`
       : `${visibleCount} match${visibleCount === 1 ? "" : "es"}`;
+
+  if (!visibleCount) {
+    showBrowseEmpty(
+      collection.length
+        ? "No records found"
+        : collectionLoaded
+          ? "No records in collection"
+          : "Collection unavailable",
+      collection.length
+        ? `Nothing matched “${searchInput.value.trim()}”.`
+        : collectionLoaded
+          ? "Import records and reload the app."
+          : "Check data/collection.json and reload the app."
+    );
+
+    browseArtist.textContent = "";
+    browseTitle.textContent = "";
+    browseMeta.textContent = "";
+    browseBackground.style.backgroundImage = "";
+    return;
+  }
+
+  hideBrowseEmpty();
 
   const visible = getVisibleCards();
 
@@ -455,7 +776,10 @@ function getVisibleCards() {
 function updateSelection() {
   const visible = getVisibleCards();
 
-  if (!visible.length) return;
+  if (!visible.length) {
+    selectedRecord = null;
+    return;
+  }
 
   selectedIndex = Math.max(
     0,
@@ -781,7 +1105,17 @@ function handleBrowseCommand(input, event) {
 
   const visible = getVisibleCards();
 
-  if (!visible.length) return false;
+  if (!visible.length) {
+    if (input.command === RemoteCommand.TEXT && input.text) {
+      preventInputDefault(event);
+      searchInput.value = input.text;
+      searchInput.focus();
+      handleSearchInput();
+      return true;
+    }
+
+    return false;
+  }
 
   selectedIndex = visible.findIndex(card =>
     card.element === document.activeElement
@@ -898,12 +1232,23 @@ window.addEventListener("jebs-remote-input", handleInputEvent);
 // --------------------
 
 async function startApp() {
+  setAppStatus("Loading collection", "loading");
+
   await loadCollection();
   await loadNowPlaying();
+
   exitAmbient();
 }
 
-startApp();
+startApp().catch(error => {
+  reportDiagnostic(
+    "error",
+    "Unexpected startup failure.",
+    error
+  );
+
+  setAppStatus("Unable to start", "error");
+});
 
 // --------------------
 // Background Updater

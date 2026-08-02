@@ -231,6 +231,18 @@ function toggleDetails() {
   }
 }
 
+function scrollLinerNotes(direction) {
+  const distance = Math.max(
+    180,
+    Math.round(nowTracklist.clientHeight * .72)
+  );
+
+  nowTracklist.scrollBy({
+    top: distance * direction,
+    behavior: "smooth"
+  });
+}
+
 function handleAmbientKeys(event) {
   if (browseOverlay.classList.contains("is-open")) return;
 
@@ -244,6 +256,26 @@ function handleAmbientKeys(event) {
     event.preventDefault();
     hideDetails();
     return;
+  }
+
+  if (detailsVisible) {
+    if (event.key === "ArrowDown") {
+      event.preventDefault();
+      scrollLinerNotes(1);
+      return;
+    }
+
+    if (event.key === "ArrowUp") {
+      event.preventDefault();
+      scrollLinerNotes(-1);
+      return;
+    }
+
+    if (event.key === "ArrowLeft" || event.key === "ArrowRight") {
+      event.preventDefault();
+      openBrowse();
+      return;
+    }
   }
 
   if (["ArrowUp", "ArrowDown", "ArrowLeft", "ArrowRight"].includes(event.key)) {

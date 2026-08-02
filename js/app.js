@@ -33,6 +33,10 @@ let selectedRecord = null;
 let detailsVisible = false;
 let collectionLoaded = false;
 let ambientTimer;
+let cursorTimer;
+let viewportTimer;
+
+const finePointerQuery = window.matchMedia("(any-pointer: fine)");
 
 const browseState = {
   selectedRecordKey: null,
@@ -677,6 +681,8 @@ function buildAlbumGrid(records) {
   safeRecords.forEach(record => {
     const card = document.createElement("article");
     const image = document.createElement("img");
+    image.draggable = false;
+
     const artistName = document.createElement("h3");
     const albumTitle = document.createElement("p");
 
@@ -1160,6 +1166,7 @@ function handleInputEvent(event) {
 
   if (!input) return;
 
+  hideCursorForRemoteInput();
   exitAmbient();
 
   if (browseOverlay.classList.contains("is-open")) {
@@ -1198,6 +1205,92 @@ window.JebsRemoteInput = Object.freeze({
 });
 
 // --------------------
+// Television Display
+// --------------------
+
+function updateViewportMetrics() {
+  const viewportHeight =
+    window.visualViewport?.height ||
+    window.innerHeight;
+
+  document.documentElement.style.setProperty(
+    "--app-height",
+    `${Math.round(viewportHeight)}px`
+  );
+}
+
+function keepFocusedContentVisible() {
+  if (browseOverlay.classList.contains("is-open")) {
+    const focusedCard =
+      document.activeElement?.closest?.(".album-card");
+
+    if (focusedCard) {
+      focusedCard.scrollIntoView({
+        block: "nearest",
+        inline: "nearest",
+        behavior: "auto"
+      });
+    }
+
+    grid.scrollTop = Math.min(
+      grid.scrollTop,
+      Math.max(0, grid.scrollHeight - grid.clientHeight)
+    );
+  }
+
+  if (detailsVisible) {
+    nowTracklist.scrollTop = Math.min(
+      nowTracklist.scrollTop,
+      Math.max(
+        0,
+        nowTracklist.scrollHeight - nowTracklist.clientHeight
+      )
+    );
+  }
+}
+
+function handleViewportChange() {
+  clearTimeout(viewportTimer);
+
+  viewportTimer = setTimeout(() => {
+    updateViewportMetrics();
+
+    requestAnimationFrame(() => {
+      keepFocusedContentVisible();
+    });
+  }, 100);
+}
+
+function hideCursor() {
+  if (!finePointerQuery.matches) return;
+
+  document.body.classList.add("cursor-hidden");
+}
+
+function showCursor() {
+  document.body.classList.remove("cursor-hidden");
+  clearTimeout(cursorTimer);
+
+  if (finePointerQuery.matches) {
+    cursorTimer = setTimeout(hideCursor, 2500);
+  }
+}
+
+function hideCursorForRemoteInput() {
+  clearTimeout(cursorTimer);
+
+  if (finePointerQuery.matches) {
+    cursorTimer = setTimeout(hideCursor, 150);
+  }
+}
+
+function preventImageDragging(event) {
+  if (event.target instanceof HTMLImageElement) {
+    event.preventDefault();
+  }
+}
+
+// --------------------
 // Ambient Mode
 // --------------------
 
@@ -1223,7 +1316,21 @@ cover.addEventListener("click", toggleDetails);
 window.addEventListener("keydown", handleInputEvent);
 window.addEventListener("jebs-remote-input", handleInputEvent);
 
-["mousemove", "click", "touchstart", "pointerdown"].forEach(eventName => {
+window.addEventListener("pointermove", showCursor, { passive: true });
+window.addEventListener("pointerdown", showCursor, { passive: true });
+window.addEventListener("dragstart", preventImageDragging);
+
+window.addEventListener("resize", handleViewportChange, { passive: true });
+window.visualViewport?.addEventListener(
+  "resize",
+  handleViewportChange,
+  { passive: true }
+);
+
+document.addEventListener("fullscreenchange", handleViewportChange);
+document.addEventListener("webkitfullscreenchange", handleViewportChange);
+
+["pointermove", "click", "touchstart", "pointerdown"].forEach(eventName => {
   window.addEventListener(eventName, exitAmbient, { passive: true });
 });
 
@@ -1232,6 +1339,9 @@ window.addEventListener("jebs-remote-input", handleInputEvent);
 // --------------------
 
 async function startApp() {
+  updateViewportMetrics();
+  showCursor();
+
   setAppStatus("Loading collection", "loading");
 
   await loadCollection();

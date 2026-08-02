@@ -4,6 +4,27 @@
   --muted: #b9b0a3;
   --accent: #b48a56;
   --border: rgba(255, 255, 255, .14);
+
+  /* Conservative television overscan / safe-area margins. */
+  --tv-safe-left: max(
+    clamp(28px, 3.5vw, 96px),
+    env(safe-area-inset-left, 0px)
+  );
+  --tv-safe-right: max(
+    clamp(28px, 3.5vw, 96px),
+    env(safe-area-inset-right, 0px)
+  );
+  --tv-safe-top: max(
+    clamp(24px, 3.5vh, 72px),
+    env(safe-area-inset-top, 0px)
+  );
+  --tv-safe-bottom: max(
+    clamp(24px, 3.5vh, 72px),
+    env(safe-area-inset-bottom, 0px)
+  );
+
+  /* JavaScript updates this for browsers with imperfect viewport units. */
+  --app-height: 100vh;
 }
 
 *,
@@ -12,23 +33,54 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: clamp(16px, .52vw, 20px);
+}
+
 html,
 body {
   margin: 0;
+  width: 100%;
   min-height: 100%;
-  overflow-x: hidden;
+  overflow: hidden;
+  overscroll-behavior: none;
 }
 
 body {
   min-height: 100vh;
+  min-height: 100dvh;
+
   background: #000;
   color: var(--text);
+
   font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+}
+
+body.cursor-hidden,
+body.cursor-hidden * {
+  cursor: none !important;
+}
+
+button,
+input {
+  -webkit-user-select: text;
+  user-select: text;
+}
+
+img {
+  -webkit-user-drag: none;
+  user-drag: none;
 }
 
 .page {
   width: 100%;
+  height: var(--app-height);
   min-height: 100vh;
+  min-height: 100dvh;
 }
 
 body.overlay-open .page {
@@ -102,13 +154,16 @@ body.app-error .app-status-dot {
 }
 
 .ambient-view {
-  --ambient-x: clamp(28px, 4vw, 64px);
-  --ambient-y: clamp(28px, 5vh, 64px);
+  --ambient-x: var(--tv-safe-left);
+  --ambient-y: var(--tv-safe-bottom);
   --jacket-size: clamp(220px, 25vw, 360px);
 
   position: relative;
   width: 100%;
+  height: var(--app-height);
   min-height: 100vh;
+  min-height: 100dvh;
+
   background: #000;
   overflow: hidden;
 }
@@ -138,8 +193,8 @@ body.app-error .app-status-dot {
 
 .now-details {
   position: absolute;
-  top: clamp(36px, 5vh, 72px);
-  right: clamp(28px, 5vw, 88px);
+  top: var(--tv-safe-top);
+  right: var(--tv-safe-right);
   bottom: var(--ambient-y);
   left: calc(var(--ambient-x) + var(--jacket-size) + clamp(36px, 4vw, 72px));
 
@@ -313,8 +368,8 @@ body.details-open .now-details {
 
 .ambient-controls {
   position: absolute;
-  right: clamp(24px, 3vw, 48px);
-  bottom: clamp(24px, 4vh, 48px);
+  right: var(--tv-safe-right);
+  bottom: var(--tv-safe-bottom);
 
   opacity: 1;
   transform: translateY(0);
@@ -452,6 +507,62 @@ body.details-open .ambient-controls {
   }
 }
 
+@media (max-height: 760px) {
+  .ambient-view {
+    --jacket-size: clamp(190px, 23vw, 300px);
+  }
+
+  .now-details {
+    top: var(--tv-safe-top);
+  }
+
+  #now-artist {
+    font-size: clamp(1.8rem, 3.2vw, 3.4rem);
+  }
+
+  #now-title {
+    font-size: clamp(1.2rem, 1.9vw, 1.8rem);
+  }
+
+  .liner-divider {
+    margin: 14px 0;
+  }
+
+  .tracklist {
+    gap: 18px 44px;
+  }
+
+  .track-row {
+    padding: .2rem 0;
+  }
+}
+
+@media (min-width: 2560px) and (min-height: 1400px) {
+  .ambient-view {
+    --jacket-size: clamp(320px, 12vw, 400px);
+  }
+
+  .overlay-header,
+  .album-grid {
+    width: min(1800px, 100%);
+  }
+
+  .album-grid {
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: .01ms !important;
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}
+
 /* ==========================
    Browse Overlay
 ========================== */
@@ -459,6 +570,11 @@ body.details-open .ambient-controls {
 .overlay {
   position: fixed;
   inset: 0;
+
+  width: 100%;
+  height: var(--app-height);
+  min-height: 100vh;
+  min-height: 100dvh;
 
   display: flex;
   flex-direction: column;
@@ -687,10 +803,14 @@ body.overlay-open {
 }
 
 .overlay-content {
-  width: min(1700px, 100%);
-  height: 100%;
+  width: min(1800px, 100%);
+  height: var(--app-height);
   margin: 0 auto;
-  padding: 40px;
+  padding:
+    var(--tv-safe-top)
+    var(--tv-safe-right)
+    var(--tv-safe-bottom)
+    var(--tv-safe-left);
 
   display: flex;
   flex-direction: column;

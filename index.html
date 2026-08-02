@@ -10,20 +10,25 @@
 
 <body>
   <main class="page">
-    <h1>Jeb's Records</h1>
+    <section class="ambient-view" aria-label="Currently spinning record">
+      <img
+        id="now-cover"
+        class="jacket"
+        src="images/placeholder-cover.svg"
+        alt=""
+        style="opacity: 0"
+      />
 
-    <section class="now">
-      <p class="label">Now Spinning</p>
-      <img id="now-cover" src="images/placeholder-cover.svg" alt="" style="opacity: 0" />
+      <!-- Retained for the upcoming Details View and existing JavaScript. -->
+      <div class="now-details" aria-hidden="true">
+        <h2 id="now-artist" style="opacity: 0"></h2>
+        <p id="now-title" style="opacity: 0"></p>
+      </div>
 
-      <h2 id="now-artist" style="opacity: 0"></h2>
-      <p id="now-title" style="opacity: 0"></p>
-
-      <div class="actions">
+      <div class="ambient-controls">
         <button id="browse-button">Browse Collection</button>
       </div>
     </section>
-
   </main>
 
   <section id="browse-overlay" class="overlay" aria-hidden="true">

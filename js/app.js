@@ -110,6 +110,12 @@ function handleAmbientKeys(event) {
   if (event.key === "Escape" && detailsVisible) {
     event.preventDefault();
     hideDetails();
+    return;
+  }
+
+  if (["ArrowUp","ArrowDown","ArrowLeft","ArrowRight"].includes(event.key)) {
+    event.preventDefault();
+    openBrowse();
   }
 }
 

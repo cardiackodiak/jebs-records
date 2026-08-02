@@ -73,11 +73,15 @@ body.overlay-open .page {
 
 .now-details {
   position: absolute;
-  left: calc(var(--ambient-x) + var(--jacket-size) + clamp(36px, 4vw, 72px));
+  top: clamp(36px, 5vh, 72px);
   right: clamp(28px, 5vw, 88px);
   bottom: var(--ambient-y);
+  left: calc(var(--ambient-x) + var(--jacket-size) + clamp(36px, 4vw, 72px));
 
-  max-width: 720px;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  max-width: 1080px;
 
   opacity: 0;
   visibility: hidden;
@@ -94,41 +98,151 @@ body.details-open .now-details {
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
+  pointer-events: auto;
+}
+
+.liner-header {
+  flex: 0 0 auto;
 }
 
 .details-label {
-  margin: 0 0 .85rem;
-  color: #8f8f8f;
-  font-size: .78rem;
+  margin: 0 0 .75rem;
+  color: #777;
+  font-size: .72rem;
   font-weight: 700;
-  letter-spacing: .22em;
+  letter-spacing: .24em;
   text-transform: uppercase;
 }
 
 #now-artist {
   margin: 0;
-  font-size: clamp(2rem, 4vw, 4.5rem);
+  font-size: clamp(2rem, 3.5vw, 4.2rem);
   line-height: .95;
   letter-spacing: -.025em;
 }
 
 #now-title {
-  margin: .55rem 0 0;
+  margin: .45rem 0 0;
   color: #d0d0d0;
-  font-size: clamp(1.35rem, 2.4vw, 2.35rem);
+  font-size: clamp(1.3rem, 2.1vw, 2.2rem);
   font-style: italic;
 }
 
 .now-meta,
 .now-genres {
-  margin: 1.25rem 0 0;
-  color: #999;
-  font-size: clamp(.95rem, 1.25vw, 1.2rem);
-  line-height: 1.55;
+  margin: 1rem 0 0;
+  color: #8f8f8f;
+  font-size: clamp(.88rem, 1.05vw, 1.08rem);
+  line-height: 1.45;
 }
 
 .now-genres {
-  margin-top: .35rem;
+  margin-top: .25rem;
+}
+
+.liner-divider {
+  width: min(100%, 760px);
+  height: 1px;
+  margin: clamp(16px, 2.5vh, 28px) 0;
+  background: rgba(255, 255, 255, .12);
+}
+
+.tracklist {
+  min-height: 0;
+  padding-right: 14px;
+
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-content: start;
+  gap: clamp(22px, 3vh, 34px) clamp(36px, 4vw, 72px);
+
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, .22) transparent;
+}
+
+.tracklist::-webkit-scrollbar {
+  width: 6px;
+}
+
+.tracklist::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.tracklist::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, .22);
+  border-radius: 999px;
+}
+
+.track-side {
+  min-width: 0;
+}
+
+.track-side-title {
+  margin: 0 0 .7rem;
+  color: #8d8d8d;
+  font-size: .72rem;
+  font-weight: 700;
+  letter-spacing: .22em;
+  text-transform: uppercase;
+}
+
+.track-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.track-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: baseline;
+  gap: 1.5rem;
+
+  padding: .28rem 0;
+
+  color: #d5d5d5;
+  font-size: clamp(.84rem, 1vw, 1.03rem);
+  line-height: 1.35;
+}
+
+.track-title {
+  min-width: 0;
+}
+
+.track-duration {
+  color: #747474;
+  font-size: .86em;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.subtrack-list {
+  grid-column: 1 / -1;
+
+  margin: .2rem 0 .15rem 1rem;
+  padding: 0;
+
+  list-style: none;
+}
+
+.subtrack-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 1rem;
+  padding: .15rem 0;
+
+  color: #999;
+  font-size: .9em;
+}
+
+.tracklist-empty {
+  grid-column: 1 / -1;
+  margin: 0;
+  color: #777;
+  font-size: .95rem;
+  font-style: italic;
 }
 
 .ambient-controls {
@@ -169,15 +283,16 @@ button:focus {
 
 .ambient-controls button {
   width: auto;
-  opacity: .28;
+  opacity: .2;
 }
 
 .ambient-controls button:hover,
 .ambient-controls button:focus {
-  opacity: 1;
+  opacity: .75;
 }
 
-.is-ambient .ambient-controls {
+.is-ambient .ambient-controls,
+body.details-open .ambient-controls {
   opacity: 0;
   pointer-events: none;
 }
@@ -186,22 +301,36 @@ button:focus {
   transform: scale(1.015);
 }
 
-@media (max-width: 900px) {
-  .ambient-view {
-    --jacket-size: min(48vw, 300px);
-  }
-
+@media (max-width: 1100px) {
   .now-details {
-    left: var(--ambient-x);
+    top: 32px;
     right: var(--ambient-x);
     bottom: calc(var(--ambient-y) + var(--jacket-size) + 28px);
+    left: var(--ambient-x);
     max-width: none;
+  }
+
+  .tracklist {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
 @media (max-width: 700px) {
   .ambient-view {
     --jacket-size: min(58vw, 300px);
+  }
+
+  .now-details {
+    top: 24px;
+  }
+
+  #now-artist {
+    font-size: clamp(1.75rem, 8vw, 2.7rem);
+  }
+
+  .tracklist {
+    grid-template-columns: 1fr;
+    gap: 24px;
   }
 
   .ambient-controls {

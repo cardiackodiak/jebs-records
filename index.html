@@ -20,11 +20,21 @@
       />
 
       <section id="now-details" class="now-details" aria-hidden="true">
-        <p class="details-label">Now Spinning</p>
-        <h2 id="now-artist" style="opacity: 0"></h2>
-        <p id="now-title" style="opacity: 0"></p>
-        <p id="now-meta" class="now-meta"></p>
-        <p id="now-genres" class="now-genres"></p>
+        <header class="liner-header">
+          <p class="details-label">Liner Notes</p>
+          <h2 id="now-artist" style="opacity: 0"></h2>
+          <p id="now-title" style="opacity: 0"></p>
+          <p id="now-meta" class="now-meta"></p>
+          <p id="now-genres" class="now-genres"></p>
+        </header>
+
+        <div class="liner-divider" aria-hidden="true"></div>
+
+        <div
+          id="now-tracklist"
+          class="tracklist"
+          aria-label="Track listing"
+        ></div>
       </section>
 
       <div class="ambient-controls">

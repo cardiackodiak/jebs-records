@@ -4,6 +4,7 @@ const title = document.getElementById("now-title");
 const nowDetails = document.getElementById("now-details");
 const nowMeta = document.getElementById("now-meta");
 const nowGenres = document.getElementById("now-genres");
+const nowTracklist = document.getElementById("now-tracklist");
 
 const browseOverlay = document.getElementById("browse-overlay");
 const browseButton = document.getElementById("browse-button");
@@ -51,7 +52,7 @@ function updateBrowsePreview() {
 }
 
 // --------------------
-// Ambient Details
+// Liner Notes
 // --------------------
 
 function formatRecordList(value) {
@@ -62,10 +63,140 @@ function formatRecordList(value) {
   return value || "";
 }
 
+function hasMeaningfulYear(value) {
+  return value && String(value) !== "0";
+}
+
+function getVinylSide(position) {
+  const normalized = String(position || "").trim().toUpperCase();
+  const match = normalized.match(/^([A-Z]+)(?=\d|$)/);
+
+  return match ? match[1] : null;
+}
+
+function createTrackRow(track) {
+  const row = document.createElement("li");
+  row.className = "track-row";
+
+  const trackTitle = document.createElement("span");
+  trackTitle.className = "track-title";
+  trackTitle.textContent = track.title || "Untitled";
+  row.appendChild(trackTitle);
+
+  if (track.duration) {
+    const duration = document.createElement("span");
+    duration.className = "track-duration";
+    duration.textContent = track.duration;
+    row.appendChild(duration);
+  }
+
+  if (Array.isArray(track.subTracks) && track.subTracks.length) {
+    const subtrackList = document.createElement("ul");
+    subtrackList.className = "subtrack-list";
+
+    track.subTracks.forEach(subTrack => {
+      const subtrackRow = document.createElement("li");
+      subtrackRow.className = "subtrack-row";
+
+      const subtrackTitle = document.createElement("span");
+      subtrackTitle.textContent = subTrack.title || "Untitled";
+      subtrackRow.appendChild(subtrackTitle);
+
+      if (subTrack.duration) {
+        const duration = document.createElement("span");
+        duration.className = "track-duration";
+        duration.textContent = subTrack.duration;
+        subtrackRow.appendChild(duration);
+      }
+
+      subtrackList.appendChild(subtrackRow);
+    });
+
+    row.appendChild(subtrackList);
+  }
+
+  return row;
+}
+
+function createTrackSide(label, tracks) {
+  const section = document.createElement("section");
+  section.className = "track-side";
+
+  const heading = document.createElement("h3");
+  heading.className = "track-side-title";
+  heading.textContent = label;
+  section.appendChild(heading);
+
+  const list = document.createElement("ol");
+  list.className = "track-list";
+
+  tracks.forEach(track => {
+    list.appendChild(createTrackRow(track));
+  });
+
+  section.appendChild(list);
+  return section;
+}
+
+function renderTracklist(tracklist) {
+  nowTracklist.replaceChildren();
+
+  const playableTracks = Array.isArray(tracklist)
+    ? tracklist.filter(track =>
+        track &&
+        track.type !== "heading" &&
+        (track.title || track.position)
+      )
+    : [];
+
+  if (!playableTracks.length) {
+    const empty = document.createElement("p");
+    empty.className = "tracklist-empty";
+    empty.textContent = "Track listing unavailable.";
+    nowTracklist.appendChild(empty);
+    return;
+  }
+
+  const vinylTracks = playableTracks.filter(track =>
+    getVinylSide(track.position)
+  );
+
+  // Some Discogs releases bundle a CD after the vinyl track list.
+  // When vinyl-style positions exist, only render those sides.
+  const tracksToRender = vinylTracks.length
+    ? vinylTracks
+    : playableTracks;
+
+  if (!vinylTracks.length) {
+    nowTracklist.appendChild(
+      createTrackSide("Track Listing", tracksToRender)
+    );
+    return;
+  }
+
+  const sides = new Map();
+
+  tracksToRender.forEach(track => {
+    const side = getVinylSide(track.position);
+
+    if (!sides.has(side)) {
+      sides.set(side, []);
+    }
+
+    sides.get(side).push(track);
+  });
+
+  sides.forEach((tracks, side) => {
+    nowTracklist.appendChild(
+      createTrackSide(`Side ${side}`, tracks)
+    );
+  });
+}
+
 function updateNowDetails(record) {
   const meta = [];
 
-  if (record.year) meta.push(record.year);
+  if (hasMeaningfulYear(record.year)) meta.push(record.year);
   if (record.label) meta.push(record.label);
 
   nowMeta.textContent = meta.join(" • ");
@@ -76,12 +207,14 @@ function updateNowDetails(record) {
   ].filter(Boolean);
 
   nowGenres.textContent = genres.join(" • ");
+  renderTracklist(record.tracklist);
 }
 
 function showDetails() {
   detailsVisible = true;
   document.body.classList.add("details-open");
   nowDetails.setAttribute("aria-hidden", "false");
+  nowTracklist.scrollTop = 0;
 }
 
 function hideDetails() {
@@ -113,7 +246,7 @@ function handleAmbientKeys(event) {
     return;
   }
 
-  if (["ArrowUp","ArrowDown","ArrowLeft","ArrowRight"].includes(event.key)) {
+  if (["ArrowUp", "ArrowDown", "ArrowLeft", "ArrowRight"].includes(event.key)) {
     event.preventDefault();
     openBrowse();
   }
@@ -144,12 +277,29 @@ function fadeToRecord(record) {
   }, 180);
 }
 
+function findCollectionRecord(record) {
+  if (!record) return null;
+
+  return collection.find(candidate =>
+    (record.id && candidate.id === record.id) ||
+    (
+      record.releaseId &&
+      String(candidate.releaseId) === String(record.releaseId)
+    ) ||
+    (
+      candidate.artist === record.artist &&
+      candidate.title === record.title
+    )
+  ) || null;
+}
+
 async function loadNowPlaying() {
   try {
     const savedRecord = localStorage.getItem("nowPlaying");
 
     if (savedRecord) {
-      fadeToRecord(JSON.parse(savedRecord));
+      const parsedRecord = JSON.parse(savedRecord);
+      fadeToRecord(findCollectionRecord(parsedRecord) || parsedRecord);
       return;
     }
 
@@ -160,7 +310,7 @@ async function loadNowPlaying() {
     }
 
     const record = await response.json();
-    fadeToRecord(record);
+    fadeToRecord(findCollectionRecord(record) || record);
   } catch (error) {
     console.error(error);
   }
@@ -502,9 +652,13 @@ window.addEventListener("keydown", handleBrowseKeys);
 // Startup
 // --------------------
 
-loadNowPlaying();
-loadCollection();
-exitAmbient();
+async function startApp() {
+  await loadCollection();
+  await loadNowPlaying();
+  exitAmbient();
+}
+
+startApp();
 
 // --------------------
 // Background Updater

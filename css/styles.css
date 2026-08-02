@@ -41,6 +41,10 @@ body.overlay-open .page {
 ========================== */
 
 .ambient-view {
+  --ambient-x: clamp(28px, 4vw, 64px);
+  --ambient-y: clamp(28px, 5vh, 64px);
+  --jacket-size: clamp(220px, 25vw, 360px);
+
   position: relative;
   width: 100%;
   min-height: 100vh;
@@ -50,11 +54,11 @@ body.overlay-open .page {
 
 .jacket {
   position: absolute;
-  left: clamp(28px, 4vw, 64px);
-  bottom: clamp(28px, 5vh, 64px);
+  left: var(--ambient-x);
+  bottom: var(--ambient-y);
 
   display: block;
-  width: clamp(220px, 25vw, 360px);
+  width: var(--jacket-size);
   max-height: calc(100vh - 56px);
   aspect-ratio: 1;
   object-fit: cover;
@@ -68,7 +72,63 @@ body.overlay-open .page {
 }
 
 .now-details {
-  display: none;
+  position: absolute;
+  left: calc(var(--ambient-x) + var(--jacket-size) + clamp(36px, 4vw, 72px));
+  right: clamp(28px, 5vw, 88px);
+  bottom: var(--ambient-y);
+
+  max-width: 720px;
+
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  pointer-events: none;
+
+  transition:
+    opacity .3s ease,
+    visibility .3s ease,
+    transform .35s cubic-bezier(.22, .61, .36, 1);
+}
+
+body.details-open .now-details {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.details-label {
+  margin: 0 0 .85rem;
+  color: #8f8f8f;
+  font-size: .78rem;
+  font-weight: 700;
+  letter-spacing: .22em;
+  text-transform: uppercase;
+}
+
+#now-artist {
+  margin: 0;
+  font-size: clamp(2rem, 4vw, 4.5rem);
+  line-height: .95;
+  letter-spacing: -.025em;
+}
+
+#now-title {
+  margin: .55rem 0 0;
+  color: #d0d0d0;
+  font-size: clamp(1.35rem, 2.4vw, 2.35rem);
+  font-style: italic;
+}
+
+.now-meta,
+.now-genres {
+  margin: 1.25rem 0 0;
+  color: #999;
+  font-size: clamp(.95rem, 1.25vw, 1.2rem);
+  line-height: 1.55;
+}
+
+.now-genres {
+  margin-top: .35rem;
 }
 
 .ambient-controls {
@@ -109,7 +169,7 @@ button:focus {
 
 .ambient-controls button {
   width: auto;
-  opacity: .42;
+  opacity: .28;
 }
 
 .ambient-controls button:hover,
@@ -126,9 +186,22 @@ button:focus {
   transform: scale(1.015);
 }
 
+@media (max-width: 900px) {
+  .ambient-view {
+    --jacket-size: min(48vw, 300px);
+  }
+
+  .now-details {
+    left: var(--ambient-x);
+    right: var(--ambient-x);
+    bottom: calc(var(--ambient-y) + var(--jacket-size) + 28px);
+    max-width: none;
+  }
+}
+
 @media (max-width: 700px) {
-  .jacket {
-    width: min(58vw, 300px);
+  .ambient-view {
+    --jacket-size: min(58vw, 300px);
   }
 
   .ambient-controls {

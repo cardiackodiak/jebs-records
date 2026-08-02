@@ -1,6 +1,9 @@
 const cover = document.getElementById("now-cover");
 const artist = document.getElementById("now-artist");
 const title = document.getElementById("now-title");
+const nowDetails = document.getElementById("now-details");
+const nowMeta = document.getElementById("now-meta");
+const nowGenres = document.getElementById("now-genres");
 
 const browseOverlay = document.getElementById("browse-overlay");
 const browseButton = document.getElementById("browse-button");
@@ -18,6 +21,7 @@ let albumCards = [];
 let selectedIndex = 0;
 let currentRecord = null;
 let selectedRecord = null;
+let detailsVisible = false;
 let ambientTimer;
 
 // --------------------
@@ -47,6 +51,69 @@ function updateBrowsePreview() {
 }
 
 // --------------------
+// Ambient Details
+// --------------------
+
+function formatRecordList(value) {
+  if (Array.isArray(value)) {
+    return value.filter(Boolean).join(" • ");
+  }
+
+  return value || "";
+}
+
+function updateNowDetails(record) {
+  const meta = [];
+
+  if (record.year) meta.push(record.year);
+  if (record.label) meta.push(record.label);
+
+  nowMeta.textContent = meta.join(" • ");
+
+  const genres = [
+    formatRecordList(record.genres),
+    formatRecordList(record.styles)
+  ].filter(Boolean);
+
+  nowGenres.textContent = genres.join(" • ");
+}
+
+function showDetails() {
+  detailsVisible = true;
+  document.body.classList.add("details-open");
+  nowDetails.setAttribute("aria-hidden", "false");
+}
+
+function hideDetails() {
+  detailsVisible = false;
+  document.body.classList.remove("details-open");
+  nowDetails.setAttribute("aria-hidden", "true");
+}
+
+function toggleDetails() {
+  if (detailsVisible) {
+    hideDetails();
+  } else {
+    showDetails();
+  }
+}
+
+function handleAmbientKeys(event) {
+  if (browseOverlay.classList.contains("is-open")) return;
+
+  if (event.key === "Enter") {
+    event.preventDefault();
+    toggleDetails();
+    return;
+  }
+
+  if (event.key === "Escape" && detailsVisible) {
+    event.preventDefault();
+    hideDetails();
+  }
+}
+
+// --------------------
 // Now Playing
 // --------------------
 
@@ -63,6 +130,7 @@ function fadeToRecord(record) {
     cover.alt = `${record.title} album cover`;
     artist.textContent = record.artist;
     title.textContent = record.title;
+    updateNowDetails(record);
 
     cover.style.opacity = 1;
     artist.style.opacity = 1;
@@ -97,6 +165,7 @@ async function loadNowPlaying() {
 // --------------------
 
 function openBrowse() {
+  hideDetails();
   browseOverlay.classList.add("is-open");
   browseOverlay.setAttribute("aria-hidden", "false");
   document.body.classList.add("overlay-open");
@@ -415,6 +484,8 @@ function exitAmbient() {
 browseButton.addEventListener("click", openBrowse);
 closeBrowseButton.addEventListener("click", closeBrowse);
 searchInput.addEventListener("input", handleSearchInput);
+cover.addEventListener("click", toggleDetails);
+window.addEventListener("keydown", handleAmbientKeys);
 window.addEventListener("keydown", handleBrowseKeys);
 
 ["mousemove", "keydown", "click", "touchstart"].forEach(eventName => {

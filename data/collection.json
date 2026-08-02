@@ -24,7 +24,111 @@
     "dateAdded": "2026-06-26 17:30:02",
     "notes": "",
     "cover": "https://i.discogs.com/M2yc5OJZPdVoDm2_UlRRXuDlDguamLLSdnbziNmZoQI/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI2MDc0/MjQtMTYzMDYwMTA4/Ny0xMTk5LmpwZWc.jpeg",
-    "thumb": "https://i.discogs.com/uKBZ4UD1ZLYLd8H4ZuEy2ticElp1MpwRfS9gw74wXZk/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI2MDc0/MjQtMTYzMDYwMTA4/Ny0xMTk5LmpwZWc.jpeg"
+    "thumb": "https://i.discogs.com/ScR7Pf_WOKOMhYFMK-0kk0H4bwaizxzvfqgln6whvxk/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE0MTg2/NDQxLTE1Njk0ODcx/NjEtNzMxNC5qcGVn.jpeg",
+    "tracklist": [
+      {
+        "position": "A1",
+        "type": "track",
+        "title": "Come Together",
+        "duration": ""
+      },
+      {
+        "position": "A2",
+        "type": "track",
+        "title": "Something",
+        "duration": ""
+      },
+      {
+        "position": "A3",
+        "type": "track",
+        "title": "Maxwell's Silver Hammer",
+        "duration": ""
+      },
+      {
+        "position": "A4",
+        "type": "track",
+        "title": "Oh! Darling",
+        "duration": ""
+      },
+      {
+        "position": "A5",
+        "type": "track",
+        "title": "Octopus's Garden",
+        "duration": ""
+      },
+      {
+        "position": "A6",
+        "type": "track",
+        "title": "I Want You (She's So Heavy)",
+        "duration": ""
+      },
+      {
+        "position": "B1",
+        "type": "track",
+        "title": "Here Comes The Sun",
+        "duration": ""
+      },
+      {
+        "position": "B2",
+        "type": "track",
+        "title": "Because",
+        "duration": ""
+      },
+      {
+        "position": "B3",
+        "type": "track",
+        "title": "You Never Give Me Your Money",
+        "duration": ""
+      },
+      {
+        "position": "B4",
+        "type": "track",
+        "title": "Sun King",
+        "duration": ""
+      },
+      {
+        "position": "B5",
+        "type": "track",
+        "title": "Mean Mr. Mustard",
+        "duration": ""
+      },
+      {
+        "position": "B6",
+        "type": "track",
+        "title": "Polythene Pam",
+        "duration": ""
+      },
+      {
+        "position": "B7",
+        "type": "track",
+        "title": "She Came In Through The Bathroom Window",
+        "duration": ""
+      },
+      {
+        "position": "B8",
+        "type": "track",
+        "title": "Golden Slumbers",
+        "duration": ""
+      },
+      {
+        "position": "B9",
+        "type": "track",
+        "title": "Carry That Weight",
+        "duration": ""
+      },
+      {
+        "position": "B10",
+        "type": "track",
+        "title": "The End",
+        "duration": ""
+      },
+      {
+        "position": "B11",
+        "type": "track",
+        "title": "Her Majesty",
+        "duration": ""
+      }
+    ]
   },
   {
     "id": "14186441-2",
@@ -51,7 +155,111 @@
     "dateAdded": "2026-07-04 22:08:13",
     "notes": "",
     "cover": "https://i.discogs.com/M2yc5OJZPdVoDm2_UlRRXuDlDguamLLSdnbziNmZoQI/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI2MDc0/MjQtMTYzMDYwMTA4/Ny0xMTk5LmpwZWc.jpeg",
-    "thumb": "https://i.discogs.com/uKBZ4UD1ZLYLd8H4ZuEy2ticElp1MpwRfS9gw74wXZk/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI2MDc0/MjQtMTYzMDYwMTA4/Ny0xMTk5LmpwZWc.jpeg"
+    "thumb": "https://i.discogs.com/ScR7Pf_WOKOMhYFMK-0kk0H4bwaizxzvfqgln6whvxk/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE0MTg2/NDQxLTE1Njk0ODcx/NjEtNzMxNC5qcGVn.jpeg",
+    "tracklist": [
+      {
+        "position": "A1",
+        "type": "track",
+        "title": "Come Together",
+        "duration": ""
+      },
+      {
+        "position": "A2",
+        "type": "track",
+        "title": "Something",
+        "duration": ""
+      },
+      {
+        "position": "A3",
+        "type": "track",
+        "title": "Maxwell's Silver Hammer",
+        "duration": ""
+      },
+      {
+        "position": "A4",
+        "type": "track",
+        "title": "Oh! Darling",
+        "duration": ""
+      },
+      {
+        "position": "A5",
+        "type": "track",
+        "title": "Octopus's Garden",
+        "duration": ""
+      },
+      {
+        "position": "A6",
+        "type": "track",
+        "title": "I Want You (She's So Heavy)",
+        "duration": ""
+      },
+      {
+        "position": "B1",
+        "type": "track",
+        "title": "Here Comes The Sun",
+        "duration": ""
+      },
+      {
+        "position": "B2",
+        "type": "track",
+        "title": "Because",
+        "duration": ""
+      },
+      {
+        "position": "B3",
+        "type": "track",
+        "title": "You Never Give Me Your Money",
+        "duration": ""
+      },
+      {
+        "position": "B4",
+        "type": "track",
+        "title": "Sun King",
+        "duration": ""
+      },
+      {
+        "position": "B5",
+        "type": "track",
+        "title": "Mean Mr. Mustard",
+        "duration": ""
+      },
+      {
+        "position": "B6",
+        "type": "track",
+        "title": "Polythene Pam",
+        "duration": ""
+      },
+      {
+        "position": "B7",
+        "type": "track",
+        "title": "She Came In Through The Bathroom Window",
+        "duration": ""
+      },
+      {
+        "position": "B8",
+        "type": "track",
+        "title": "Golden Slumbers",
+        "duration": ""
+      },
+      {
+        "position": "B9",
+        "type": "track",
+        "title": "Carry That Weight",
+        "duration": ""
+      },
+      {
+        "position": "B10",
+        "type": "track",
+        "title": "The End",
+        "duration": ""
+      },
+      {
+        "position": "B11",
+        "type": "track",
+        "title": "Her Majesty",
+        "duration": ""
+      }
+    ]
   },
   {
     "id": "25197124-3",
@@ -78,7 +286,57 @@
     "dateAdded": "2026-07-04 21:21:59",
     "notes": "",
     "cover": "https://i.discogs.com/6_5fKN7897XpeelEO-k3Uq6aTi0E2oXcgc5Ob9gunJo/rs:fit/g:sm/q:90/h:384/w:384/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI4OTMx/MzktMTMwNjAyNDI1/NC5qcGVn.jpeg",
-    "thumb": "https://i.discogs.com/hKIG2cJD5LAGXYevCyuiRkYzGpeuo_fKvzqWqmmhaDA/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI4OTMx/MzktMTMwNjAyNDI1/NC5qcGVn.jpeg"
+    "thumb": "https://i.discogs.com/bz3WhZ3vjvRk1whFMwosI9wDk__DAAEhrfRQrwbCKhc/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI1MTk3/MTI0LTE2NzczMzcy/MDktNDcyMS5qcGVn.jpeg",
+    "tracklist": [
+      {
+        "position": "A1",
+        "type": "track",
+        "title": "Black Dog",
+        "duration": "4:55"
+      },
+      {
+        "position": "A2",
+        "type": "track",
+        "title": "Rock And Roll",
+        "duration": "3:40"
+      },
+      {
+        "position": "A3",
+        "type": "track",
+        "title": "The Battle Of Evermore",
+        "duration": "5:51"
+      },
+      {
+        "position": "A4",
+        "type": "track",
+        "title": "Stairway To Heaven",
+        "duration": "8:02"
+      },
+      {
+        "position": "B1",
+        "type": "track",
+        "title": "Misty Mountain Hop",
+        "duration": "4:38"
+      },
+      {
+        "position": "B2",
+        "type": "track",
+        "title": "Four Sticks",
+        "duration": "4:45"
+      },
+      {
+        "position": "B3",
+        "type": "track",
+        "title": "Going To California",
+        "duration": "3:32"
+      },
+      {
+        "position": "B4",
+        "type": "track",
+        "title": "When The Levee Breaks",
+        "duration": "7:08"
+      }
+    ]
   },
   {
     "id": "6224441-4",
@@ -106,7 +364,57 @@
     "dateAdded": "2026-06-14 12:28:11",
     "notes": "",
     "cover": "https://i.discogs.com/BLWVi0t0llSqJvIybHrSvPql-RfORCmZU1klNfV0si8/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ1NTA3/Ny0xNTg4ODgwNzg4/LTIyMjYuanBlZw.jpeg",
-    "thumb": "https://i.discogs.com/ZSOqpHiPJeu3sinlMc7kRizBo0LLFcX0dt1mdBExi_0/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ1NTA3/Ny0xNTg4ODgwNzg4/LTIyMjYuanBlZw.jpeg"
+    "thumb": "https://i.discogs.com/-aU-xDrf5rIc6R6ZDw2PPElV5Z6iN5K9bIY78my3LLA/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTYyMjQ0/NDEtMTQyNDM4MDcx/Mi02MDI3LmpwZWc.jpeg",
+    "tracklist": [
+      {
+        "position": "A1",
+        "type": "track",
+        "title": "The Song Remains The Same",
+        "duration": "5:29"
+      },
+      {
+        "position": "A2",
+        "type": "track",
+        "title": "The Rain Song",
+        "duration": "7:39"
+      },
+      {
+        "position": "A3",
+        "type": "track",
+        "title": "Over The Hills And Far Away",
+        "duration": "4:50"
+      },
+      {
+        "position": "A4",
+        "type": "track",
+        "title": "The Crunge",
+        "duration": "3:17"
+      },
+      {
+        "position": "B1",
+        "type": "track",
+        "title": "Dancing Days",
+        "duration": "3:43"
+      },
+      {
+        "position": "B2",
+        "type": "track",
+        "title": "D'yer Mak'er",
+        "duration": "4:22"
+      },
+      {
+        "position": "B3",
+        "type": "track",
+        "title": "No Quarter",
+        "duration": "7:02"
+      },
+      {
+        "position": "B4",
+        "type": "track",
+        "title": "The Ocean",
+        "duration": "4:31"
+      }
+    ]
   },
   {
     "id": "5734538-5",
@@ -133,7 +441,69 @@
     "dateAdded": "2026-06-14 09:40:43",
     "notes": "",
     "cover": "https://i.discogs.com/rH0wZkbEHw23qAiflgI9Gq9e164tnPOdMyLZg2I2Oa4/rs:fit/g:sm/q:90/h:576/w:580/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIwMTk5/MjAtMTM5MTQ0MTgy/NS0zODkxLmpwZWc.jpeg",
-    "thumb": "https://i.discogs.com/bub2KsucciRuJbAPsSnee4Vje64l7VZY_YiioTN-tY4/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIwMTk5/MjAtMTM5MTQ0MTgy/NS0zODkxLmpwZWc.jpeg"
+    "thumb": "https://i.discogs.com/Ds7hEBBOuFxWlm_rtcz0J84KlcKYTNzGMyci_50q6gg/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTU3MzQ1/MzgtMTY0MzczOTMz/NC05NjE5LmpwZWc.jpeg",
+    "tracklist": [
+      {
+        "position": "A1",
+        "type": "track",
+        "title": "Immigrant Song",
+        "duration": "2:26"
+      },
+      {
+        "position": "A2",
+        "type": "track",
+        "title": "Friends",
+        "duration": "3:53"
+      },
+      {
+        "position": "A3",
+        "type": "track",
+        "title": "Celebration Day",
+        "duration": "3:30"
+      },
+      {
+        "position": "A4",
+        "type": "track",
+        "title": "Since I've Been Loving You",
+        "duration": "7:24"
+      },
+      {
+        "position": "A5",
+        "type": "track",
+        "title": "Out On The Tiles",
+        "duration": "4:07"
+      },
+      {
+        "position": "B1",
+        "type": "track",
+        "title": "Gallows Pole",
+        "duration": "4:57"
+      },
+      {
+        "position": "B2",
+        "type": "track",
+        "title": "Tangerine",
+        "duration": "3:11"
+      },
+      {
+        "position": "B3",
+        "type": "track",
+        "title": "That's The Way",
+        "duration": "5:37"
+      },
+      {
+        "position": "B4",
+        "type": "track",
+        "title": "Bron-Y-Aur Stomp",
+        "duration": "4:17"
+      },
+      {
+        "position": "B5",
+        "type": "track",
+        "title": "Hats Off To (Roy) Harper",
+        "duration": "3:42"
+      }
+    ]
   },
   {
     "id": "19502752-6",
@@ -160,7 +530,63 @@
     "dateAdded": "2026-07-04 21:10:35",
     "notes": "",
     "cover": "https://i.discogs.com/X-rPuAAYCmWZVGfSORdFws-ygb-Pg3iQfkJCJxEqcv0/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMwOTIz/NTktMTc2MjYxODc1/My01MzczLmpwZWc.jpeg",
-    "thumb": "https://i.discogs.com/kIT1kFI5WdqGyHFohhS9oDglAmAKmxc9lp1DdoLE3uw/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMwOTIz/NTktMTc2MjYxODc1/My01MzczLmpwZWc.jpeg"
+    "thumb": "https://i.discogs.com/RtXlDK07VCU2jWWieP27wLV2o1KeJYGpmIoPuiAckMY/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE5NTAy/NzUyLTE2NzgxODgy/NjQtNDUzMC5qcGVn.jpeg",
+    "tracklist": [
+      {
+        "position": "A1",
+        "type": "track",
+        "title": "Whole Lotta Love",
+        "duration": "5:34"
+      },
+      {
+        "position": "A2",
+        "type": "track",
+        "title": "What Is And What Should Never Be",
+        "duration": "4:46"
+      },
+      {
+        "position": "A3",
+        "type": "track",
+        "title": "The Lemon Song",
+        "duration": "6:19"
+      },
+      {
+        "position": "A4",
+        "type": "track",
+        "title": "Thank You",
+        "duration": "4:49"
+      },
+      {
+        "position": "B1",
+        "type": "track",
+        "title": "Heartbreaker",
+        "duration": "4:14"
+      },
+      {
+        "position": "B2",
+        "type": "track",
+        "title": "Living Loving Maid (She's Just A Woman)",
+        "duration": "2:39"
+      },
+      {
+        "position": "B3",
+        "type": "track",
+        "title": "Ramble On",
+        "duration": "4:34"
+      },
+      {
+        "position": "B4",
+        "type": "track",
+        "title": "Moby Dick",
+        "duration": "4:20"
+      },
+      {
+        "position": "B5",
+        "type": "track",
+        "title": "Bring It On Home",
+        "duration": "4:19"
+      }
+    ]
   },
   {
     "id": "32219661-7",
@@ -186,10 +612,187 @@
     "dateAdded": "2026-07-07 18:41:44",
     "notes": "",
     "cover": "https://i.discogs.com/EPjymcFyvhNUi2pT09bctj7X69dOIkk7Bv9cAQTg-p4/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM3MTM0/MS0xNzM1NzY1MTM0/LTIxMzUuanBlZw.jpeg",
-    "thumb": "https://i.discogs.com/o4q7NAabsAQ_YD9l8FHYyYtV0QYs3wrr4YOWN1SbLdk/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM3MTM0/MS0xNzM1NzY1MTM0/LTIxMzUuanBlZw.jpeg"
+    "thumb": "https://i.discogs.com/g9RnsDj7GpyzMVYl0ZyWKnbvcMaJoE-PeM7wAbxk71E/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMyMjE5/NjYxLTE3NzcwMzY4/NTktMjg1My5qcGVn.jpeg",
+    "tracklist": [
+      {
+        "position": "A1",
+        "type": "track",
+        "title": "Hello",
+        "duration": "3:21"
+      },
+      {
+        "position": "A2",
+        "type": "track",
+        "title": "Roll With It",
+        "duration": "3:59"
+      },
+      {
+        "position": "A3",
+        "type": "track",
+        "title": "Wonderwall",
+        "duration": "4:18"
+      },
+      {
+        "position": "B1",
+        "type": "track",
+        "title": "Don't Look Back In Anger",
+        "duration": "4:48"
+      },
+      {
+        "position": "B2",
+        "type": "track",
+        "title": "Hey Now!",
+        "duration": "5:41"
+      },
+      {
+        "position": "B3",
+        "type": "track",
+        "title": "(No Title)",
+        "duration": "0:44"
+      },
+      {
+        "position": "B4",
+        "type": "track",
+        "title": "Bonehead's Bank Holiday",
+        "duration": "4:03"
+      },
+      {
+        "position": "C1",
+        "type": "track",
+        "title": "Some Might Say",
+        "duration": "5:29"
+      },
+      {
+        "position": "C2",
+        "type": "track",
+        "title": "Cast No Shadow",
+        "duration": "4:51"
+      },
+      {
+        "position": "C3",
+        "type": "track",
+        "title": "She's Electric",
+        "duration": "3:40"
+      },
+      {
+        "position": "D1",
+        "type": "track",
+        "title": "Morning Glory",
+        "duration": "5:03"
+      },
+      {
+        "position": "D2",
+        "type": "track",
+        "title": "(No Title)",
+        "duration": "0:39"
+      },
+      {
+        "position": "D3",
+        "type": "track",
+        "title": "Champagne Supernova",
+        "duration": "7:27"
+      }
+    ]
   },
   {
-    "id": "14029797-8",
+    "id": "2825561-8",
+    "releaseId": "2825561",
+    "masterId": 54463,
+    "artist": "The Beatles",
+    "title": "Magical Mystery Tour",
+    "year": "1986",
+    "country": "US",
+    "genres": [
+      "Rock",
+      "Stage & Screen"
+    ],
+    "styles": [
+      "Soundtrack",
+      "Psychedelic Rock",
+      "Pop Rock"
+    ],
+    "labels": [
+      "Capitol Records",
+      "Capitol Records"
+    ],
+    "label": "Capitol Records, Capitol Records",
+    "format": "LP, Album, RE, Spe",
+    "rating": "",
+    "dateAdded": "2026-07-31 08:50:23",
+    "notes": "",
+    "cover": "https://i.discogs.com/5rwh2E75lUD011G_luz1V-5Uou4HjCEsxUcg-RgxukY/rs:fit/g:sm/q:90/h:600/w:595/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ2NDI5/Mi0xNDM0NjY1MjM4/LTM3MDIuanBlZw.jpeg",
+    "thumb": "https://i.discogs.com/W8rXL7Ma8wzfzvq8jXgy8Eqqu19tWjGY-w2cBvEQS5s/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI4MjU1/NjEtMTMyODcxMzUz/NC5qcGVn.jpeg",
+    "tracklist": [
+      {
+        "position": "A1",
+        "type": "track",
+        "title": "Magical Mystery Tour",
+        "duration": "2:48"
+      },
+      {
+        "position": "A2",
+        "type": "track",
+        "title": "The Fool On The Hill",
+        "duration": "3:00"
+      },
+      {
+        "position": "A3",
+        "type": "track",
+        "title": "Flying",
+        "duration": "2:16"
+      },
+      {
+        "position": "A4",
+        "type": "track",
+        "title": "Blue Jay Way",
+        "duration": "3:50"
+      },
+      {
+        "position": "A5",
+        "type": "track",
+        "title": "Your Mother Should Know",
+        "duration": "2:33"
+      },
+      {
+        "position": "A6",
+        "type": "track",
+        "title": "I Am The Walrus",
+        "duration": "4:35"
+      },
+      {
+        "position": "B1",
+        "type": "track",
+        "title": "Hello Goodbye",
+        "duration": "3:24"
+      },
+      {
+        "position": "B2",
+        "type": "track",
+        "title": "Strawberry Fields Forever",
+        "duration": "4:05"
+      },
+      {
+        "position": "B3",
+        "type": "track",
+        "title": "Penny Lane",
+        "duration": "2:57"
+      },
+      {
+        "position": "B4",
+        "type": "track",
+        "title": "Baby You're A Rich Man",
+        "duration": "3:07"
+      },
+      {
+        "position": "B5",
+        "type": "track",
+        "title": "All You Need Is Love",
+        "duration": "3:57"
+      }
+    ]
+  },
+  {
+    "id": "14029797-9",
     "releaseId": "14029797",
     "masterId": 97786,
     "artist": "Willie Nelson",
@@ -211,10 +814,102 @@
     "dateAdded": "2026-06-12 08:34:33",
     "notes": "",
     "cover": "https://i.discogs.com/fhat5CADYWANhC1T0U-kY4l9dmgeU2VCB0HtMVVqWVQ/rs:fit/g:sm/q:90/h:598/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE1NjA0/NTAtMTUzOTgzNjE4/OC01OTMzLmpwZWc.jpeg",
-    "thumb": "https://i.discogs.com/pZM2er6Q6fH0kPc17CAwZc0YEu0l7Ve3kJUeo1X4Y1w/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE1NjA0/NTAtMTUzOTgzNjE4/OC01OTMzLmpwZWc.jpeg"
+    "thumb": "https://i.discogs.com/r9vsYSgPKr0dMT5x3GygZeQvVidtSliKl8pIpvdaT9g/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE0MDI5/Nzk3LTE1Njk2ODMz/OTEtMjA4MC5qcGVn.jpeg",
+    "tracklist": [
+      {
+        "position": "A1",
+        "type": "track",
+        "title": "Time Of The Preacher",
+        "duration": "2:24"
+      },
+      {
+        "position": "A2",
+        "type": "track",
+        "title": "I Couldn't Believe It Was True",
+        "duration": "1:32"
+      },
+      {
+        "position": "A3",
+        "type": "track",
+        "title": "Time Of The Preacher Theme",
+        "duration": "1:12"
+      },
+      {
+        "position": "A4",
+        "type": "track",
+        "title": "Medley: Blue Rock Montana / Red Headed Stranger",
+        "duration": "1:32"
+      },
+      {
+        "position": "A5",
+        "type": "track",
+        "title": "Blue Eyes Crying In The Rain",
+        "duration": "2:17"
+      },
+      {
+        "position": "A6",
+        "type": "track",
+        "title": "Red Headed Stranger",
+        "duration": "3:57"
+      },
+      {
+        "position": "A7",
+        "type": "track",
+        "title": "Time Of The Preacher Theme",
+        "duration": "0:25"
+      },
+      {
+        "position": "A8",
+        "type": "track",
+        "title": "Just As I Am",
+        "duration": "1:45"
+      },
+      {
+        "position": "B1",
+        "type": "track",
+        "title": "Denver",
+        "duration": "0:55"
+      },
+      {
+        "position": "B2",
+        "type": "track",
+        "title": "O'er The Waves",
+        "duration": "0:48"
+      },
+      {
+        "position": "B3",
+        "type": "track",
+        "title": "Down Yonder",
+        "duration": "1:53"
+      },
+      {
+        "position": "B4",
+        "type": "track",
+        "title": "Can I Sleep In Your Arms",
+        "duration": "5:22"
+      },
+      {
+        "position": "B5",
+        "type": "track",
+        "title": "Remember Me",
+        "duration": "2:50"
+      },
+      {
+        "position": "B6",
+        "type": "track",
+        "title": "Hands On The Wheel",
+        "duration": "4:20"
+      },
+      {
+        "position": "B7",
+        "type": "track",
+        "title": "Bandera",
+        "duration": "2:18"
+      }
+    ]
   },
   {
-    "id": "11346765-9",
+    "id": "11346765-10",
     "releaseId": "11346765",
     "masterId": 264742,
     "artist": "Arcade Fire",
@@ -237,10 +932,356 @@
     "dateAdded": "2026-07-04 21:50:36",
     "notes": "",
     "cover": "https://i.discogs.com/wkYwUOYrK-kiGRJF3FGwgN9UCiAIhSdbSxtiSla6o0o/rs:fit/g:sm/q:90/h:589/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIzODAw/MDQtMTU3OTQ3ODg0/Mi01NTAzLmpwZWc.jpeg",
-    "thumb": "https://i.discogs.com/w7tp8cPOB7b9AJ7BvnJqHatER5LW2ap1Qr34sKEck_M/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIzODAw/MDQtMTU3OTQ3ODg0/Mi01NTAzLmpwZWc.jpeg"
+    "thumb": "https://i.discogs.com/h2yaMDHiTeqUuQ9v29Vg_I7uEIIe1cPmXM-mo4RLT3A/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExMzQ2/NzY1LTE1MTUwMjMy/MjYtNjE1NS5qcGVn.jpeg",
+    "tracklist": [
+      {
+        "position": "A1",
+        "type": "track",
+        "title": "The Suburbs",
+        "duration": "5:15"
+      },
+      {
+        "position": "A2",
+        "type": "track",
+        "title": "Ready To Start",
+        "duration": "4:16"
+      },
+      {
+        "position": "A3",
+        "type": "track",
+        "title": "Modern Man",
+        "duration": "4:40"
+      },
+      {
+        "position": "A4",
+        "type": "track",
+        "title": "Rococo",
+        "duration": "3:57"
+      },
+      {
+        "position": "B5",
+        "type": "track",
+        "title": "Empty Room",
+        "duration": "2:52"
+      },
+      {
+        "position": "B6",
+        "type": "track",
+        "title": "City With No Children",
+        "duration": "3:12"
+      },
+      {
+        "position": "B7",
+        "type": "track",
+        "title": "Half Light I",
+        "duration": "4:14"
+      },
+      {
+        "position": "B8",
+        "type": "track",
+        "title": "Half Light II (No Celebration)",
+        "duration": "4:27"
+      },
+      {
+        "position": "C9",
+        "type": "track",
+        "title": "Month Of May",
+        "duration": "3:51"
+      },
+      {
+        "position": "C10",
+        "type": "track",
+        "title": "Wasted Hours",
+        "duration": "3:21"
+      },
+      {
+        "position": "C11",
+        "type": "track",
+        "title": "Deep Blue",
+        "duration": "4:28"
+      },
+      {
+        "position": "C12",
+        "type": "track",
+        "title": "We Used To Wait",
+        "duration": "5:01"
+      },
+      {
+        "position": "D13",
+        "type": "track",
+        "title": "Sprawl I (Flatland)",
+        "duration": "2:54"
+      },
+      {
+        "position": "D14",
+        "type": "track",
+        "title": "Sprawl II (Mountains Beyond Mountains)",
+        "duration": "5:26"
+      },
+      {
+        "position": "D15",
+        "type": "track",
+        "title": "Suburban War",
+        "duration": "4:45"
+      },
+      {
+        "position": "D16",
+        "type": "track",
+        "title": "The Suburbs (Continued)",
+        "duration": "1:28"
+      }
+    ]
   },
   {
-    "id": "13808380-10",
+    "id": "19168642-11",
+    "releaseId": "19168642",
+    "masterId": 27194,
+    "artist": "Bruce Springsteen",
+    "title": "The River",
+    "year": "1980",
+    "country": "US",
+    "genres": [
+      "Rock"
+    ],
+    "styles": [
+      "Folk Rock",
+      "Pop Rock",
+      "Classic Rock"
+    ],
+    "labels": [
+      "Columbia"
+    ],
+    "label": "Columbia",
+    "format": "2xLP, Album",
+    "rating": "",
+    "dateAdded": "2026-07-31 09:06:53",
+    "notes": "",
+    "cover": "https://i.discogs.com/35mYMEqlPXsfgIsf30wWPzNMplX1fQPzAnre_rTz-k4/rs:fit/g:sm/q:90/h:599/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTg5Mjk3/MS0xNTE3MzUwMTEx/LTQxOTQuanBlZw.jpeg",
+    "thumb": "https://i.discogs.com/lvHNJ0hcLSEx3y3bX-KSuzm5gXJSu-YsB8RmzXUeMNQ/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE5MTY4/NjQyLTE2MjM5MzA4/NTQtODI5MS5qcGVn.jpeg",
+    "tracklist": [
+      {
+        "position": "A1",
+        "type": "track",
+        "title": "The Ties That Bind",
+        "duration": "3:33"
+      },
+      {
+        "position": "A2",
+        "type": "track",
+        "title": "Sherry Darling",
+        "duration": "4:02"
+      },
+      {
+        "position": "A3",
+        "type": "track",
+        "title": "Jackson Cage",
+        "duration": "3:04"
+      },
+      {
+        "position": "A4",
+        "type": "track",
+        "title": "Two Hearts",
+        "duration": "2:42"
+      },
+      {
+        "position": "A5",
+        "type": "track",
+        "title": "Independence Day",
+        "duration": "4:46"
+      },
+      {
+        "position": "B1",
+        "type": "track",
+        "title": "Hungry Heart",
+        "duration": "3:19"
+      },
+      {
+        "position": "B2",
+        "type": "track",
+        "title": "Out In The Street",
+        "duration": "4:17"
+      },
+      {
+        "position": "B3",
+        "type": "track",
+        "title": "Crush On You",
+        "duration": "3:10"
+      },
+      {
+        "position": "B4",
+        "type": "track",
+        "title": "You Can Look (But You Better Not Touch)",
+        "duration": "2:36"
+      },
+      {
+        "position": "B5",
+        "type": "track",
+        "title": "I Wanna Marry You",
+        "duration": "3:26"
+      },
+      {
+        "position": "B6",
+        "type": "track",
+        "title": "The River",
+        "duration": "4:59"
+      },
+      {
+        "position": "C1",
+        "type": "track",
+        "title": "Point Blank",
+        "duration": "6:05"
+      },
+      {
+        "position": "C2",
+        "type": "track",
+        "title": "Cadillac Ranch",
+        "duration": "3:02"
+      },
+      {
+        "position": "C3",
+        "type": "track",
+        "title": "I'm A Rocker",
+        "duration": "3:34"
+      },
+      {
+        "position": "C4",
+        "type": "track",
+        "title": "Fade Away",
+        "duration": "4:40"
+      },
+      {
+        "position": "C5",
+        "type": "track",
+        "title": "Stolen Car",
+        "duration": "3:53"
+      },
+      {
+        "position": "D1",
+        "type": "track",
+        "title": "Ramrod",
+        "duration": "4:04"
+      },
+      {
+        "position": "D2",
+        "type": "track",
+        "title": "The Price You Pay",
+        "duration": "5:27"
+      },
+      {
+        "position": "D3",
+        "type": "track",
+        "title": "Drive All Night",
+        "duration": "8:26"
+      },
+      {
+        "position": "D4",
+        "type": "track",
+        "title": "Wreck On The Highway",
+        "duration": "3:53"
+      }
+    ]
+  },
+  {
+    "id": "3529270-12",
+    "releaseId": "3529270",
+    "masterId": 549938,
+    "artist": "Various",
+    "title": "Zenith Presents Hootenanny Special",
+    "year": "1965",
+    "country": "US",
+    "genres": [
+      "Folk, World, & Country"
+    ],
+    "styles": [
+      "Folk"
+    ],
+    "labels": [
+      "Columbia Special Products"
+    ],
+    "label": "Columbia Special Products",
+    "format": "LP, Comp",
+    "rating": "",
+    "dateAdded": "2026-07-31 08:46:24",
+    "notes": "",
+    "cover": "https://i.discogs.com/5ym8MvbPPrg4tbJrcl4zr7GTmNtU-vIT6PChx863Gjc/rs:fit/g:sm/q:90/h:600/w:562/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM1Mjky/NzAtMTMzNDAzMzM1/NS5qcGVn.jpeg",
+    "thumb": "https://i.discogs.com/_6p9t3Iou1fgaJg0Zz7nGMOXX9BRxQ4O9L2RbWUewHE/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM1Mjky/NzAtMTMzNDAzMzM1/NS5qcGVn.jpeg",
+    "tracklist": [
+      {
+        "position": "A1",
+        "type": "track",
+        "title": "Californi-o",
+        "duration": ""
+      },
+      {
+        "position": "A2",
+        "type": "track",
+        "title": "Rovin' Gambler",
+        "duration": ""
+      },
+      {
+        "position": "A3",
+        "type": "track",
+        "title": "San Francisco Bay Blues",
+        "duration": ""
+      },
+      {
+        "position": "A4",
+        "type": "track",
+        "title": "Michael Row The Boat Ashore",
+        "duration": ""
+      },
+      {
+        "position": "A5",
+        "type": "track",
+        "title": "John Henry",
+        "duration": ""
+      },
+      {
+        "position": "A6",
+        "type": "track",
+        "title": "Follow The Drinkin' Gourd",
+        "duration": ""
+      },
+      {
+        "position": "B1",
+        "type": "track",
+        "title": "If I Had A Hammer",
+        "duration": ""
+      },
+      {
+        "position": "B2",
+        "type": "track",
+        "title": "Green, Green",
+        "duration": ""
+      },
+      {
+        "position": "B3",
+        "type": "track",
+        "title": "Brennan On The Moor",
+        "duration": ""
+      },
+      {
+        "position": "B4",
+        "type": "track",
+        "title": "Reilly's Daughter",
+        "duration": ""
+      },
+      {
+        "position": "B5",
+        "type": "track",
+        "title": "Don't Think Twice, It's All Right",
+        "duration": ""
+      },
+      {
+        "position": "B6",
+        "type": "track",
+        "title": "House Of The Rising Sun",
+        "duration": ""
+      }
+    ]
+  },
+  {
+    "id": "13808380-13",
     "releaseId": "13808380",
     "masterId": 3878,
     "artist": "Bob Dylan",
@@ -263,10 +1304,72 @@
     "dateAdded": "2026-06-14 08:51:39",
     "notes": "",
     "cover": "https://i.discogs.com/Aq5gLIL8zUSEBQpOiutdVfApi41taYrIU5DYAcUmMZI/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIzMDY5/NDEtMTMzNzQzMzg5/MS01MTc2LmpwZWc.jpeg",
-    "thumb": "https://i.discogs.com/v0Qvf7c2n4MJaPeVOcQ4Lku_gqtkekXBOFvBJrA_P_8/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIzMDY5/NDEtMTMzNzQzMzg5/MS01MTc2LmpwZWc.jpeg"
+    "thumb": "https://i.discogs.com/8BIGuuCgXe7kRWSChP2FZbAj0E9jjwvaRyYOxL82cyM/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEzODA4/MzgwLTE1NjIyODAx/NjItMTQwNi5wbmc.jpeg",
+    "tracklist": [
+      {
+        "position": "A1",
+        "type": "track",
+        "title": "Tangled Up In Blue",
+        "duration": "5:40"
+      },
+      {
+        "position": "A2",
+        "type": "track",
+        "title": "Simple Twist Of Fate",
+        "duration": "4:18"
+      },
+      {
+        "position": "A3",
+        "type": "track",
+        "title": "You're A Big Girl Now",
+        "duration": "4:36"
+      },
+      {
+        "position": "A4",
+        "type": "track",
+        "title": "Idiot Wind",
+        "duration": "7:45"
+      },
+      {
+        "position": "A5",
+        "type": "track",
+        "title": "You're Gonna Make Me Lonesome When You Go",
+        "duration": "2:58"
+      },
+      {
+        "position": "B1",
+        "type": "track",
+        "title": "Meet Me In The Morning",
+        "duration": "4:19"
+      },
+      {
+        "position": "B2",
+        "type": "track",
+        "title": "Lily, Rosemary And The Jack Of Hearts",
+        "duration": "8:50"
+      },
+      {
+        "position": "B3",
+        "type": "track",
+        "title": "If You See Her, Say Hello",
+        "duration": "4:46"
+      },
+      {
+        "position": "B4",
+        "type": "track",
+        "title": "Shelter From The Storm",
+        "duration": "4:59"
+      },
+      {
+        "position": "B5",
+        "type": "track",
+        "title": "Buckets Of Rain",
+        "duration": "3:29"
+      }
+    ]
   },
   {
-    "id": "28702942-11",
+    "id": "28702942-14",
     "releaseId": "28702942",
     "masterId": 4455,
     "artist": "Bob Dylan",
@@ -289,10 +1392,90 @@
     "dateAdded": "2026-07-03 08:43:29",
     "notes": "",
     "cover": "https://i.discogs.com/TKHI29jZuGAJwT4JBTfBESWh5mk4kRSXOCKOkjSuOVM/rs:fit/g:sm/q:90/h:599/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE1OTY0/MzgtMTMwMTk5MTc0/Ny5qcGVn.jpeg",
-    "thumb": "https://i.discogs.com/ZoepylnO2BTmtuy49DAgE9AkLvxb5jL7pGgYzykB8SI/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE1OTY0/MzgtMTMwMTk5MTc0/Ny5qcGVn.jpeg"
+    "thumb": "https://i.discogs.com/eJHs_WZ1qDGBBBy_UHgS0rTcJeBD1Wj1CjFD1EVNJZI/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI4NzAy/OTQyLTE2OTgyNTc2/NjEtNTg5Ni5qcGVn.jpeg",
+    "tracklist": [
+      {
+        "position": "A1",
+        "type": "track",
+        "title": "Blowin' In The Wind",
+        "duration": ""
+      },
+      {
+        "position": "A2",
+        "type": "track",
+        "title": "Girl From The North Country",
+        "duration": ""
+      },
+      {
+        "position": "A3",
+        "type": "track",
+        "title": "Masters Of War",
+        "duration": ""
+      },
+      {
+        "position": "A4",
+        "type": "track",
+        "title": "Down The Highway",
+        "duration": ""
+      },
+      {
+        "position": "A5",
+        "type": "track",
+        "title": "Bob Dylan's Blues",
+        "duration": ""
+      },
+      {
+        "position": "A6",
+        "type": "track",
+        "title": "A Hard Rain's A-Gonna Fall",
+        "duration": ""
+      },
+      {
+        "position": "B1",
+        "type": "track",
+        "title": "Don't Think Twice, It's All Right",
+        "duration": ""
+      },
+      {
+        "position": "B2",
+        "type": "track",
+        "title": "Bob Dylan's Dream",
+        "duration": ""
+      },
+      {
+        "position": "B3",
+        "type": "track",
+        "title": "Oxford Town",
+        "duration": ""
+      },
+      {
+        "position": "B4",
+        "type": "track",
+        "title": "Talking World War III Blues",
+        "duration": ""
+      },
+      {
+        "position": "B5",
+        "type": "track",
+        "title": "Corrina, Corrina",
+        "duration": ""
+      },
+      {
+        "position": "B6",
+        "type": "track",
+        "title": "Honey, Just Allow Me One More Chance",
+        "duration": ""
+      },
+      {
+        "position": "B7",
+        "type": "track",
+        "title": "I Shall Be Free",
+        "duration": ""
+      }
+    ]
   },
   {
-    "id": "22825475-12",
+    "id": "22825475-15",
     "releaseId": "22825475",
     "masterId": 3823,
     "artist": "Bob Dylan",
@@ -318,10 +1501,78 @@
     "dateAdded": "2026-07-05 20:00:24",
     "notes": "",
     "cover": "https://i.discogs.com/1PZjyWQWhcQ7Zw9iyo01J_iQFyqd-PyCwABti95GvsU/rs:fit/g:sm/q:90/h:564/w:598/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwNjI5/MTUtMTM0Mzg0NTI3/MS05NTc4LmpwZWc.jpeg",
-    "thumb": "https://i.discogs.com/qA-FnAlS7F3DOIT2jqZ8ERQbZfNjltgo_wk1FpRvU5E/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwNjI5/MTUtMTM0Mzg0NTI3/MS05NTc4LmpwZWc.jpeg"
+    "thumb": "https://i.discogs.com/e6cTp7bGNyBjhPZcbrdGu4bnzoyDqV7QdVfS1e1g4XI/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIyODI1/NDc1LTE3MzU0MDU1/ODYtNTI3My5qcGVn.jpeg",
+    "tracklist": [
+      {
+        "position": "A1",
+        "type": "track",
+        "title": "Subterranean Homesick Blues",
+        "duration": "2:17"
+      },
+      {
+        "position": "A2",
+        "type": "track",
+        "title": "She Belongs To Me",
+        "duration": "2:48"
+      },
+      {
+        "position": "A3",
+        "type": "track",
+        "title": "Maggie's Farm",
+        "duration": "3:51"
+      },
+      {
+        "position": "A4",
+        "type": "track",
+        "title": "Love Minus Zero / No Limit",
+        "duration": "2:47"
+      },
+      {
+        "position": "A5",
+        "type": "track",
+        "title": "Outlaw Blues",
+        "duration": "3:00"
+      },
+      {
+        "position": "A6",
+        "type": "track",
+        "title": "On The Road Again",
+        "duration": "2:30"
+      },
+      {
+        "position": "A7",
+        "type": "track",
+        "title": "Bob Dylan's 115th Dream",
+        "duration": "6:29"
+      },
+      {
+        "position": "B1",
+        "type": "track",
+        "title": "Mr. Tambourine Man",
+        "duration": "5:25"
+      },
+      {
+        "position": "B2",
+        "type": "track",
+        "title": "Gates Of Eden",
+        "duration": "5:42"
+      },
+      {
+        "position": "B3",
+        "type": "track",
+        "title": "It's Alright, Ma (I'm Only Bleeding)",
+        "duration": "7:30"
+      },
+      {
+        "position": "B4",
+        "type": "track",
+        "title": "It's All Over Now, Baby Blue",
+        "duration": "4:13"
+      }
+    ]
   },
   {
-    "id": "22814468-13",
+    "id": "22814468-16",
     "releaseId": "22814468",
     "masterId": 3986,
     "artist": "Bob Dylan",
@@ -345,10 +1596,66 @@
     "dateAdded": "2026-07-05 20:03:03",
     "notes": "",
     "cover": "https://i.discogs.com/SFuuIpiD9lB8uQV2Fiw83xjct3qM0x1PiG3-NNtnC48/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY1OTAw/MDQtMTQyMjY0ODIx/Mi05NjIzLmpwZWc.jpeg",
-    "thumb": "https://i.discogs.com/UNOaDPY1YgQuQGf2EZpyMdhYf0ndbz9iFDgohoFRkNs/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY1OTAw/MDQtMTQyMjY0ODIx/Mi05NjIzLmpwZWc.jpeg"
+    "thumb": "https://i.discogs.com/oyfYMxx0bed5QPbUoEAL-YSnlm9fTdVy-0p361U5JOQ/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIyODE0/NDY4LTE3MzU0MDU3/ODMtNDI1Ni5qcGVn.jpeg",
+    "tracklist": [
+      {
+        "position": "A1",
+        "type": "track",
+        "title": "Like A Rolling Stone",
+        "duration": "5:59"
+      },
+      {
+        "position": "A2",
+        "type": "track",
+        "title": "Tombstone Blues",
+        "duration": "5:53"
+      },
+      {
+        "position": "A3",
+        "type": "track",
+        "title": "It Takes A Lot To Laugh, It Takes A Train To Cry",
+        "duration": "3:25"
+      },
+      {
+        "position": "A4",
+        "type": "track",
+        "title": "From A Buick 6",
+        "duration": "3:06"
+      },
+      {
+        "position": "A5",
+        "type": "track",
+        "title": "Ballad Of A Thin Man",
+        "duration": "5:48"
+      },
+      {
+        "position": "B1",
+        "type": "track",
+        "title": "Queen Jane Approximately",
+        "duration": "4:57"
+      },
+      {
+        "position": "B2",
+        "type": "track",
+        "title": "Highway 61 Revisited",
+        "duration": "3:15"
+      },
+      {
+        "position": "B3",
+        "type": "track",
+        "title": "Just Like Tom Thumb's Blues",
+        "duration": "5:08"
+      },
+      {
+        "position": "B4",
+        "type": "track",
+        "title": "Desolation Row",
+        "duration": "11:18"
+      }
+    ]
   },
   {
-    "id": "11078235-14",
+    "id": "11078235-17",
     "releaseId": "11078235",
     "masterId": 97789,
     "artist": "Willie Nelson",
@@ -370,10 +1677,72 @@
     "dateAdded": "2026-06-21 20:45:26",
     "notes": "",
     "cover": "https://i.discogs.com/F5473BdIMjLpI8QaaTiOaouh-4b-Pf2i4nwV8iRyP3s/rs:fit/g:sm/q:90/h:597/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY2NTg4/ODctMTQyNDk2MDI2/OC0zMTQxLmpwZWc.jpeg",
-    "thumb": "https://i.discogs.com/cIixHFR15tFM_ECHd6bAMFDEqTprAJqvjS9DWMwtl34/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY2NTg4/ODctMTQyNDk2MDI2/OC0zMTQxLmpwZWc.jpeg"
+    "thumb": "https://i.discogs.com/m9n-jzDdOS-p1PG2-QdeAZjzYUovMNny8iegTsO-Eyc/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExMDc4/MjM1LTE1MDk0NDg3/MzctMzkyMy5qcGVn.jpeg",
+    "tracklist": [
+      {
+        "position": "A1",
+        "type": "track",
+        "title": "Stardust",
+        "duration": "3:50"
+      },
+      {
+        "position": "A2",
+        "type": "track",
+        "title": "Georgia On My Mind",
+        "duration": "4:19"
+      },
+      {
+        "position": "A3",
+        "type": "track",
+        "title": "Blue Skies",
+        "duration": "3:32"
+      },
+      {
+        "position": "A4",
+        "type": "track",
+        "title": "All Of Me",
+        "duration": "3:52"
+      },
+      {
+        "position": "A5",
+        "type": "track",
+        "title": "Unchained Melody",
+        "duration": "3:48"
+      },
+      {
+        "position": "B1",
+        "type": "track",
+        "title": "September Song",
+        "duration": "4:32"
+      },
+      {
+        "position": "B2",
+        "type": "track",
+        "title": "On The Sunny Side Of The Street",
+        "duration": "2:35"
+      },
+      {
+        "position": "B3",
+        "type": "track",
+        "title": "Moonlight In Vermont",
+        "duration": "3:23"
+      },
+      {
+        "position": "B4",
+        "type": "track",
+        "title": "Don't Get Around Much Anymore",
+        "duration": "2:30"
+      },
+      {
+        "position": "B5",
+        "type": "track",
+        "title": "Someone To Watch Over Me",
+        "duration": "4:01"
+      }
+    ]
   },
   {
-    "id": "22814654-15",
+    "id": "22814654-18",
     "releaseId": "22814654",
     "masterId": 3773,
     "artist": "Bob Dylan",
@@ -399,10 +1768,96 @@
     "dateAdded": "2026-07-05 20:05:25",
     "notes": "",
     "cover": "https://i.discogs.com/cKHKgGtH7DF9WbL_raA2XNsN9pQbjYu69Cp8cMJ--70/rs:fit/g:sm/q:90/h:600/w:598/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE0MzE2/MDEtMTM4NzE0MTM4/MC04MDg1LmpwZWc.jpeg",
-    "thumb": "https://i.discogs.com/4lljYqxO0OdzAEiLy4fW-eOnb1Lrgen0iaQcuS82SZo/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE0MzE2/MDEtMTM4NzE0MTM4/MC04MDg1LmpwZWc.jpeg"
+    "thumb": "https://i.discogs.com/CZ1w67sIYCQlBwhA_HDt0D5lcwID2kTGXdZ7ZdbpLTA/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIyODE0/NjU0LTE2NDk0Njg2/MTUtNDg2MC5qcGVn.jpeg",
+    "tracklist": [
+      {
+        "position": "A1",
+        "type": "track",
+        "title": "Rainy Day Women #12 & 35",
+        "duration": ""
+      },
+      {
+        "position": "A2",
+        "type": "track",
+        "title": "Pledging My Time",
+        "duration": ""
+      },
+      {
+        "position": "A3",
+        "type": "track",
+        "title": "Visions Of Johanna",
+        "duration": ""
+      },
+      {
+        "position": "A4",
+        "type": "track",
+        "title": "One Of Us Must Know (Sooner Or Later)",
+        "duration": ""
+      },
+      {
+        "position": "B1",
+        "type": "track",
+        "title": "I Want You",
+        "duration": ""
+      },
+      {
+        "position": "B2",
+        "type": "track",
+        "title": "Memphis Blues Again",
+        "duration": ""
+      },
+      {
+        "position": "B3",
+        "type": "track",
+        "title": "Leopard-Skin Pill-Box Hat",
+        "duration": ""
+      },
+      {
+        "position": "B4",
+        "type": "track",
+        "title": "Just Like A Woman",
+        "duration": ""
+      },
+      {
+        "position": "C1",
+        "type": "track",
+        "title": "Most Likely You Go Your Way And I'll Go Mine",
+        "duration": ""
+      },
+      {
+        "position": "C2",
+        "type": "track",
+        "title": "Temporary Like Achilles",
+        "duration": ""
+      },
+      {
+        "position": "C3",
+        "type": "track",
+        "title": "Absolutely Sweet Marie",
+        "duration": ""
+      },
+      {
+        "position": "C4",
+        "type": "track",
+        "title": "4th Time Around",
+        "duration": ""
+      },
+      {
+        "position": "C5",
+        "type": "track",
+        "title": "Obviously 5 Believers",
+        "duration": ""
+      },
+      {
+        "position": "D",
+        "type": "track",
+        "title": "Sad Eyed Lady Of The Lowlands",
+        "duration": ""
+      }
+    ]
   },
   {
-    "id": "24526181-16",
+    "id": "24526181-19",
     "releaseId": "24526181",
     "masterId": 2785907,
     "artist": "Creedence Clearwater Revival",
@@ -427,10 +1882,84 @@
     "dateAdded": "2026-06-29 16:11:40",
     "notes": "",
     "cover": "https://i.discogs.com/Ee4KUHIcknyOwaZYxZFV5EYvNzx9jbVYMBeM68sy6GY/rs:fit/g:sm/q:90/h:545/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI0NTU0/NjU3LTE2NjY4MjM1/OTktMTY3My5qcGVn.jpeg",
-    "thumb": "https://i.discogs.com/sY4AF69AjlhglkAruACIcjORet8qZHp3enJVPA4T3ic/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI0NTU0/NjU3LTE2NjY4MjM1/OTktMTY3My5qcGVn.jpeg"
+    "thumb": "https://i.discogs.com/_3nFJBh9FNsa7uV5pmBunXwJEeP62ILRL6VayFsEGek/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI0NTI2/MTgxLTE3MzM2NDg5/MzUtNzk3NC5qcGVn.jpeg",
+    "tracklist": [
+      {
+        "position": "A1",
+        "type": "track",
+        "title": "Born On The Bayou",
+        "duration": "5:12"
+      },
+      {
+        "position": "A2",
+        "type": "track",
+        "title": "Green River",
+        "duration": "2:58"
+      },
+      {
+        "position": "A3",
+        "type": "track",
+        "title": "Tombstone Shadow",
+        "duration": "3:41"
+      },
+      {
+        "position": "A4",
+        "type": "track",
+        "title": "Travelin' Band",
+        "duration": "2:11"
+      },
+      {
+        "position": "A5",
+        "type": "track",
+        "title": "Fortunate Son",
+        "duration": "2:16"
+      },
+      {
+        "position": "A6",
+        "type": "track",
+        "title": "Commotion",
+        "duration": "2:45"
+      },
+      {
+        "position": "A7",
+        "type": "track",
+        "title": "Midnight Special",
+        "duration": "3:42"
+      },
+      {
+        "position": "B1",
+        "type": "track",
+        "title": "Bad Moon Rising",
+        "duration": "2:25"
+      },
+      {
+        "position": "B2",
+        "type": "track",
+        "title": "Proud Mary",
+        "duration": "3:01"
+      },
+      {
+        "position": "B3",
+        "type": "track",
+        "title": "The Night Time Is The Right Time",
+        "duration": "3:15"
+      },
+      {
+        "position": "B4",
+        "type": "track",
+        "title": "Good Golly Miss Molly",
+        "duration": "2:58"
+      },
+      {
+        "position": "B5",
+        "type": "track",
+        "title": "Keep On Chooglin'",
+        "duration": "8:30"
+      }
+    ]
   },
   {
-    "id": "35845513-17",
+    "id": "35845513-20",
     "releaseId": "35845513",
     "masterId": 4058788,
     "artist": "Oasis (2)",
@@ -452,10 +1981,78 @@
     "dateAdded": "2026-07-18 15:51:01",
     "notes": "",
     "cover": "https://i.discogs.com/zzsqvuPy3A3lt6Rd4Jx3x9HL4skEU0i-TpOwdHVs65s/rs:fit/g:sm/q:90/h:585/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM1NzU5/MDk4LTE3NjQ3MDY4/MzMtMTg3OS5qcGVn.jpeg",
-    "thumb": "https://i.discogs.com/RkPzFhGKPNkyuRHlnnPD1vuUOeVI034UvDg_SRr4K30/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM1NzU5/MDk4LTE3NjQ3MDY4/MzMtMTg3OS5qcGVn.jpeg"
+    "thumb": "https://i.discogs.com/gP367nDBqzx5316XKSn6hl7Tb6rQvbJYVhyzE_ukX0o/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM1ODQ1/NTEzLTE3NjQ5Mjkw/NjgtNjExNC5qcGVn.jpeg",
+    "tracklist": [
+      {
+        "position": "A1",
+        "type": "track",
+        "title": "Columbia",
+        "duration": ""
+      },
+      {
+        "position": "A2",
+        "type": "track",
+        "title": "Shakermaker",
+        "duration": ""
+      },
+      {
+        "position": "A3",
+        "type": "track",
+        "title": "Fade Away",
+        "duration": ""
+      },
+      {
+        "position": "A4",
+        "type": "track",
+        "title": "Digsy's Dinner",
+        "duration": ""
+      },
+      {
+        "position": "A5",
+        "type": "track",
+        "title": "Live Forever",
+        "duration": ""
+      },
+      {
+        "position": "A6",
+        "type": "track",
+        "title": "Bring It On Down",
+        "duration": ""
+      },
+      {
+        "position": "B1",
+        "type": "track",
+        "title": "Up In The Sky",
+        "duration": ""
+      },
+      {
+        "position": "B2",
+        "type": "track",
+        "title": "Slide Away",
+        "duration": ""
+      },
+      {
+        "position": "B3",
+        "type": "track",
+        "title": "Cigarettes & Alcohol",
+        "duration": ""
+      },
+      {
+        "position": "B4",
+        "type": "track",
+        "title": "Supersonic",
+        "duration": ""
+      },
+      {
+        "position": "B5",
+        "type": "track",
+        "title": "I Am The Walrus",
+        "duration": ""
+      }
+    ]
   },
   {
-    "id": "33139851-18",
+    "id": "33139851-21",
     "releaseId": "33139851",
     "masterId": 55288,
     "artist": "Creedence Clearwater Revival",
@@ -479,10 +2076,149 @@
     "dateAdded": "2026-06-12 08:33:50",
     "notes": "",
     "cover": "https://i.discogs.com/jQUu2-eMl0XOJ4SDaMbsww0hQJiQOGhz9WZHcz7I0rU/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEzMzE3/MDMtMTIyNTYzNjEz/MC5qcGVn.jpeg",
-    "thumb": "https://i.discogs.com/05NwOW1vC7AECgbxUIQu8Nt4pHAwgsZqKS547nfHusk/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEzMzE3/MDMtMTIyNTYzNjEz/MC5qcGVn.jpeg"
+    "thumb": "https://i.discogs.com/C26Al6l9IgUZjeSoR3iMZ9tXoTYIlrT0n2vu9TT5KDM/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMzMTM5/ODUxLTE3Mzk1NTcy/MjAtODQ3NS5qcGVn.jpeg",
+    "tracklist": [
+      {
+        "position": "A1",
+        "type": "track",
+        "title": "Down On The Corner",
+        "duration": "2:43"
+      },
+      {
+        "position": "A2",
+        "type": "track",
+        "title": "It Came Out Of The Sky",
+        "duration": "2:58"
+      },
+      {
+        "position": "A3",
+        "type": "track",
+        "title": "Cotton Fields",
+        "duration": "2:53"
+      },
+      {
+        "position": "A4",
+        "type": "track",
+        "title": "Poorboy Shuffle",
+        "duration": "2:25"
+      },
+      {
+        "position": "A5",
+        "type": "track",
+        "title": "Feelin' Blue",
+        "duration": "5:05"
+      },
+      {
+        "position": "B1",
+        "type": "track",
+        "title": "Fortunate Son",
+        "duration": "2:20"
+      },
+      {
+        "position": "B2",
+        "type": "track",
+        "title": "Don't Look Now (It Ain't You Or Me)",
+        "duration": "2:08"
+      },
+      {
+        "position": "B3",
+        "type": "track",
+        "title": "The Midnight Special",
+        "duration": "4:10"
+      },
+      {
+        "position": "B4",
+        "type": "track",
+        "title": "Side Of The Road",
+        "duration": "3:21"
+      },
+      {
+        "position": "B5",
+        "type": "track",
+        "title": "Effigy",
+        "duration": "6:28"
+      }
+    ]
   },
   {
-    "id": "26125709-19",
+    "id": "8010158-22",
+    "releaseId": "8010158",
+    "masterId": 55329,
+    "artist": "Creedence Clearwater Revival",
+    "title": "Creedence Gold",
+    "year": "1972",
+    "country": "US",
+    "genres": [
+      "Rock"
+    ],
+    "styles": [
+      "Rock & Roll",
+      "Southern Rock",
+      "Classic Rock"
+    ],
+    "labels": [
+      "Fantasy"
+    ],
+    "label": "Fantasy",
+    "format": "LP, Comp",
+    "rating": "",
+    "dateAdded": "2026-07-31 09:00:34",
+    "notes": "",
+    "cover": "https://i.discogs.com/q4cWgogkbZ1JLkN50Cxj1fPtzTK0t9fYmW0DY2yrNI8/rs:fit/g:sm/q:90/h:592/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQxMzc0/My0xNDUzNDgxNjUy/LTM2MzEuanBlZw.jpeg",
+    "thumb": "https://i.discogs.com/4PSeRlQGy7T4xQzknQGcz3Z4nDVcNx0JBqNJkYIa0Hk/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTgwMTAx/NTgtMTQ1MzQxODEz/MC01Mzg3LmpwZWc.jpeg",
+    "tracklist": [
+      {
+        "position": "A1",
+        "type": "track",
+        "title": "Proud Mary",
+        "duration": "3:07"
+      },
+      {
+        "position": "A2",
+        "type": "track",
+        "title": "Down On The Corner",
+        "duration": "2:43"
+      },
+      {
+        "position": "A3",
+        "type": "track",
+        "title": "Bad Moon Rising",
+        "duration": "2:17"
+      },
+      {
+        "position": "A4",
+        "type": "track",
+        "title": "I Heard It Through The Grapevine",
+        "duration": "11:05"
+      },
+      {
+        "position": "B1",
+        "type": "track",
+        "title": "The Midnight Special",
+        "duration": "4:10"
+      },
+      {
+        "position": "B2",
+        "type": "track",
+        "title": "Have You Ever Seen The Rain?",
+        "duration": "2:39"
+      },
+      {
+        "position": "B3",
+        "type": "track",
+        "title": "Born On The Bayou",
+        "duration": "5:10"
+      },
+      {
+        "position": "B4",
+        "type": "track",
+        "title": "Suzie Q",
+        "duration": "8:34"
+      }
+    ]
+  },
+  {
+    "id": "26125709-23",
     "releaseId": "26125709",
     "masterId": 22433,
     "artist": "Nirvana",
@@ -506,10 +2242,96 @@
     "dateAdded": "2026-06-14 08:56:11",
     "notes": "",
     "cover": "https://i.discogs.com/XlGRRhzw6QLSiBSDROYpb3DSRysqxqTY5Pp-jPql2DU/rs:fit/g:sm/q:90/h:500/w:501/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM3NTk4/MC0xNzQ4MzY4MDgw/LTUxODIuanBlZw.jpeg",
-    "thumb": "https://i.discogs.com/_2ir9r1GOIZ9ieoTDigxE17bfgmZkUr4Ttk4Vtc2E3A/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM3NTk4/MC0xNzQ4MzY4MDgw/LTUxODIuanBlZw.jpeg"
+    "thumb": "https://i.discogs.com/y5zxwQyCEjsZiXOZkIVIgORmQOSWlvCZ-FpEofHuc9c/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI2MTI1/NzA5LTE2NzY1ODQx/MjMtMzI4MS5qcGVn.jpeg",
+    "tracklist": [
+      {
+        "position": "A1",
+        "type": "track",
+        "title": "About A Girl",
+        "duration": "3:37"
+      },
+      {
+        "position": "A2",
+        "type": "track",
+        "title": "Come As You Are",
+        "duration": "4:14"
+      },
+      {
+        "position": "A3",
+        "type": "track",
+        "title": "Jesus Doesn't Want Me For A Sunbeam",
+        "duration": "4:37"
+      },
+      {
+        "position": "A4",
+        "type": "track",
+        "title": "The Man Who Sold The World",
+        "duration": "4:20"
+      },
+      {
+        "position": "A5",
+        "type": "track",
+        "title": "Pennyroyal Tea",
+        "duration": "3:40"
+      },
+      {
+        "position": "A6",
+        "type": "track",
+        "title": "Dumb",
+        "duration": "2:52"
+      },
+      {
+        "position": "A7",
+        "type": "track",
+        "title": "Polly",
+        "duration": "3:16"
+      },
+      {
+        "position": "B1",
+        "type": "track",
+        "title": "On A Plain",
+        "duration": "3:44"
+      },
+      {
+        "position": "B2",
+        "type": "track",
+        "title": "Something In The Way",
+        "duration": "4:01"
+      },
+      {
+        "position": "B3",
+        "type": "track",
+        "title": "Plateau",
+        "duration": "3:38"
+      },
+      {
+        "position": "B4",
+        "type": "track",
+        "title": "Oh Me",
+        "duration": "3:26"
+      },
+      {
+        "position": "B5",
+        "type": "track",
+        "title": "Lake Of Fire",
+        "duration": "2:55"
+      },
+      {
+        "position": "B6",
+        "type": "track",
+        "title": "All Apologies",
+        "duration": "4:23"
+      },
+      {
+        "position": "B7",
+        "type": "track",
+        "title": "Where Did You Sleep Last Night",
+        "duration": "5:07"
+      }
+    ]
   },
   {
-    "id": "32532858-20",
+    "id": "32532858-24",
     "releaseId": "32532858",
     "masterId": 74337,
     "artist": "Tom Petty And The Heartbreakers",
@@ -533,10 +2355,120 @@
     "dateAdded": "2026-07-06 17:06:25",
     "notes": "",
     "cover": "https://i.discogs.com/jbWmJaCooLbf5RbRG-7Jpl4U97TCyue0x6BBPqKHoCc/rs:fit/g:sm/q:90/h:598/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTgwNTYw/MS0xNDAzMTkwNzMx/LTk0MTkuanBlZw.jpeg",
-    "thumb": "https://i.discogs.com/xPADhs-H6UabgLBYz2w5TsCJWjJ9ifTc97zq8SY59bc/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTgwNTYw/MS0xNDAzMTkwNzMx/LTk0MTkuanBlZw.jpeg"
+    "thumb": "https://i.discogs.com/ZuGKbm9acvRsixjKHCunDu0mI7C3LlLKrmt-JB2XQWE/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMyNTMy/ODU4LTE3NjUxMjE5/NjctNjMxNC5qcGVn.jpeg",
+    "tracklist": [
+      {
+        "position": "A1",
+        "type": "track",
+        "title": "American Girl",
+        "duration": ""
+      },
+      {
+        "position": "A2",
+        "type": "track",
+        "title": "Breakdown",
+        "duration": ""
+      },
+      {
+        "position": "A3",
+        "type": "track",
+        "title": "Listen To Her Heart",
+        "duration": ""
+      },
+      {
+        "position": "A4",
+        "type": "track",
+        "title": "I Need To Know",
+        "duration": ""
+      },
+      {
+        "position": "A5",
+        "type": "track",
+        "title": "Refugee",
+        "duration": ""
+      },
+      {
+        "position": "B1",
+        "type": "track",
+        "title": "Don't Do Me Like That",
+        "duration": ""
+      },
+      {
+        "position": "B2",
+        "type": "track",
+        "title": "Even The Losers",
+        "duration": ""
+      },
+      {
+        "position": "B3",
+        "type": "track",
+        "title": "Here Comes My Girl",
+        "duration": ""
+      },
+      {
+        "position": "B4",
+        "type": "track",
+        "title": "The Waiting",
+        "duration": ""
+      },
+      {
+        "position": "B5",
+        "type": "track",
+        "title": "You Got Lucky",
+        "duration": ""
+      },
+      {
+        "position": "C1",
+        "type": "track",
+        "title": "Don't Come Around Here No More",
+        "duration": ""
+      },
+      {
+        "position": "C2",
+        "type": "track",
+        "title": "I Won't Back Down",
+        "duration": ""
+      },
+      {
+        "position": "C3",
+        "type": "track",
+        "title": "Runnin' Down A Dream",
+        "duration": ""
+      },
+      {
+        "position": "C4",
+        "type": "track",
+        "title": "Free Fallin'",
+        "duration": ""
+      },
+      {
+        "position": "D1",
+        "type": "track",
+        "title": "Learning To Fly",
+        "duration": ""
+      },
+      {
+        "position": "D2",
+        "type": "track",
+        "title": "Into The Great Wide Open",
+        "duration": ""
+      },
+      {
+        "position": "D3",
+        "type": "track",
+        "title": "Mary Jane's Last Dance",
+        "duration": ""
+      },
+      {
+        "position": "D4",
+        "type": "track",
+        "title": "Something In The Air",
+        "duration": ""
+      }
+    ]
   },
   {
-    "id": "29973601-21",
+    "id": "29973601-25",
     "releaseId": "29973601",
     "masterId": 35266,
     "artist": "Weezer",
@@ -559,10 +2491,72 @@
     "dateAdded": "2026-06-14 12:41:40",
     "notes": "",
     "cover": "https://i.discogs.com/MBe-Ixw7f7ZFbNoluI3LU4sJTiXO8ASiU_Qrl6JQiWY/rs:fit/g:sm/q:90/h:595/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTg0NTQy/ODUtMTQ2MTkzODM3/Ny0zMzA4LmpwZWc.jpeg",
-    "thumb": "https://i.discogs.com/ENWUyxdjzIm7Jp_dcjTRN04_9HQ1WLujRkeAoZdvQA8/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTg0NTQy/ODUtMTQ2MTkzODM3/Ny0zMzA4LmpwZWc.jpeg"
+    "thumb": "https://i.discogs.com/NfAij3rAD9iuke3jXiEj7GUYUbjo0Yp_713nrL548CU/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI5OTcz/NjAxLTE3MDk1OTc3/NDMtNDU3Mi5qcGVn.jpeg",
+    "tracklist": [
+      {
+        "position": "A1",
+        "type": "track",
+        "title": "My Name Is Jonas",
+        "duration": "3:24"
+      },
+      {
+        "position": "A2",
+        "type": "track",
+        "title": "No One Else",
+        "duration": "3:04"
+      },
+      {
+        "position": "A3",
+        "type": "track",
+        "title": "The World Has Turned And Left Me Here",
+        "duration": "4:19"
+      },
+      {
+        "position": "A4",
+        "type": "track",
+        "title": "Buddy Holly",
+        "duration": "2:39"
+      },
+      {
+        "position": "A5",
+        "type": "track",
+        "title": "Undone - The Sweater Song",
+        "duration": "5:05"
+      },
+      {
+        "position": "A6",
+        "type": "track",
+        "title": "Surf Wax America",
+        "duration": "3:06"
+      },
+      {
+        "position": "B1",
+        "type": "track",
+        "title": "Say It Ain't So",
+        "duration": "4:18"
+      },
+      {
+        "position": "B2",
+        "type": "track",
+        "title": "In The Garage",
+        "duration": "3:55"
+      },
+      {
+        "position": "B3",
+        "type": "track",
+        "title": "Holiday",
+        "duration": "3:24"
+      },
+      {
+        "position": "B4",
+        "type": "track",
+        "title": "Only In Dreams",
+        "duration": "7:59"
+      }
+    ]
   },
   {
-    "id": "34378186-22",
+    "id": "34378186-26",
     "releaseId": "34378186",
     "masterId": 3881041,
     "artist": "The Grateful Dead",
@@ -587,10 +2581,66 @@
     "dateAdded": "2026-06-16 20:21:54",
     "notes": "",
     "cover": "https://i.discogs.com/Al8jr4O0G6lOnYgWx_yj84t0lt55WqQeVk0Nr9ECblM/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM0Mjcw/Nzk4LTE3NDk5NDMz/ODYtOTcwMC5qcGVn.jpeg",
-    "thumb": "https://i.discogs.com/71YqlZRFsNahfCv7l3_KFe-WvhtuyOYmvvMvDk3Vt9E/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM0Mjcw/Nzk4LTE3NDk5NDMz/ODYtOTcwMC5qcGVn.jpeg"
+    "thumb": "https://i.discogs.com/Bkj02EgX4dov0UOACY-urCDy2I4QPSfOOoO0l9-09Wc/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM0Mzc4/MTg2LTE3NTA5NTIz/MjgtODcyMi5qcGVn.jpeg",
+    "tracklist": [
+      {
+        "position": "A1",
+        "type": "track",
+        "title": "Casey Jones",
+        "duration": "4:24"
+      },
+      {
+        "position": "A2",
+        "type": "track",
+        "title": "Friend Of The Devil",
+        "duration": "3:21"
+      },
+      {
+        "position": "A3",
+        "type": "track",
+        "title": "Box Of Rain",
+        "duration": "5:17"
+      },
+      {
+        "position": "A4",
+        "type": "track",
+        "title": "Sugar Magnolia",
+        "duration": "3:17"
+      },
+      {
+        "position": "A5",
+        "type": "track",
+        "title": "Truckin'",
+        "duration": "5:03"
+      },
+      {
+        "position": "B1",
+        "type": "track",
+        "title": "Scarlet Begonias",
+        "duration": "4:19"
+      },
+      {
+        "position": "B2",
+        "type": "track",
+        "title": "Fire On The Mountain",
+        "duration": "3:47"
+      },
+      {
+        "position": "B3",
+        "type": "track",
+        "title": "Estimated Prophet",
+        "duration": "5:35"
+      },
+      {
+        "position": "B4",
+        "type": "track",
+        "title": "Touch Of Grey",
+        "duration": "5:48"
+      }
+    ]
   },
   {
-    "id": "26698010-23",
+    "id": "26698010-27",
     "releaseId": "26698010",
     "masterId": 861083,
     "artist": "Tame Impala",
@@ -616,10 +2666,90 @@
     "dateAdded": "2026-07-04 21:47:29",
     "notes": "",
     "cover": "https://i.discogs.com/0m9adSJO-pWPRlWpwczRCUJfTokcREPbsmZMprEs1-o/rs:fit/g:sm/q:90/h:592/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTcyNTIx/MTEtMTY5NzM4MTkw/MS0yMjg3LmpwZWc.jpeg",
-    "thumb": "https://i.discogs.com/IPQHVvwWF0XrYmhXnrfFJpKcb-1hJxdUBH7w7igdryw/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTcyNTIx/MTEtMTY5NzM4MTkw/MS0yMjg3LmpwZWc.jpeg"
+    "thumb": "https://i.discogs.com/psOikxA5cXQQs_9YrHRHfNQBS-j1Z576V8MbfkhmbHU/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI2Njk4/MDEwLTE2ODEwMTU0/MDQtODc4NS5qcGVn.jpeg",
+    "tracklist": [
+      {
+        "position": "A1",
+        "type": "track",
+        "title": "Let It Happen",
+        "duration": "7:47"
+      },
+      {
+        "position": "A2",
+        "type": "track",
+        "title": "Nangs",
+        "duration": "1:48"
+      },
+      {
+        "position": "A3",
+        "type": "track",
+        "title": "The Moment",
+        "duration": "4:16"
+      },
+      {
+        "position": "B1",
+        "type": "track",
+        "title": "Yes I'm Changing",
+        "duration": "4:31"
+      },
+      {
+        "position": "B2",
+        "type": "track",
+        "title": "Eventually",
+        "duration": "5:19"
+      },
+      {
+        "position": "B3",
+        "type": "track",
+        "title": "Gossip",
+        "duration": "0:55"
+      },
+      {
+        "position": "C1",
+        "type": "track",
+        "title": "The Less I Know The Better",
+        "duration": "3:39"
+      },
+      {
+        "position": "C2",
+        "type": "track",
+        "title": "Past Life",
+        "duration": "3:48"
+      },
+      {
+        "position": "C3",
+        "type": "track",
+        "title": "Disciples",
+        "duration": "1:49"
+      },
+      {
+        "position": "C4",
+        "type": "track",
+        "title": "'Cause I'm A Man",
+        "duration": "4:02"
+      },
+      {
+        "position": "D1",
+        "type": "track",
+        "title": "Reality In Motion",
+        "duration": "4:13"
+      },
+      {
+        "position": "D2",
+        "type": "track",
+        "title": "Love / Paranoia",
+        "duration": "3:07"
+      },
+      {
+        "position": "D3",
+        "type": "track",
+        "title": "New Person, Same Old Mistakes",
+        "duration": "6:02"
+      }
+    ]
   },
   {
-    "id": "30781416-24",
+    "id": "30781416-28",
     "releaseId": "30781416",
     "masterId": 65863,
     "artist": "Bob Marley & The Wailers",
@@ -640,10 +2770,96 @@
     "dateAdded": "2026-06-16 20:17:42",
     "notes": "",
     "cover": "https://i.discogs.com/vLVptBfro38CQ49Ox99ADJWXAesfPj5FvXgOQNnne-M/rs:fit/g:sm/q:90/h:594/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTUwOTIz/NS0xMjE2MTY4MTgz/LmpwZWc.jpeg",
-    "thumb": "https://i.discogs.com/IhXFVQTS2CBeQVg7XAuxJIkOVlm_JLuA3zNGCVtAJfo/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTUwOTIz/NS0xMjE2MTY4MTgz/LmpwZWc.jpeg"
+    "thumb": "https://i.discogs.com/AnfkbE60ovvB8KVzcug5YOaMS7QVQxu3mKKeKlhFpPA/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMwNzgx/NDE2LTE3MTY3NDQy/MDQtNjcxOS5qcGVn.jpeg",
+    "tracklist": [
+      {
+        "position": "A1",
+        "type": "track",
+        "title": "Is This Love",
+        "duration": "3:52"
+      },
+      {
+        "position": "A2",
+        "type": "track",
+        "title": "No Woman No Cry",
+        "duration": "4:05"
+      },
+      {
+        "position": "A3",
+        "type": "track",
+        "title": "Could You Be Loved",
+        "duration": "3:33"
+      },
+      {
+        "position": "A4",
+        "type": "track",
+        "title": "Three Little Birds",
+        "duration": "2:56"
+      },
+      {
+        "position": "A5",
+        "type": "track",
+        "title": "Buffalo Soldier",
+        "duration": "5:24"
+      },
+      {
+        "position": "A6",
+        "type": "track",
+        "title": "Get Up Stand Up",
+        "duration": "3:17"
+      },
+      {
+        "position": "A7",
+        "type": "track",
+        "title": "Stir It Up",
+        "duration": "3:38"
+      },
+      {
+        "position": "B1",
+        "type": "track",
+        "title": "One Love / People Get Ready",
+        "duration": "2:52"
+      },
+      {
+        "position": "B2",
+        "type": "track",
+        "title": "I Shot The Sheriff",
+        "duration": "3:46"
+      },
+      {
+        "position": "B3",
+        "type": "track",
+        "title": "Waiting In Vain",
+        "duration": "4:10"
+      },
+      {
+        "position": "B4",
+        "type": "track",
+        "title": "Redemption Song",
+        "duration": "3:48"
+      },
+      {
+        "position": "B5",
+        "type": "track",
+        "title": "Satisfy My Soul",
+        "duration": "3:45"
+      },
+      {
+        "position": "B6",
+        "type": "track",
+        "title": "Exodus",
+        "duration": "5:24"
+      },
+      {
+        "position": "B7",
+        "type": "track",
+        "title": "Jamming",
+        "duration": "3:17"
+      }
+    ]
   },
   {
-    "id": "35801743-25",
+    "id": "35801743-29",
     "releaseId": "35801743",
     "masterId": 4550,
     "artist": "Bob Dylan",
@@ -669,10 +2885,72 @@
     "dateAdded": "2026-07-05 19:45:16",
     "notes": "",
     "cover": "https://i.discogs.com/uAFc-3IEkFstC7ya1TxrjVOlLE77glfmCcdbs0Vt8BY/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE0ODYy/NzItMTIzNDUxOTQ0/Ny5qcGVn.jpeg",
-    "thumb": "https://i.discogs.com/O68AjbskEnFPVQV2W29y2yjJ7apM4_B9EKul7bP3Ot0/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE0ODYy/NzItMTIzNDUxOTQ0/Ny5qcGVn.jpeg"
+    "thumb": "https://i.discogs.com/Oha5xGwUvKjUjVhGrSFWGDfMTn1hlJGfVj_Mi9fuENk/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM1ODAx/NzQzLTE3NjQ0Nzcy/NjUtOTM4OS5qcGVn.jpeg",
+    "tracklist": [
+      {
+        "position": "A1",
+        "type": "track",
+        "title": "Girl From The North Country",
+        "duration": ""
+      },
+      {
+        "position": "A2",
+        "type": "track",
+        "title": "Nashville Skyline Rag",
+        "duration": ""
+      },
+      {
+        "position": "A3",
+        "type": "track",
+        "title": "To Be Alone With You",
+        "duration": ""
+      },
+      {
+        "position": "A4",
+        "type": "track",
+        "title": "I Threw It All Away",
+        "duration": ""
+      },
+      {
+        "position": "A5",
+        "type": "track",
+        "title": "Peggy Day",
+        "duration": ""
+      },
+      {
+        "position": "B1",
+        "type": "track",
+        "title": "Lay Lady Lay",
+        "duration": ""
+      },
+      {
+        "position": "B2",
+        "type": "track",
+        "title": "One More Night",
+        "duration": ""
+      },
+      {
+        "position": "B3",
+        "type": "track",
+        "title": "Tell Me That It Isn't True",
+        "duration": ""
+      },
+      {
+        "position": "B4",
+        "type": "track",
+        "title": "Country Pie",
+        "duration": ""
+      },
+      {
+        "position": "B5",
+        "type": "track",
+        "title": "Tonight I'll Be Staying Here With You",
+        "duration": ""
+      }
+    ]
   },
   {
-    "id": "16447011-26",
+    "id": "16447011-30",
     "releaseId": "16447011",
     "masterId": 24497,
     "artist": "The Jimi Hendrix Experience",
@@ -696,10 +2974,78 @@
     "dateAdded": "2026-06-14 08:33:40",
     "notes": "",
     "cover": "https://i.discogs.com/2-7PGO_kBzci2lp_uafKMXvnH7gbXI0F9knTOUBtay4/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTk5MzAy/OC0xNTc2MzMzMjAx/LTg1MzAuanBlZw.jpeg",
-    "thumb": "https://i.discogs.com/PEJk9NNJr6YT1kDM-pfakByScVSHcBO2I970gAZ2gI0/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTk5MzAy/OC0xNTc2MzMzMjAx/LTg1MzAuanBlZw.jpeg"
+    "thumb": "https://i.discogs.com/iZAIrx0HOvMbnIv13GYTknZGoFq3VyUq1tgjTGChXJ8/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE2NDQ3/MDExLTE2MTA4NDkx/OTctNDYwNC5qcGVn.jpeg",
+    "tracklist": [
+      {
+        "position": "A1",
+        "type": "track",
+        "title": "Purple Haze",
+        "duration": "2:50"
+      },
+      {
+        "position": "A2",
+        "type": "track",
+        "title": "Manic Depression",
+        "duration": "3:42"
+      },
+      {
+        "position": "A3",
+        "type": "track",
+        "title": "Hey Joe",
+        "duration": "3:30"
+      },
+      {
+        "position": "A4",
+        "type": "track",
+        "title": "Love Or Confusion",
+        "duration": "3:12"
+      },
+      {
+        "position": "A5",
+        "type": "track",
+        "title": "May This Be Love",
+        "duration": "3:10"
+      },
+      {
+        "position": "A6",
+        "type": "track",
+        "title": "I Don't Live Today",
+        "duration": "3:54"
+      },
+      {
+        "position": "B1",
+        "type": "track",
+        "title": "The Wind Cries Mary",
+        "duration": "3:20"
+      },
+      {
+        "position": "B2",
+        "type": "track",
+        "title": "Fire",
+        "duration": "2:43"
+      },
+      {
+        "position": "B3",
+        "type": "track",
+        "title": "3rd Stone From The Sun",
+        "duration": "6:44"
+      },
+      {
+        "position": "B4",
+        "type": "track",
+        "title": "Foxey Lady",
+        "duration": "3:18"
+      },
+      {
+        "position": "B5",
+        "type": "track",
+        "title": "Are You Experienced?",
+        "duration": "4:14"
+      }
+    ]
   },
   {
-    "id": "1266973-27",
+    "id": "1266973-31",
     "releaseId": "1266973",
     "masterId": 54479,
     "artist": "The Beatles",
@@ -723,10 +3069,382 @@
     "dateAdded": "2026-06-14 08:58:16",
     "notes": "",
     "cover": "https://i.discogs.com/CI0c6XAE_fI0bYPwbUhtGvYd6_1kHj6GD2ZNhch16iA/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExMTM4/ODAtMTMzOTAwMjY5/MS01MzczLmpwZWc.jpeg",
-    "thumb": "https://i.discogs.com/ukcMwDCLUxHzsKqHZGkPWZG-nVqrNAJc-Gfjc8WMj9I/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExMTM4/ODAtMTMzOTAwMjY5/MS01MzczLmpwZWc.jpeg"
+    "thumb": "https://i.discogs.com/fnnuCes6WCKIxTRGf5NEmegtfs5_cmMzNQQK4oXupjc/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyNjY5/NzMtMTIwNTU5NTU0/MS5qcGVn.jpeg",
+    "tracklist": [
+      {
+        "position": "A1",
+        "type": "track",
+        "title": "I'm Gonna Sit Right Down And Cry Over You",
+        "duration": ""
+      },
+      {
+        "position": "A2",
+        "type": "track",
+        "title": "Roll Over Beethoven",
+        "duration": ""
+      },
+      {
+        "position": "A3",
+        "type": "track",
+        "title": "Hippy Hippy Shake",
+        "duration": ""
+      },
+      {
+        "position": "A4",
+        "type": "track",
+        "title": "Sweet Little Sixteen",
+        "duration": ""
+      },
+      {
+        "position": "A5",
+        "type": "track",
+        "title": "Lend Me Your Comb",
+        "duration": ""
+      },
+      {
+        "position": "A6",
+        "type": "track",
+        "title": "Your Feets Too Big",
+        "duration": ""
+      },
+      {
+        "position": "B1",
+        "type": "track",
+        "title": "Where Have You Been All My Life",
+        "duration": ""
+      },
+      {
+        "position": "B2",
+        "type": "track",
+        "title": "Mr. Moonlight",
+        "duration": ""
+      },
+      {
+        "position": "B3",
+        "type": "track",
+        "title": "A Taste Of Honey",
+        "duration": ""
+      },
+      {
+        "position": "B4",
+        "type": "track",
+        "title": "Besame Mucho",
+        "duration": ""
+      },
+      {
+        "position": "B5",
+        "type": "track",
+        "title": "'Till There Was You",
+        "duration": ""
+      },
+      {
+        "position": "B6",
+        "type": "track",
+        "title": "Kansas City/Hey Hey Hey Hey",
+        "duration": ""
+      },
+      {
+        "position": "C1",
+        "type": "track",
+        "title": "Ain't Nothing Shakin' Like The Leaves On A Tree",
+        "duration": ""
+      },
+      {
+        "position": "C2",
+        "type": "track",
+        "title": "To Know Her Is To Love Her",
+        "duration": ""
+      },
+      {
+        "position": "C3",
+        "type": "track",
+        "title": "Little Queenie",
+        "duration": ""
+      },
+      {
+        "position": "C4",
+        "type": "track",
+        "title": "Falling In Love Again",
+        "duration": ""
+      },
+      {
+        "position": "C5",
+        "type": "track",
+        "title": "Sheila",
+        "duration": ""
+      },
+      {
+        "position": "C6",
+        "type": "track",
+        "title": "Be-Bop-A-Lula",
+        "duration": ""
+      },
+      {
+        "position": "C7",
+        "type": "track",
+        "title": "Halleluja, I Love Her So",
+        "duration": ""
+      },
+      {
+        "position": "D1",
+        "type": "track",
+        "title": "Red Sails In The Sunset",
+        "duration": ""
+      },
+      {
+        "position": "D2",
+        "type": "track",
+        "title": "Everybody's Trying To Be My Baby",
+        "duration": ""
+      },
+      {
+        "position": "D3",
+        "type": "track",
+        "title": "Matchbox",
+        "duration": ""
+      },
+      {
+        "position": "D4",
+        "type": "track",
+        "title": "Talkin 'Bout You",
+        "duration": ""
+      },
+      {
+        "position": "D5",
+        "type": "track",
+        "title": "Shimmy Shake",
+        "duration": ""
+      },
+      {
+        "position": "D6",
+        "type": "track",
+        "title": "Long Tall Sally",
+        "duration": ""
+      },
+      {
+        "position": "D7",
+        "type": "track",
+        "title": "I Remember You",
+        "duration": ""
+      }
+    ]
   },
   {
-    "id": "28527184-28",
+    "id": "16719198-32",
+    "releaseId": "16719198",
+    "masterId": 185376,
+    "artist": "Hank Williams",
+    "title": "The Very Best Of Hank Williams",
+    "year": "1963",
+    "country": "US",
+    "genres": [
+      "Folk, World, & Country"
+    ],
+    "styles": [
+      "Country",
+      "Folk"
+    ],
+    "labels": [
+      "MGM Records"
+    ],
+    "label": "MGM Records",
+    "format": "LP, Comp, Mono",
+    "rating": "",
+    "dateAdded": "2026-07-31 08:44:13",
+    "notes": "",
+    "cover": "https://i.discogs.com/gCJPu8F8YXnJXRV5r4AGiV0vyKT3zfueBIm_QDPLT1A/rs:fit/g:sm/q:90/h:593/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIyMDEx/NjUtMTM3ODE0Nzg4/OC01NDQ5LmpwZWc.jpeg",
+    "thumb": "https://i.discogs.com/JxrbvtCjs9agcrXGwXTJXlyyE4xwq1n1AMs86hX_JVU/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE2NzE5/MTk4LTE2MDk0MzAz/MzQtODE1MS5qcGVn.jpeg",
+    "tracklist": [
+      {
+        "position": "A1",
+        "type": "track",
+        "title": "Your Cheatin' Heart",
+        "duration": "2:38"
+      },
+      {
+        "position": "A2",
+        "type": "track",
+        "title": "Jambalaya",
+        "duration": "2:47"
+      },
+      {
+        "position": "A3",
+        "type": "track",
+        "title": "Lovesick Blues",
+        "duration": "2:42"
+      },
+      {
+        "position": "A4",
+        "type": "track",
+        "title": "Half As Much",
+        "duration": "2:39"
+      },
+      {
+        "position": "A5",
+        "type": "track",
+        "title": "Cold, Cold Heart",
+        "duration": "2:42"
+      },
+      {
+        "position": "A6",
+        "type": "track",
+        "title": "Hey, Good Lookin'",
+        "duration": "2:35"
+      },
+      {
+        "position": "B1",
+        "type": "track",
+        "title": "Why Don't You Love Me",
+        "duration": "2:23"
+      },
+      {
+        "position": "B2",
+        "type": "track",
+        "title": "Wedding Bells",
+        "duration": "2:52"
+      },
+      {
+        "position": "B3",
+        "type": "track",
+        "title": "Kaw-Liga",
+        "duration": "2:33"
+      },
+      {
+        "position": "B4",
+        "type": "track",
+        "title": "I'm So Lonesome I Could Cry",
+        "duration": "2:43"
+      },
+      {
+        "position": "B5",
+        "type": "track",
+        "title": "Ramblin' Man",
+        "duration": "3:00"
+      },
+      {
+        "position": "B6",
+        "type": "track",
+        "title": "Honky Tonkin'",
+        "duration": "2:40"
+      }
+    ]
+  },
+  {
+    "id": "11283509-33",
+    "releaseId": "11283509",
+    "masterId": 518287,
+    "artist": "Hank Williams",
+    "title": "14 More Of Hank Williams' Greatest Hits Vol. II",
+    "year": "1962",
+    "country": "US",
+    "genres": [
+      "Folk, World, & Country"
+    ],
+    "styles": [
+      "Country",
+      "Honky Tonk"
+    ],
+    "labels": [
+      "MGM Records",
+      "MGM Records",
+      "MGM Records"
+    ],
+    "label": "MGM Records, MGM Records, MGM Records",
+    "format": "LP, Comp",
+    "rating": "",
+    "dateAdded": "2026-07-31 08:53:39",
+    "notes": "",
+    "cover": "https://i.discogs.com/5hZSexxecRtVrX4ayVR8NGeekTaZnH0zjvAA3B09YgI/rs:fit/g:sm/q:90/h:600/w:590/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE4MjA2/MDEtMTc2OTgyNjkx/OC0zOTI2LmpwZWc.jpeg",
+    "thumb": "https://i.discogs.com/6wmDFynqLP79BfebZ0snAUjk3j_k2xhqv6E7KFpvZY8/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExMjgz/NTA5LTE1MTMzOTQz/NTMtNjIzOS5qcGVn.jpeg",
+    "tracklist": [
+      {
+        "position": "A1",
+        "type": "track",
+        "title": "Crazy Heart",
+        "duration": "2:24"
+      },
+      {
+        "position": "A2",
+        "type": "track",
+        "title": "Move It On Over",
+        "duration": "2:42"
+      },
+      {
+        "position": "A3",
+        "type": "track",
+        "title": "Honky Tonk Blues",
+        "duration": "2:10"
+      },
+      {
+        "position": "A4",
+        "type": "track",
+        "title": "I'll Be A Bachelor 'Til I Die",
+        "duration": "2:32"
+      },
+      {
+        "position": "A5",
+        "type": "track",
+        "title": "My Sweet Love Ain't Around",
+        "duration": "2:40"
+      },
+      {
+        "position": "A6",
+        "type": "track",
+        "title": "They'll Never Take Her Love From Me",
+        "duration": "2:40"
+      },
+      {
+        "position": "A7",
+        "type": "track",
+        "title": "Window Shopping",
+        "duration": "2:30"
+      },
+      {
+        "position": "B1",
+        "type": "track",
+        "title": "Nobody's Lonesome For Me",
+        "duration": "2:28"
+      },
+      {
+        "position": "B2",
+        "type": "track",
+        "title": "I'm Sorry For You, My Friend",
+        "duration": "2:40"
+      },
+      {
+        "position": "B3",
+        "type": "track",
+        "title": "I Just Don't Like This Kind Of Livin'",
+        "duration": "2:45"
+      },
+      {
+        "position": "B4",
+        "type": "track",
+        "title": "Ramblin' Man",
+        "duration": "3:00"
+      },
+      {
+        "position": "B5",
+        "type": "track",
+        "title": "Howlin' At The Moon",
+        "duration": "2:42"
+      },
+      {
+        "position": "B6",
+        "type": "track",
+        "title": "A Mansion On The Hill",
+        "duration": "2:30"
+      },
+      {
+        "position": "B7",
+        "type": "track",
+        "title": "Baby We're Really In Love",
+        "duration": "2:30"
+      }
+    ]
+  },
+  {
+    "id": "28527184-34",
     "releaseId": "28527184",
     "masterId": 8883,
     "artist": "Michael Jackson",
@@ -755,10 +3473,66 @@
     "dateAdded": "2026-07-04 22:01:45",
     "notes": "",
     "cover": "https://i.discogs.com/Lk1N8yAArDekdQTyct_faU28OREDICyAauKyeC1sRHw/rs:fit/g:sm/q:90/h:600/w:571/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI5MTEy/OTMtMTUxNjE0NDE1/NC01NDk5LmpwZWc.jpeg",
-    "thumb": "https://i.discogs.com/YUg3KtvrYJxfN6sI2FtFkxDcsNQeMhObLOEvNSCcqLs/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI5MTEy/OTMtMTUxNjE0NDE1/NC01NDk5LmpwZWc.jpeg"
+    "thumb": "https://i.discogs.com/sKWESzNnF_FihA_orfnT9P76yP0laOEe8XE8u9AOIQA/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI4NTI3/MTg0LTE2OTY3MDkz/MzYtOTE4OC5qcGVn.jpeg",
+    "tracklist": [
+      {
+        "position": "A1",
+        "type": "track",
+        "title": "Wanna Be Startin' Somethin'",
+        "duration": "6:02"
+      },
+      {
+        "position": "A2",
+        "type": "track",
+        "title": "Baby Be Mine",
+        "duration": "4:20"
+      },
+      {
+        "position": "A3",
+        "type": "track",
+        "title": "The Girl Is Mine",
+        "duration": "3:42"
+      },
+      {
+        "position": "A4",
+        "type": "track",
+        "title": "Thriller",
+        "duration": "5:57"
+      },
+      {
+        "position": "B1",
+        "type": "track",
+        "title": "Beat It",
+        "duration": "4:17"
+      },
+      {
+        "position": "B2",
+        "type": "track",
+        "title": "Billie Jean",
+        "duration": "4:57"
+      },
+      {
+        "position": "B3",
+        "type": "track",
+        "title": "Human Nature",
+        "duration": "4:05"
+      },
+      {
+        "position": "B4",
+        "type": "track",
+        "title": "P.Y.T. (Pretty Young Thing)",
+        "duration": "3:58"
+      },
+      {
+        "position": "B5",
+        "type": "track",
+        "title": "The Lady In My Life",
+        "duration": "4:57"
+      }
+    ]
   },
   {
-    "id": "5799410-29",
+    "id": "5799410-35",
     "releaseId": "5799410",
     "masterId": 240064,
     "artist": "MGMT",
@@ -784,10 +3558,66 @@
     "dateAdded": "2026-07-03 08:36:22",
     "notes": "",
     "cover": "https://i.discogs.com/f4NKMZwlLm1XI-orX-LQZAWTHBsNigylUTCKua8hGJQ/rs:fit/g:sm/q:90/h:524/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI4NDI5/NDAtMTMwMzU3ODU0/MS5qcGVn.jpeg",
-    "thumb": "https://i.discogs.com/i4uzmnLITPQIMqDDVNmDZrpjwJsL-rxB4dkgsn0BQE8/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI4NDI5/NDAtMTMwMzU3ODU0/MS5qcGVn.jpeg"
+    "thumb": "https://i.discogs.com/PiLq7XhSAlWk7lHouBsHwMA1M2JUQ47u_hpMnSR0Ubc/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTU3OTk0/MTAtMTQwMzAwNDcw/NS0yNTkxLmpwZWc.jpeg",
+    "tracklist": [
+      {
+        "position": "A1",
+        "type": "track",
+        "title": "It's Working",
+        "duration": "4:05"
+      },
+      {
+        "position": "A2",
+        "type": "track",
+        "title": "Song For Dan Treacy",
+        "duration": "4:09"
+      },
+      {
+        "position": "A3",
+        "type": "track",
+        "title": "Someone's Missing",
+        "duration": "2:29"
+      },
+      {
+        "position": "B1",
+        "type": "track",
+        "title": "Flash Delirium",
+        "duration": "4:15"
+      },
+      {
+        "position": "B2",
+        "type": "track",
+        "title": "I Found A Whistle",
+        "duration": "3:40"
+      },
+      {
+        "position": "C1",
+        "type": "track",
+        "title": "Siberian Breaks",
+        "duration": "12:09"
+      },
+      {
+        "position": "D1",
+        "type": "track",
+        "title": "Brian Eno",
+        "duration": "4:31"
+      },
+      {
+        "position": "D2",
+        "type": "track",
+        "title": "Lady Dada's Nightmare",
+        "duration": "4:31"
+      },
+      {
+        "position": "D3",
+        "type": "track",
+        "title": "Congratulations",
+        "duration": "3:54"
+      }
+    ]
   },
   {
-    "id": "2201915-30",
+    "id": "2201915-36",
     "releaseId": "2201915",
     "masterId": 31249,
     "artist": "The Beatles",
@@ -812,10 +3642,108 @@
     "dateAdded": "2026-06-12 18:05:23",
     "notes": "",
     "cover": "https://i.discogs.com/0Jw9E-unXLQ7zrU3nBJJpWmtHISlIBQvoVImzPkrecc/rs:fit/g:sm/q:90/h:598/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE1MjA0/MDUtMTU2NjA1NjYy/NC0yOTY4LmpwZWc.jpeg",
-    "thumb": "https://i.discogs.com/_Nq_Ve1_iKmPuUsytOuUcAv5aw713DDYjBSvtTPLfvY/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE1MjA0/MDUtMTU2NjA1NjYy/NC0yOTY4LmpwZWc.jpeg"
+    "thumb": "https://i.discogs.com/b6WCerdBcOgUV5JgNM5DIHSHKA0dNBjxAtV1dpx7VsA/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIyMDE5/MTUtMTYzOTQwNzQ5/OS0xMzE4LmpwZWc.jpeg",
+    "tracklist": [
+      {
+        "position": "A1",
+        "type": "track",
+        "title": "She Loves You",
+        "duration": ""
+      },
+      {
+        "position": "A2",
+        "type": "track",
+        "title": "From Me To You",
+        "duration": ""
+      },
+      {
+        "position": "A3",
+        "type": "track",
+        "title": "We Can Work It Out",
+        "duration": ""
+      },
+      {
+        "position": "A4",
+        "type": "track",
+        "title": "Help!",
+        "duration": ""
+      },
+      {
+        "position": "A5",
+        "type": "track",
+        "title": "Michelle",
+        "duration": ""
+      },
+      {
+        "position": "A6",
+        "type": "track",
+        "title": "Yesterday",
+        "duration": ""
+      },
+      {
+        "position": "A7",
+        "type": "track",
+        "title": "I Feel Fine",
+        "duration": ""
+      },
+      {
+        "position": "A8",
+        "type": "track",
+        "title": "Yellow Submarine",
+        "duration": ""
+      },
+      {
+        "position": "B1",
+        "type": "track",
+        "title": "Can't Buy Me Love",
+        "duration": ""
+      },
+      {
+        "position": "B2",
+        "type": "track",
+        "title": "Bad Boy",
+        "duration": ""
+      },
+      {
+        "position": "B3",
+        "type": "track",
+        "title": "Day Tripper",
+        "duration": ""
+      },
+      {
+        "position": "B4",
+        "type": "track",
+        "title": "A Hard Day's Night",
+        "duration": ""
+      },
+      {
+        "position": "B5",
+        "type": "track",
+        "title": "Ticket To Ride",
+        "duration": ""
+      },
+      {
+        "position": "B6",
+        "type": "track",
+        "title": "Paperback Writer",
+        "duration": ""
+      },
+      {
+        "position": "B7",
+        "type": "track",
+        "title": "Eleanor Rigby",
+        "duration": ""
+      },
+      {
+        "position": "B8",
+        "type": "track",
+        "title": "I Want To Hold Your Hand",
+        "duration": ""
+      }
+    ]
   },
   {
-    "id": "34767662-31",
+    "id": "34767662-37",
     "releaseId": "34767662",
     "masterId": 45799,
     "artist": "The Beatles",
@@ -840,10 +3768,96 @@
     "dateAdded": "2026-07-05 19:32:47",
     "notes": "",
     "cover": "https://i.discogs.com/vOXF-5IUBdgv3LCVA63yJVpYEortGAlvlzaVGfq1oH0/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY1MTE0/My0xNjI2MDE3ODY2/LTM3NDQuanBlZw.jpeg",
-    "thumb": "https://i.discogs.com/8O9_OmPKKyq3q0XfkE70tfQdRmoihH6K90z216YtflU/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY1MTE0/My0xNjI2MDE3ODY2/LTM3NDQuanBlZw.jpeg"
+    "thumb": "https://i.discogs.com/gr9wA9EVLLUYBvoAe_4KPMMJMUTjgVdyiO5vuMS0S1Y/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM0NzY3/NjYyLTE3NTQ2Njgx/OTctOTA3MS5qcGVn.jpeg",
+    "tracklist": [
+      {
+        "position": "A1",
+        "type": "track",
+        "title": "No Reply",
+        "duration": ""
+      },
+      {
+        "position": "A2",
+        "type": "track",
+        "title": "I'm A Loser",
+        "duration": ""
+      },
+      {
+        "position": "A3",
+        "type": "track",
+        "title": "Baby's In Black",
+        "duration": ""
+      },
+      {
+        "position": "A4",
+        "type": "track",
+        "title": "Rock And Roll Music",
+        "duration": ""
+      },
+      {
+        "position": "A5",
+        "type": "track",
+        "title": "I'll Follow The Sun",
+        "duration": ""
+      },
+      {
+        "position": "A6",
+        "type": "track",
+        "title": "Mr. Moonlight",
+        "duration": ""
+      },
+      {
+        "position": "A7",
+        "type": "track",
+        "title": "Kansas City",
+        "duration": ""
+      },
+      {
+        "position": "B1",
+        "type": "track",
+        "title": "Eight Days A Week",
+        "duration": ""
+      },
+      {
+        "position": "B2",
+        "type": "track",
+        "title": "Words Of Love",
+        "duration": ""
+      },
+      {
+        "position": "B3",
+        "type": "track",
+        "title": "Honey Don't",
+        "duration": ""
+      },
+      {
+        "position": "B4",
+        "type": "track",
+        "title": "Every Little Thing",
+        "duration": ""
+      },
+      {
+        "position": "B5",
+        "type": "track",
+        "title": "I Don't Want To Spoil The Party",
+        "duration": ""
+      },
+      {
+        "position": "B6",
+        "type": "track",
+        "title": "What You're Doing",
+        "duration": ""
+      },
+      {
+        "position": "B7",
+        "type": "track",
+        "title": "Everybody's Trying To Be My Baby",
+        "duration": ""
+      }
+    ]
   },
   {
-    "id": "17693929-32",
+    "id": "17693929-38",
     "releaseId": "17693929",
     "masterId": 1233695,
     "artist": "Alvvays",
@@ -866,10 +3880,72 @@
     "dateAdded": "2026-06-22 18:08:45",
     "notes": "",
     "cover": "https://i.discogs.com/wVMuL6BAj2A8P31krdF73HU2fYYao6QoFFSPu9E1sGs/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwNzg2/MzUzLTE1NDEwMTM4/OTEtNDk1NC5qcGVn.jpeg",
-    "thumb": "https://i.discogs.com/NECWWFkHhEuSzeweaRAJyCazKCxIlnuUcHkmwI7XPJs/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwNzg2/MzUzLTE1NDEwMTM4/OTEtNDk1NC5qcGVn.jpeg"
+    "thumb": "https://i.discogs.com/cywc5TwAEq2dzBiV1_jN45Hrd2ZPlNjBmQ22p0sMq80/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE3Njkz/OTI5LTE2MTQ5MDI1/NzItNTQ4NS5qcGVn.jpeg",
+    "tracklist": [
+      {
+        "position": "A1",
+        "type": "track",
+        "title": "In Undertow",
+        "duration": "3:17"
+      },
+      {
+        "position": "A2",
+        "type": "track",
+        "title": "Dreams Tonite",
+        "duration": "3:16"
+      },
+      {
+        "position": "A3",
+        "type": "track",
+        "title": "Plimsoll Punks",
+        "duration": "4:50"
+      },
+      {
+        "position": "A4",
+        "type": "track",
+        "title": "Your Type",
+        "duration": "2:04"
+      },
+      {
+        "position": "A5",
+        "type": "track",
+        "title": "Not My Baby",
+        "duration": "4:16"
+      },
+      {
+        "position": "B1",
+        "type": "track",
+        "title": "Hey",
+        "duration": "2:49"
+      },
+      {
+        "position": "B2",
+        "type": "track",
+        "title": "Lollipop (Ode to Jim)",
+        "duration": "3:17"
+      },
+      {
+        "position": "B3",
+        "type": "track",
+        "title": "Already Gone",
+        "duration": "3:04"
+      },
+      {
+        "position": "B4",
+        "type": "track",
+        "title": "Saved By A Waif",
+        "duration": "2:59"
+      },
+      {
+        "position": "B5",
+        "type": "track",
+        "title": "Forget About Life",
+        "duration": "2:43"
+      }
+    ]
   },
   {
-    "id": "608680-33",
+    "id": "608680-39",
     "releaseId": "608680",
     "masterId": 12410,
     "artist": "The Strokes",
@@ -891,10 +3967,178 @@
     "dateAdded": "2026-06-14 09:32:50",
     "notes": "",
     "cover": "https://i.discogs.com/cEdBuS5TgIJUGHeU2Hb_zAEBRMTGY-Fi2cU3tzwkeWg/rs:fit/g:sm/q:90/h:594/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTYxNjUx/Ny0xNTk0NTc3MDMz/LTQyMjYuanBlZw.jpeg",
-    "thumb": "https://i.discogs.com/rJcDNchQU5W-uRVaK4ONsPuJe7k4lg0EGK-a2iY6Lg8/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTYxNjUx/Ny0xNTk0NTc3MDMz/LTQyMjYuanBlZw.jpeg"
+    "thumb": "https://i.discogs.com/R2rwVBogxwuwkH4pLUU_CYP1sZyzzpmi8P_87aK8SQw/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTYwODY4/MC0xNDkzMDU5MjAz/LTgyNDUuanBlZw.jpeg",
+    "tracklist": [
+      {
+        "position": "A1",
+        "type": "track",
+        "title": "You Only Live Once",
+        "duration": "3:09"
+      },
+      {
+        "position": "A2",
+        "type": "track",
+        "title": "Juicebox",
+        "duration": "3:17"
+      },
+      {
+        "position": "A3",
+        "type": "track",
+        "title": "Heart In A Cage",
+        "duration": "3:27"
+      },
+      {
+        "position": "A4",
+        "type": "track",
+        "title": "Razorblade",
+        "duration": "3:29"
+      },
+      {
+        "position": "A5",
+        "type": "track",
+        "title": "On The Other Side",
+        "duration": "4:38"
+      },
+      {
+        "position": "A6",
+        "type": "track",
+        "title": "Vision Of Division",
+        "duration": "4:20"
+      },
+      {
+        "position": "A7",
+        "type": "track",
+        "title": "Ask Me Anything",
+        "duration": "3:12"
+      },
+      {
+        "position": "B1",
+        "type": "track",
+        "title": "Electricityscape",
+        "duration": "3:33"
+      },
+      {
+        "position": "B2",
+        "type": "track",
+        "title": "Killing Lies",
+        "duration": "3:50"
+      },
+      {
+        "position": "B3",
+        "type": "track",
+        "title": "Fear Of Sleep",
+        "duration": "4:00"
+      },
+      {
+        "position": "B4",
+        "type": "track",
+        "title": "15 Minutes",
+        "duration": "4:34"
+      },
+      {
+        "position": "B5",
+        "type": "track",
+        "title": "Ize Of The World",
+        "duration": "4:29"
+      },
+      {
+        "position": "B6",
+        "type": "track",
+        "title": "Evening Sun",
+        "duration": "3:06"
+      },
+      {
+        "position": "B7",
+        "type": "track",
+        "title": "Red Light",
+        "duration": "3:11"
+      }
+    ]
   },
   {
-    "id": "29446156-34",
+    "id": "37965894-40",
+    "releaseId": "37965894",
+    "masterId": 4293972,
+    "artist": "The Strokes",
+    "title": "Reality Awaits",
+    "year": "2026",
+    "country": "USA & Europe",
+    "genres": [
+      "Rock"
+    ],
+    "styles": [
+      "Alternative Rock"
+    ],
+    "labels": [
+      "RCA",
+      "Cult Records (3)"
+    ],
+    "label": "RCA, Cult Records (3)",
+    "format": "LP, Album, Ltd, Red",
+    "rating": "",
+    "dateAdded": "2026-07-27 15:08:45",
+    "notes": "",
+    "cover": "https://i.discogs.com/TZWOhsFIMkxPUFukT3hmdE_P_23zcid1J6MW1CUwK90/rs:fit/g:sm/q:90/h:582/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM3OTUy/MDI1LTE3ODQ3Njc5/NTMtNDgxNS5qcGVn.jpeg",
+    "thumb": "https://i.discogs.com/zsjh1EZXgLR3RLBwF_yMvIqYJGyYl4WKrgqragHqQ1g/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM3OTY1/ODk0LTE3ODUxODk3/NTMtNTI5OC5qcGVn.jpeg",
+    "tracklist": [
+      {
+        "position": "A1",
+        "type": "track",
+        "title": "Psycho Shit",
+        "duration": ""
+      },
+      {
+        "position": "A2",
+        "type": "track",
+        "title": "Dine N'Dash",
+        "duration": ""
+      },
+      {
+        "position": "A3",
+        "type": "track",
+        "title": "Lonely in the Future",
+        "duration": ""
+      },
+      {
+        "position": "A4",
+        "type": "track",
+        "title": "Falling out of Love",
+        "duration": ""
+      },
+      {
+        "position": "B1",
+        "type": "track",
+        "title": "Going to Babble On",
+        "duration": ""
+      },
+      {
+        "position": "B2",
+        "type": "track",
+        "title": "Going Shopping",
+        "duration": ""
+      },
+      {
+        "position": "B3",
+        "type": "track",
+        "title": "Liar's Remorse",
+        "duration": ""
+      },
+      {
+        "position": "B4",
+        "type": "track",
+        "title": "The Fruits of Conquest",
+        "duration": ""
+      },
+      {
+        "position": "B5",
+        "type": "track",
+        "title": "Tyrants of the Mellow Moon",
+        "duration": ""
+      }
+    ]
+  },
+  {
+    "id": "29446156-41",
     "releaseId": "29446156",
     "masterId": 12347,
     "artist": "The Strokes",
@@ -918,10 +4162,78 @@
     "dateAdded": "2026-06-14 07:41:10",
     "notes": "",
     "cover": "https://i.discogs.com/UMLNSgraQ68YSUb0-5DF1P19vUxPZ36TWNL9ALRlG1Q/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEzMTAz/NzQtMTQ1Njk0MTMz/My0zMDY2LmpwZWc.jpeg",
-    "thumb": "https://i.discogs.com/VSV15HRjwsqwYE-V3NgyROYAGqsF7w6JeNje3iTHnUg/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEzMTAz/NzQtMTQ1Njk0MTMz/My0zMDY2LmpwZWc.jpeg"
+    "thumb": "https://i.discogs.com/gX-LvVw4FXfMSBMDyRtgAh0iCPT9G-iNVWr78PdWsgk/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI5NDQ2/MTU2LTE3MDQ4OTIy/NTgtOTE0NS5qcGVn.jpeg",
+    "tracklist": [
+      {
+        "position": "A1",
+        "type": "track",
+        "title": "Is This It",
+        "duration": "2:30"
+      },
+      {
+        "position": "A2",
+        "type": "track",
+        "title": "The Modern Age",
+        "duration": "3:27"
+      },
+      {
+        "position": "A3",
+        "type": "track",
+        "title": "Soma",
+        "duration": "2:33"
+      },
+      {
+        "position": "A4",
+        "type": "track",
+        "title": "Barely Legal",
+        "duration": "3:54"
+      },
+      {
+        "position": "A5",
+        "type": "track",
+        "title": "Someday",
+        "duration": "3:03"
+      },
+      {
+        "position": "B1",
+        "type": "track",
+        "title": "Alone, Together",
+        "duration": "3:08"
+      },
+      {
+        "position": "B2",
+        "type": "track",
+        "title": "Last Nite",
+        "duration": "3:12"
+      },
+      {
+        "position": "B3",
+        "type": "track",
+        "title": "Hard To Explain",
+        "duration": "3:43"
+      },
+      {
+        "position": "B4",
+        "type": "track",
+        "title": "New York City Cops",
+        "duration": "3:20"
+      },
+      {
+        "position": "B5",
+        "type": "track",
+        "title": "Trying Your Luck",
+        "duration": "3:22"
+      },
+      {
+        "position": "B6",
+        "type": "track",
+        "title": "Take It Or Leave It",
+        "duration": "3:14"
+      }
+    ]
   },
   {
-    "id": "15249054-35",
+    "id": "15249054-42",
     "releaseId": "15249054",
     "masterId": 1712601,
     "artist": "The Strokes",
@@ -947,10 +4259,66 @@
     "dateAdded": "2026-06-12 10:20:48",
     "notes": "",
     "cover": "https://i.discogs.com/JSvoLvGxGluJIZgM6vMO74oLnVcR8W7zFhiHxvz802Q/rs:fit/g:sm/q:90/h:500/w:500/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE2NzM2/NjQ2LTE2MDk1MzI1/MTItMzA5My5qcGVn.jpeg",
-    "thumb": "https://i.discogs.com/KQ-BFkrQVn99M1mtTuZoeJXKqnuo1hBJeCMPTk4VHUw/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE2NzM2/NjQ2LTE2MDk1MzI1/MTItMzA5My5qcGVn.jpeg"
+    "thumb": "https://i.discogs.com/MqHdbNITCV5alMMRzgnY4x7EAvfr8UOYcADMWconMUA/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE1MjQ5/MDU0LTE1ODg2Njkx/OTctODAwNC5qcGVn.jpeg",
+    "tracklist": [
+      {
+        "position": "A1",
+        "type": "track",
+        "title": "The Adults Are Talking",
+        "duration": "4:46"
+      },
+      {
+        "position": "A2",
+        "type": "track",
+        "title": "Selfless",
+        "duration": "4:02"
+      },
+      {
+        "position": "A3",
+        "type": "track",
+        "title": "Brooklyn Bridge To Chorus",
+        "duration": "3:54"
+      },
+      {
+        "position": "A4",
+        "type": "track",
+        "title": "Bad Decisions",
+        "duration": "4:46"
+      },
+      {
+        "position": "A5",
+        "type": "track",
+        "title": "Eternal Summer",
+        "duration": "6:20"
+      },
+      {
+        "position": "B6",
+        "type": "track",
+        "title": "At The Door",
+        "duration": "5:10"
+      },
+      {
+        "position": "B7",
+        "type": "track",
+        "title": "Why Are Sundays So Depressing",
+        "duration": "4:28"
+      },
+      {
+        "position": "B8",
+        "type": "track",
+        "title": "Not The Same Anymore",
+        "duration": "5:46"
+      },
+      {
+        "position": "B9",
+        "type": "track",
+        "title": "Ode To The Mets",
+        "duration": "5:50"
+      }
+    ]
   },
   {
-    "id": "2772859-36",
+    "id": "2772859-43",
     "releaseId": "2772859",
     "masterId": 319839,
     "artist": "The Strokes",
@@ -973,10 +4341,72 @@
     "dateAdded": "2026-07-04 21:33:26",
     "notes": "",
     "cover": "https://i.discogs.com/P62Y-tnm4UTQrTzxMuNmujYRuFKOfzrpsdcQt6E3bno/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI3ODU1/OTEtMTQxNjk0MTc3/NS00NzM4LmpwZWc.jpeg",
-    "thumb": "https://i.discogs.com/teG0IdSy0tJrypq8DgLUsTlL44GkPqveRBDGlZr2Ayk/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI3ODU1/OTEtMTQxNjk0MTc3/NS00NzM4LmpwZWc.jpeg"
+    "thumb": "https://i.discogs.com/1_D79TvvwsyXdd3vQDCnb8VyoGhHlmjwFtSXNJQ6w7I/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI3NzI4/NTktMTQxNDAzNjc3/Ni0xMzQ3LmpwZWc.jpeg",
+    "tracklist": [
+      {
+        "position": "A1",
+        "type": "track",
+        "title": "Machu Picchu",
+        "duration": "3:32"
+      },
+      {
+        "position": "A2",
+        "type": "track",
+        "title": "Under Cover Of Darkness",
+        "duration": "3:57"
+      },
+      {
+        "position": "A3",
+        "type": "track",
+        "title": "Two Kinds Of Happiness",
+        "duration": "3:44"
+      },
+      {
+        "position": "A4",
+        "type": "track",
+        "title": "You're So Right",
+        "duration": "2:34"
+      },
+      {
+        "position": "A5",
+        "type": "track",
+        "title": "Taken For A Fool",
+        "duration": "3:25"
+      },
+      {
+        "position": "B1",
+        "type": "track",
+        "title": "Games",
+        "duration": "3:53"
+      },
+      {
+        "position": "B2",
+        "type": "track",
+        "title": "Call Me Back",
+        "duration": "3:03"
+      },
+      {
+        "position": "B3",
+        "type": "track",
+        "title": "Gratisfaction",
+        "duration": "2:59"
+      },
+      {
+        "position": "B4",
+        "type": "track",
+        "title": "Metabolism",
+        "duration": "3:05"
+      },
+      {
+        "position": "B5",
+        "type": "track",
+        "title": "Life Is Simple In The Moonlight",
+        "duration": "4:15"
+      }
+    ]
   },
   {
-    "id": "28422934-37",
+    "id": "28422934-44",
     "releaseId": "28422934",
     "masterId": 33170,
     "artist": "Green Day",
@@ -1000,10 +4430,102 @@
     "dateAdded": "2026-06-14 08:52:35",
     "notes": "",
     "cover": "https://i.discogs.com/97ebzLVUHs_asnbIKbnPbeD_turZRhyF9Ghm0L0oWwM/rs:fit/g:sm/q:90/h:600/w:599/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIxMDM3/ODgtMTUwNzgxNDY2/Ny05NTU4LmpwZWc.jpeg",
-    "thumb": "https://i.discogs.com/r7vE-nZMF2CURa2hqtUAyd3iRAVjvI0sL5tQCzIOz_Y/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIxMDM3/ODgtMTUwNzgxNDY2/Ny05NTU4LmpwZWc.jpeg"
+    "thumb": "https://i.discogs.com/HMD8WcdfpFNPwOu925KtPDVzexcfr5FvwKR_atqGjXU/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI4NDIy/OTM0LTE2OTU5MDA2/NDctNzgzNS5qcGVn.jpeg",
+    "tracklist": [
+      {
+        "position": "A1",
+        "type": "track",
+        "title": "Burnout",
+        "duration": "2:07"
+      },
+      {
+        "position": "A2",
+        "type": "track",
+        "title": "Having A Blast",
+        "duration": "2:45"
+      },
+      {
+        "position": "A3",
+        "type": "track",
+        "title": "Chump",
+        "duration": "2:54"
+      },
+      {
+        "position": "A4",
+        "type": "track",
+        "title": "Longview",
+        "duration": "3:59"
+      },
+      {
+        "position": "A5",
+        "type": "track",
+        "title": "Welcome To Paradise",
+        "duration": "3:45"
+      },
+      {
+        "position": "A6",
+        "type": "track",
+        "title": "Pulling Teeth",
+        "duration": "2:31"
+      },
+      {
+        "position": "A7",
+        "type": "track",
+        "title": "Basket Case",
+        "duration": "3:01"
+      },
+      {
+        "position": "B1",
+        "type": "track",
+        "title": "She",
+        "duration": "2:14"
+      },
+      {
+        "position": "B2",
+        "type": "track",
+        "title": "Sassafras Roots",
+        "duration": "2:38"
+      },
+      {
+        "position": "B3",
+        "type": "track",
+        "title": "When I Come Around",
+        "duration": "2:58"
+      },
+      {
+        "position": "B4",
+        "type": "track",
+        "title": "Coming Clean",
+        "duration": "1:35"
+      },
+      {
+        "position": "B5",
+        "type": "track",
+        "title": "Emenius Sleepus",
+        "duration": "1:44"
+      },
+      {
+        "position": "B6",
+        "type": "track",
+        "title": "In The End",
+        "duration": "1:46"
+      },
+      {
+        "position": "B7",
+        "type": "track",
+        "title": "F.O.D.",
+        "duration": "2:49"
+      },
+      {
+        "position": "B8",
+        "type": "track",
+        "title": "All By Myself ",
+        "duration": ""
+      }
+    ]
   },
   {
-    "id": "5821153-38",
+    "id": "5821153-45",
     "releaseId": "5821153",
     "masterId": 244775,
     "artist": "Arlo Guthrie",
@@ -1026,10 +4548,78 @@
     "dateAdded": "2026-07-03 14:34:18",
     "notes": "",
     "cover": "https://i.discogs.com/I9JfkrcZooqxL895xxek8WmUkZUFJ3ml0dOhJGWtVMk/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExOTI2/ODktMTI0OTQ5MTgw/NS5qcGVn.jpeg",
-    "thumb": "https://i.discogs.com/IyN7FuO-y0T3l5QpHIUaVB0eLY-bHpPq31CVaUv9x8o/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExOTI2/ODktMTI0OTQ5MTgw/NS5qcGVn.jpeg"
+    "thumb": "https://i.discogs.com/yxXsJ7-VpsZ4gYIoGTawOe5LU7_C1TXSjFUVBR2OeJg/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTU4MjEx/NTMtMTQwMzY1MDUw/My0yMTQ3LmpwZWc.jpeg",
+    "tracklist": [
+      {
+        "position": "A1",
+        "type": "track",
+        "title": "Anytime",
+        "duration": "1:46"
+      },
+      {
+        "position": "A2",
+        "type": "track",
+        "title": "The City Of New Orleans",
+        "duration": "4:31"
+      },
+      {
+        "position": "A3",
+        "type": "track",
+        "title": "Lightning Bar Blues",
+        "duration": "2:47"
+      },
+      {
+        "position": "A4",
+        "type": "track",
+        "title": "Shackles & Chains",
+        "duration": "2:49"
+      },
+      {
+        "position": "A5",
+        "type": "track",
+        "title": "1913 Massacre",
+        "duration": "4:15"
+      },
+      {
+        "position": "A6",
+        "type": "track",
+        "title": "Somebody Turned On The Light",
+        "duration": "3:13"
+      },
+      {
+        "position": "B1",
+        "type": "track",
+        "title": "Ukulele Lady",
+        "duration": "3:21"
+      },
+      {
+        "position": "B2",
+        "type": "track",
+        "title": "When The Ship Comes In",
+        "duration": "4:24"
+      },
+      {
+        "position": "B3",
+        "type": "track",
+        "title": "Mapleview (20%) Rag",
+        "duration": "2:05"
+      },
+      {
+        "position": "B4",
+        "type": "track",
+        "title": "Days Are Short",
+        "duration": "4:15"
+      },
+      {
+        "position": "B5",
+        "type": "track",
+        "title": "Hobo's Lullaby",
+        "duration": "3:57"
+      }
+    ]
   },
   {
-    "id": "17817910-39",
+    "id": "17817910-46",
     "releaseId": "17817910",
     "masterId": 31513,
     "artist": "Alanis Morissette",
@@ -1053,10 +4643,84 @@
     "dateAdded": "2026-07-05 19:52:37",
     "notes": "",
     "cover": "https://i.discogs.com/qPULYNuVimuZvfusZcsZ_Cg5ZdEQXOWWVZTAmjiwizM/rs:fit/g:sm/q:90/h:592/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM2ODAy/My0xNDQ0MTM4Njgw/LTc2NTMuanBlZw.jpeg",
-    "thumb": "https://i.discogs.com/E-lSSlFnqNrCwVu25MrPox6Z1AIAstlwJxP1WULt-yk/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM2ODAy/My0xNDQ0MTM4Njgw/LTc2NTMuanBlZw.jpeg"
+    "thumb": "https://i.discogs.com/iTvmLHoA-_E3xbCMa_EMEKTl_uttaQdOOYb1mEJ40fU/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE3ODE3/OTEwLTE2NDY5MTc0/ODktNjM1NS5qcGVn.jpeg",
+    "tracklist": [
+      {
+        "position": "A1",
+        "type": "track",
+        "title": "All I Really Want",
+        "duration": "4:42"
+      },
+      {
+        "position": "A2",
+        "type": "track",
+        "title": "You Oughta Know",
+        "duration": "4:07"
+      },
+      {
+        "position": "A3",
+        "type": "track",
+        "title": "Perfect",
+        "duration": "3:05"
+      },
+      {
+        "position": "A4",
+        "type": "track",
+        "title": "Hand In My Pocket",
+        "duration": "3:38"
+      },
+      {
+        "position": "A5",
+        "type": "track",
+        "title": "Right Through You",
+        "duration": "2:53"
+      },
+      {
+        "position": "A6",
+        "type": "track",
+        "title": "Forgiven",
+        "duration": "4:57"
+      },
+      {
+        "position": "B1",
+        "type": "track",
+        "title": "You Learn",
+        "duration": "3:58"
+      },
+      {
+        "position": "B2",
+        "type": "track",
+        "title": "Head Over Feet",
+        "duration": "4:24"
+      },
+      {
+        "position": "B3",
+        "type": "track",
+        "title": "Mary Jane",
+        "duration": "4:38"
+      },
+      {
+        "position": "B4",
+        "type": "track",
+        "title": "Ironic",
+        "duration": "3:47"
+      },
+      {
+        "position": "B5",
+        "type": "track",
+        "title": "Not The Doctor",
+        "duration": "3:44"
+      },
+      {
+        "position": "B6",
+        "type": "track",
+        "title": "Wake Up",
+        "duration": "4:54"
+      }
+    ]
   },
   {
-    "id": "36426940-40",
+    "id": "36426940-47",
     "releaseId": "36426940",
     "masterId": 35308,
     "artist": "The Velvet Underground",
@@ -1083,10 +4747,72 @@
     "dateAdded": "2026-06-12 08:31:48",
     "notes": "",
     "cover": "https://i.discogs.com/09gxz-cHoSdZoxJEY9tWimw80cLCUkJDgfjMBXzN6eQ/rs:fit/g:sm/q:90/h:400/w:400/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTg5NDIy/OS0xMTcxMjQwNzA1/LmpwZWc.jpeg",
-    "thumb": "https://i.discogs.com/3Id-sM7MpDoehAVM5P-JRtCEpy2cqcPt3iSzsdzRUOg/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTg5NDIy/OS0xMTcxMjQwNzA1/LmpwZWc.jpeg"
+    "thumb": "https://i.discogs.com/-Lh4y1QKVWOybWruBR2P1L1bO234XzQ7jnrC0eMNgNE/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM2NDI2/OTQwLTE3NzE2MzI1/NDktOTQ3MC5wbmc.jpeg",
+    "tracklist": [
+      {
+        "position": "A1",
+        "type": "track",
+        "title": "Who Loves The Sun",
+        "duration": "2:50"
+      },
+      {
+        "position": "A2",
+        "type": "track",
+        "title": "Sweet Jane",
+        "duration": "3:55"
+      },
+      {
+        "position": "A3",
+        "type": "track",
+        "title": "Rock & Roll",
+        "duration": "4:47"
+      },
+      {
+        "position": "A4",
+        "type": "track",
+        "title": "Cool It Down",
+        "duration": "3:05"
+      },
+      {
+        "position": "A5",
+        "type": "track",
+        "title": "New Age",
+        "duration": "5:20"
+      },
+      {
+        "position": "B1",
+        "type": "track",
+        "title": "Head Held High",
+        "duration": "2:52"
+      },
+      {
+        "position": "B2",
+        "type": "track",
+        "title": "Lonesome Cowboy Bill",
+        "duration": "2:48"
+      },
+      {
+        "position": "B3",
+        "type": "track",
+        "title": "I Found A Reason",
+        "duration": "4:15"
+      },
+      {
+        "position": "B4",
+        "type": "track",
+        "title": "Train Round The Bend",
+        "duration": "3:20"
+      },
+      {
+        "position": "B5",
+        "type": "track",
+        "title": "Oh Sweet Nuthin'",
+        "duration": "7:23"
+      }
+    ]
   },
   {
-    "id": "16035846-41",
+    "id": "16035846-48",
     "releaseId": "16035846",
     "masterId": 30303,
     "artist": "The Rolling Stones",
@@ -1111,10 +4837,120 @@
     "dateAdded": "2026-06-18 08:42:59",
     "notes": "",
     "cover": "https://i.discogs.com/E1mU0s3-uQSxAhjw2ZSLA5Q0bTw6ZvePzFXWvatm7LY/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM3NTg1/NC0xNzEyMTM2Nzg4/LTc5NDkuanBlZw.jpeg",
-    "thumb": "https://i.discogs.com/206Tc6wTs2EH3AjXHgYnyOopNmtuiuBEo3AHQqw0mBs/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM3NTg1/NC0xNzEyMTM2Nzg4/LTc5NDkuanBlZw.jpeg"
+    "thumb": "https://i.discogs.com/_Z-gLezv8MYH5DocSy14e9Hxa3iQccstO5_NvJ8ca3Q/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE2MDM1/ODQ2LTE2MDIyODAw/ODMtNzE1Ny5qcGVn.jpeg",
+    "tracklist": [
+      {
+        "position": "A1",
+        "type": "track",
+        "title": "Rocks Off",
+        "duration": "4:33"
+      },
+      {
+        "position": "A2",
+        "type": "track",
+        "title": "Rip This Joint",
+        "duration": "2:24"
+      },
+      {
+        "position": "A3",
+        "type": "track",
+        "title": "Shake Your Hips",
+        "duration": "2:58"
+      },
+      {
+        "position": "A4",
+        "type": "track",
+        "title": "Casino Boogie",
+        "duration": "3:30"
+      },
+      {
+        "position": "A5",
+        "type": "track",
+        "title": "Tumbling Dice",
+        "duration": "3:30"
+      },
+      {
+        "position": "B1",
+        "type": "track",
+        "title": "Sweet Virginia",
+        "duration": "4:25"
+      },
+      {
+        "position": "B2",
+        "type": "track",
+        "title": "Torn And Frayed",
+        "duration": "3:40"
+      },
+      {
+        "position": "B3",
+        "type": "track",
+        "title": "Sweet Black Angel",
+        "duration": "3:05"
+      },
+      {
+        "position": "B4",
+        "type": "track",
+        "title": "Loving Cup",
+        "duration": "4:22"
+      },
+      {
+        "position": "C1",
+        "type": "track",
+        "title": "Happy",
+        "duration": "3:00"
+      },
+      {
+        "position": "C2",
+        "type": "track",
+        "title": "Turd On The Run",
+        "duration": "2:33"
+      },
+      {
+        "position": "C3",
+        "type": "track",
+        "title": "Ventilator Blues",
+        "duration": "3:20"
+      },
+      {
+        "position": "C4",
+        "type": "track",
+        "title": "I Just Want To See His Face",
+        "duration": "3:15"
+      },
+      {
+        "position": "C5",
+        "type": "track",
+        "title": "Let It Loose",
+        "duration": "5:17"
+      },
+      {
+        "position": "D1",
+        "type": "track",
+        "title": "All Down The Line",
+        "duration": "3:50"
+      },
+      {
+        "position": "D2",
+        "type": "track",
+        "title": "Stop Breaking Down",
+        "duration": "3:40"
+      },
+      {
+        "position": "D3",
+        "type": "track",
+        "title": "Shine A Light",
+        "duration": "4:15"
+      },
+      {
+        "position": "D4",
+        "type": "track",
+        "title": "Soul Survivor",
+        "duration": "3:50"
+      }
+    ]
   },
   {
-    "id": "28821367-42",
+    "id": "28821367-49",
     "releaseId": "28821367",
     "masterId": 108306,
     "artist": "The Shins",
@@ -1137,10 +4973,72 @@
     "dateAdded": "2026-07-04 21:08:44",
     "notes": "",
     "cover": "https://i.discogs.com/sY47-FbjziMxB3vTUrViX3-biIHUiCD-IIQM0xaJLoo/rs:fit/g:sm/q:90/h:600/w:594/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ4NDEw/OC0xNzcxODc3NjQ0/LTQ0OTEuanBlZw.jpeg",
-    "thumb": "https://i.discogs.com/EJWz1yfGylT7biJql0OJHskAruv9oM34Qe0Dtxp2qA0/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ4NDEw/OC0xNzcxODc3NjQ0/LTQ0OTEuanBlZw.jpeg"
+    "thumb": "https://i.discogs.com/lK5j2H85kBos_h68hN3BZnEB0u_n4eBl6zQLwrh3QRk/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI4ODIx/MzY3LTE2OTkyOTM5/MTgtNjAyOC5qcGVn.jpeg",
+    "tracklist": [
+      {
+        "position": "A1",
+        "type": "track",
+        "title": "Kissing The Lipless",
+        "duration": ""
+      },
+      {
+        "position": "A2",
+        "type": "track",
+        "title": "Mine's Not A High Horse",
+        "duration": ""
+      },
+      {
+        "position": "A3",
+        "type": "track",
+        "title": "So Says I",
+        "duration": ""
+      },
+      {
+        "position": "A4",
+        "type": "track",
+        "title": "Young Pilgrim",
+        "duration": ""
+      },
+      {
+        "position": "A5",
+        "type": "track",
+        "title": "Saint Simon",
+        "duration": ""
+      },
+      {
+        "position": "B1",
+        "type": "track",
+        "title": "Fighting In A Sack",
+        "duration": ""
+      },
+      {
+        "position": "B2",
+        "type": "track",
+        "title": "Pink Bullets",
+        "duration": ""
+      },
+      {
+        "position": "B3",
+        "type": "track",
+        "title": "Turn A Square",
+        "duration": ""
+      },
+      {
+        "position": "B4",
+        "type": "track",
+        "title": "Gone For Good",
+        "duration": ""
+      },
+      {
+        "position": "B5",
+        "type": "track",
+        "title": "Those To Come",
+        "duration": ""
+      }
+    ]
   },
   {
-    "id": "14793761-43",
+    "id": "14793761-50",
     "releaseId": "14793761",
     "masterId": 9537,
     "artist": "The Postal Service",
@@ -1164,10 +5062,72 @@
     "dateAdded": "2026-07-04 22:34:02",
     "notes": "",
     "cover": "https://i.discogs.com/rqlTpllJuw20ftalEnfIoQVra1Ogbc74Bzw5_GbhJCs/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY0MDky/MjItMTUyNzg3MjQ4/My0zNTM3LmpwZWc.jpeg",
-    "thumb": "https://i.discogs.com/tPoenDzBlLtBz1wEh00RZ2-X4cJVqDjsIM7jjsPTaEo/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY0MDky/MjItMTUyNzg3MjQ4/My0zNTM3LmpwZWc.jpeg"
+    "thumb": "https://i.discogs.com/PTM7Ye0eAasxtXIWtEiRiQegXmZG84pe681tf2C-Ic0/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE0Nzkz/NzYxLTE3NDE1ODM3/NDktNjYzOC5qcGVn.jpeg",
+    "tracklist": [
+      {
+        "position": "A1",
+        "type": "track",
+        "title": "The District Sleeps Alone Tonight",
+        "duration": ""
+      },
+      {
+        "position": "A2",
+        "type": "track",
+        "title": "Such Great Heights",
+        "duration": ""
+      },
+      {
+        "position": "A3",
+        "type": "track",
+        "title": "Sleeping In",
+        "duration": ""
+      },
+      {
+        "position": "A4",
+        "type": "track",
+        "title": "Nothing Better",
+        "duration": ""
+      },
+      {
+        "position": "A5",
+        "type": "track",
+        "title": "Recycled Air",
+        "duration": ""
+      },
+      {
+        "position": "B1",
+        "type": "track",
+        "title": "Clark Gable",
+        "duration": ""
+      },
+      {
+        "position": "B2",
+        "type": "track",
+        "title": "We Will Become Silhouettes",
+        "duration": ""
+      },
+      {
+        "position": "B3",
+        "type": "track",
+        "title": "This Place Is A Prison",
+        "duration": ""
+      },
+      {
+        "position": "B4",
+        "type": "track",
+        "title": "Brand New Colony",
+        "duration": ""
+      },
+      {
+        "position": "B5",
+        "type": "track",
+        "title": "Natural Anthem",
+        "duration": ""
+      }
+    ]
   },
   {
-    "id": "14568721-44",
+    "id": "14568721-51",
     "releaseId": "14568721",
     "masterId": 13773,
     "artist": "Nirvana",
@@ -1189,10 +5149,78 @@
     "dateAdded": "2026-06-14 09:04:29",
     "notes": "",
     "cover": "https://i.discogs.com/WTTg74ExM5Aq0hkwV_6CWO6LCOh-2mepiT6UOVUh238/rs:fit/g:sm/q:90/h:592/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI3OTU1/NTQtMTMwMTM3OTg3/Mi5qcGVn.jpeg",
-    "thumb": "https://i.discogs.com/wyFw9Gxo2IAo79SjSyIo1flGhz44TEPz3XB8B8amYUs/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI3OTU1/NTQtMTMwMTM3OTg3/Mi5qcGVn.jpeg"
+    "thumb": "https://i.discogs.com/IeH87VPW4E_n_gPG3sXdorLvAHgYP8YFyaDTtrR2qkI/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE0NTY4/NzIxLTE1ODA4MTQy/ODUtNTI3NS5qcGVn.jpeg",
+    "tracklist": [
+      {
+        "position": "A1",
+        "type": "track",
+        "title": "Blew",
+        "duration": ""
+      },
+      {
+        "position": "A2",
+        "type": "track",
+        "title": "Floyd The Barber",
+        "duration": ""
+      },
+      {
+        "position": "A3",
+        "type": "track",
+        "title": "About A Girl",
+        "duration": ""
+      },
+      {
+        "position": "A4",
+        "type": "track",
+        "title": "School",
+        "duration": ""
+      },
+      {
+        "position": "A5",
+        "type": "track",
+        "title": "Love Buzz",
+        "duration": ""
+      },
+      {
+        "position": "A6",
+        "type": "track",
+        "title": "Paper Cuts",
+        "duration": ""
+      },
+      {
+        "position": "B1",
+        "type": "track",
+        "title": "Negative Creep",
+        "duration": ""
+      },
+      {
+        "position": "B2",
+        "type": "track",
+        "title": "Scoff",
+        "duration": ""
+      },
+      {
+        "position": "B3",
+        "type": "track",
+        "title": "Swap Meet",
+        "duration": ""
+      },
+      {
+        "position": "B4",
+        "type": "track",
+        "title": "Mr. Moustache",
+        "duration": ""
+      },
+      {
+        "position": "B5",
+        "type": "track",
+        "title": "Sifting",
+        "duration": ""
+      }
+    ]
   },
   {
-    "id": "32702064-45",
+    "id": "32702064-52",
     "releaseId": "32702064",
     "masterId": 13814,
     "artist": "Nirvana",
@@ -1216,10 +5244,84 @@
     "dateAdded": "2026-06-21 17:34:41",
     "notes": "",
     "cover": "https://i.discogs.com/os3Gm61mroiZvEw2bIGtNDf0RXydEx8PRmIk-YYwBSU/rs:fit/g:sm/q:90/h:600/w:594/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE4MTMw/MDYtMTQzNjgxNDc2/Mi05NjgxLmpwZWc.jpeg",
-    "thumb": "https://i.discogs.com/TcLhjpdmx3MmaXiqlQZbPOskOdPkxDcfwtS8TIp9tvo/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE4MTMw/MDYtMTQzNjgxNDc2/Mi05NjgxLmpwZWc.jpeg"
+    "thumb": "https://i.discogs.com/npFaGOVLa_jarD2lM-mt0Tn4a85mYLlIWNAVc5I7SpE/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMyNzAy/MDY0LTE3MzU1MzEy/MjctODM1Ny5qcGVn.jpeg",
+    "tracklist": [
+      {
+        "position": "A1",
+        "type": "track",
+        "title": "Smells Like Teen Spirit",
+        "duration": ""
+      },
+      {
+        "position": "A2",
+        "type": "track",
+        "title": "In Bloom",
+        "duration": ""
+      },
+      {
+        "position": "A3",
+        "type": "track",
+        "title": "Come As You Are",
+        "duration": ""
+      },
+      {
+        "position": "A4",
+        "type": "track",
+        "title": "Breed",
+        "duration": ""
+      },
+      {
+        "position": "A5",
+        "type": "track",
+        "title": "Lithium",
+        "duration": ""
+      },
+      {
+        "position": "A6",
+        "type": "track",
+        "title": "Polly",
+        "duration": ""
+      },
+      {
+        "position": "B1",
+        "type": "track",
+        "title": "Territorial Pissings",
+        "duration": ""
+      },
+      {
+        "position": "B2",
+        "type": "track",
+        "title": "Drain You",
+        "duration": ""
+      },
+      {
+        "position": "B3",
+        "type": "track",
+        "title": "Lounge Act",
+        "duration": ""
+      },
+      {
+        "position": "B4",
+        "type": "track",
+        "title": "Stay Away",
+        "duration": ""
+      },
+      {
+        "position": "B5",
+        "type": "track",
+        "title": "On A Plain",
+        "duration": ""
+      },
+      {
+        "position": "B6",
+        "type": "track",
+        "title": "Something In The Way",
+        "duration": ""
+      }
+    ]
   },
   {
-    "id": "34574536-46",
+    "id": "34574536-53",
     "releaseId": "34574536",
     "masterId": 66631,
     "artist": "Marvin Gaye",
@@ -1242,10 +5344,66 @@
     "dateAdded": "2026-07-04 21:39:08",
     "notes": "",
     "cover": "https://i.discogs.com/Og9Kw_wwfal0lfOddRXnr9kA1OnS49u_z6Tm2u-fbfw/rs:fit/g:sm/q:90/h:591/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI2MTk3/ODI2LTE3ODAyMDMz/OTItMjI2Mi5qcGVn.jpeg",
-    "thumb": "https://i.discogs.com/KyquH_0gbjH4a6MqVflhZ0CndTyzHkNwwYahCM4TI2I/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI2MTk3/ODI2LTE3ODAyMDMz/OTItMjI2Mi5qcGVn.jpeg"
+    "thumb": "https://i.discogs.com/x4Gt29qjLMEaOlHAK-Q1qe_S8oYLml4jBP-nisi_EIw/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM0NTc0/NTM2LTE3NTI4NTA5/NDItNTI3MS5qcGVn.jpeg",
+    "tracklist": [
+      {
+        "position": "A1",
+        "type": "track",
+        "title": "What's Going On",
+        "duration": "4:00"
+      },
+      {
+        "position": "A2",
+        "type": "track",
+        "title": "What's Happening Brother",
+        "duration": "2:57"
+      },
+      {
+        "position": "A3",
+        "type": "track",
+        "title": "Flyin' High (In The Friendly Sky)",
+        "duration": "3:40"
+      },
+      {
+        "position": "A4",
+        "type": "track",
+        "title": "Save The Children",
+        "duration": "4:06"
+      },
+      {
+        "position": "A5",
+        "type": "track",
+        "title": "God Is Love",
+        "duration": "1:44"
+      },
+      {
+        "position": "A6",
+        "type": "track",
+        "title": "Mercy Mercy Me (The Ecology)",
+        "duration": "3:03"
+      },
+      {
+        "position": "B1",
+        "type": "track",
+        "title": "Right On",
+        "duration": "7:15"
+      },
+      {
+        "position": "B2",
+        "type": "track",
+        "title": "Wholy Holy",
+        "duration": "3:06"
+      },
+      {
+        "position": "B3",
+        "type": "track",
+        "title": "Inner City Blues (Make Me Wanna Holler)",
+        "duration": "5:30"
+      }
+    ]
   },
   {
-    "id": "1187003-47",
+    "id": "1187003-54",
     "releaseId": "1187003",
     "masterId": 21520,
     "artist": "Radiohead",
@@ -1272,10 +5430,72 @@
     "dateAdded": "2026-06-14 09:09:47",
     "notes": "",
     "cover": "https://i.discogs.com/7y0jjFTZp88uBO380fsYcO36I3ex_er3lZn8COq90Vc/rs:fit/g:sm/q:90/h:594/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExNzQy/OTYtMTY5NzMyNzQ3/Ny0yMzQ1LmpwZWc.jpeg",
-    "thumb": "https://i.discogs.com/UKHuCQopvCdU89374sbx3qEakqFhvLjeYku6Kwc1eIs/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExNzQy/OTYtMTY5NzMyNzQ3/Ny0yMzQ1LmpwZWc.jpeg"
+    "thumb": "https://i.discogs.com/2xYfLAYtGVwblW4yz2jDhkq3WGgBSNXeUQaTGFfYkZ0/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExODcw/MDMtMTQ5NTY3NzIz/OS0yODE2LmpwZWc.jpeg",
+    "tracklist": [
+      {
+        "position": "A1",
+        "type": "track",
+        "title": "15 Step",
+        "duration": "3:57"
+      },
+      {
+        "position": "A2",
+        "type": "track",
+        "title": "Bodysnatchers",
+        "duration": "4:02"
+      },
+      {
+        "position": "A3",
+        "type": "track",
+        "title": "Nude",
+        "duration": "4:15"
+      },
+      {
+        "position": "A4",
+        "type": "track",
+        "title": "Weird Fishes/Arpeggi",
+        "duration": "5:18"
+      },
+      {
+        "position": "A5",
+        "type": "track",
+        "title": "All I Need",
+        "duration": "3:49"
+      },
+      {
+        "position": "B1",
+        "type": "track",
+        "title": "Faust Arp",
+        "duration": "2:10"
+      },
+      {
+        "position": "B2",
+        "type": "track",
+        "title": "Reckoner",
+        "duration": "4:50"
+      },
+      {
+        "position": "B3",
+        "type": "track",
+        "title": "House Of Cards",
+        "duration": "5:28"
+      },
+      {
+        "position": "B4",
+        "type": "track",
+        "title": "Jigsaw Falling Into Place",
+        "duration": "4:09"
+      },
+      {
+        "position": "B5",
+        "type": "track",
+        "title": "Videotape",
+        "duration": "4:40"
+      }
+    ]
   },
   {
-    "id": "3533677-48",
+    "id": "3533677-55",
     "releaseId": "3533677",
     "masterId": 456346,
     "artist": "Ben Kweller",
@@ -1301,10 +5521,150 @@
     "dateAdded": "2026-07-05 19:30:07",
     "notes": "",
     "cover": "https://i.discogs.com/NJBvHvxQUS34MPb5b9eEREyL9E2Rv-HRJ8ZHoXkVgsE/rs:fit/g:sm/q:90/h:500/w:500/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM1MzM2/NzctMTMzNDIwMzc4/Ny5qcGVn.jpeg",
-    "thumb": "https://i.discogs.com/l_4wKaGHLWgsvPGf2tB21C0Z2j3jHb0A9E1np-flK8k/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM1MzM2/NzctMTMzNDIwMzc4/Ny5qcGVn.jpeg"
+    "thumb": "https://i.discogs.com/l_4wKaGHLWgsvPGf2tB21C0Z2j3jHb0A9E1np-flK8k/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM1MzM2/NzctMTMzNDIwMzc4/Ny5qcGVn.jpeg",
+    "tracklist": [
+      {
+        "position": "A1",
+        "type": "track",
+        "title": "Mean To Me",
+        "duration": "3:20"
+      },
+      {
+        "position": "A2",
+        "type": "track",
+        "title": "Out The Door",
+        "duration": "3:42"
+      },
+      {
+        "position": "A3",
+        "type": "track",
+        "title": "Jealous Girl",
+        "duration": "3:56"
+      },
+      {
+        "position": "A4",
+        "type": "track",
+        "title": "Gossip",
+        "duration": "3:48"
+      },
+      {
+        "position": "A5",
+        "type": "track",
+        "title": "Free",
+        "duration": "3:41"
+      },
+      {
+        "position": "B1",
+        "type": "track",
+        "title": "Full Circle",
+        "duration": "3:09"
+      },
+      {
+        "position": "B2",
+        "type": "track",
+        "title": "The Rainbow",
+        "duration": "3:57"
+      },
+      {
+        "position": "B3",
+        "type": "track",
+        "title": "Justify Me",
+        "duration": "2:19"
+      },
+      {
+        "position": "B4",
+        "type": "track",
+        "title": "Time Will Save The Day",
+        "duration": "3:47"
+      },
+      {
+        "position": "B5",
+        "type": "track",
+        "title": "I Miss You",
+        "duration": "3:58"
+      },
+      {
+        "position": "B6",
+        "type": "track",
+        "title": "You Can Count On Me",
+        "duration": "3:22"
+      },
+      {
+        "position": "",
+        "type": "heading",
+        "title": "CD",
+        "duration": ""
+      },
+      {
+        "position": "1",
+        "type": "track",
+        "title": "Mean To Me",
+        "duration": "3:20"
+      },
+      {
+        "position": "2",
+        "type": "track",
+        "title": "Out The Door",
+        "duration": "3:42"
+      },
+      {
+        "position": "3",
+        "type": "track",
+        "title": "Jealous Girl",
+        "duration": "3:56"
+      },
+      {
+        "position": "4",
+        "type": "track",
+        "title": "Gossip",
+        "duration": "3:48"
+      },
+      {
+        "position": "5",
+        "type": "track",
+        "title": "Free",
+        "duration": "3:41"
+      },
+      {
+        "position": "6",
+        "type": "track",
+        "title": "Full Circle",
+        "duration": "3:09"
+      },
+      {
+        "position": "7",
+        "type": "track",
+        "title": "The Rainbow",
+        "duration": "3:57"
+      },
+      {
+        "position": "8",
+        "type": "track",
+        "title": "Justify Me",
+        "duration": "2:19"
+      },
+      {
+        "position": "9",
+        "type": "track",
+        "title": "Time Will Save The Day",
+        "duration": "3:47"
+      },
+      {
+        "position": "10",
+        "type": "track",
+        "title": "I Miss You",
+        "duration": "3:58"
+      },
+      {
+        "position": "11",
+        "type": "track",
+        "title": "You Can Count On Me",
+        "duration": "3:22"
+      }
+    ]
   },
   {
-    "id": "31492631-49",
+    "id": "31492631-56",
     "releaseId": "31492631",
     "masterId": 16245,
     "artist": "Prince And The Revolution",
@@ -1334,10 +5694,66 @@
     "dateAdded": "2026-06-21 17:33:17",
     "notes": "",
     "cover": "https://i.discogs.com/mSIjl1G4gAdx2xw9iLG1fBmNPLz_5GNo0bLqeWyDMh4/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE5NDAy/MS0xMzM1NDAwMjg5/LmpwZWc.jpeg",
-    "thumb": "https://i.discogs.com/5V--CGA7V4wulxts-n_rMBEsMXglMBHo6DNIFvH5NNg/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE5NDAy/MS0xMzM1NDAwMjg5/LmpwZWc.jpeg"
+    "thumb": "https://i.discogs.com/pOqzJZztyIZbNbCifm_3taqNpuPxvsn6T6jE43IfEeo/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMxNDky/NjMxLTE3MjM4MDUy/MTktMzkzMi5qcGVn.jpeg",
+    "tracklist": [
+      {
+        "position": "A1",
+        "type": "track",
+        "title": "Let's Go Crazy",
+        "duration": "4:38"
+      },
+      {
+        "position": "A2",
+        "type": "track",
+        "title": "Take Me With U",
+        "duration": "3:53"
+      },
+      {
+        "position": "A3",
+        "type": "track",
+        "title": "The Beautiful Ones",
+        "duration": "5:13"
+      },
+      {
+        "position": "A4",
+        "type": "track",
+        "title": "Computer Blue",
+        "duration": "3:58"
+      },
+      {
+        "position": "A5",
+        "type": "track",
+        "title": "Darling Nikki",
+        "duration": "4:15"
+      },
+      {
+        "position": "B1",
+        "type": "track",
+        "title": "When Doves Cry",
+        "duration": "5:53"
+      },
+      {
+        "position": "B2",
+        "type": "track",
+        "title": "I Would Die 4 U",
+        "duration": "2:49"
+      },
+      {
+        "position": "B3",
+        "type": "track",
+        "title": "Baby I'm A Star",
+        "duration": "4:22"
+      },
+      {
+        "position": "B4",
+        "type": "track",
+        "title": "Purple Rain",
+        "duration": "8:44"
+      }
+    ]
   },
   {
-    "id": "6846296-50",
+    "id": "6846296-57",
     "releaseId": "6846296",
     "masterId": 29426,
     "artist": "Van Halen",
@@ -1359,10 +5775,78 @@
     "dateAdded": "2026-06-14 08:42:06",
     "notes": "",
     "cover": "https://i.discogs.com/roczw_NtkkygG6ynC3N_8BtJbPisLXnMk5uawMhE58M/rs:fit/g:sm/q:90/h:600/w:598/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM4OTI1/NDktMTM4NzkyNzYw/Ny00MjU3LmpwZWc.jpeg",
-    "thumb": "https://i.discogs.com/axVMPS5_nu5O76HM0l--bMfOBeua8pd6QmmGFoB1nms/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM4OTI1/NDktMTM4NzkyNzYw/Ny00MjU3LmpwZWc.jpeg"
+    "thumb": "https://i.discogs.com/B_SOQQMkpeQXnK2BsoGyiRawrynfespxhBNhnPK6z48/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY4NDYy/OTYtMTYwMDAyMjM3/MC0zMDUwLmpwZWc.jpeg",
+    "tracklist": [
+      {
+        "position": "A1",
+        "type": "track",
+        "title": "Runnin' With The Devil",
+        "duration": "3:32"
+      },
+      {
+        "position": "A2",
+        "type": "track",
+        "title": "Eruption",
+        "duration": "1:42"
+      },
+      {
+        "position": "A3",
+        "type": "track",
+        "title": "You Really Got Me",
+        "duration": "2:37"
+      },
+      {
+        "position": "A4",
+        "type": "track",
+        "title": "Ain't Talkin' 'Bout Love",
+        "duration": "3:47"
+      },
+      {
+        "position": "A5",
+        "type": "track",
+        "title": "I'm The One",
+        "duration": "3:44"
+      },
+      {
+        "position": "B1",
+        "type": "track",
+        "title": "Jamie's Cryin'",
+        "duration": "3:30"
+      },
+      {
+        "position": "B2",
+        "type": "track",
+        "title": "Atomic Punk",
+        "duration": "3:00"
+      },
+      {
+        "position": "B3",
+        "type": "track",
+        "title": "Feel Your Love Tonight",
+        "duration": "3:40"
+      },
+      {
+        "position": "B4",
+        "type": "track",
+        "title": "Little Dreamer",
+        "duration": "3:22"
+      },
+      {
+        "position": "B5",
+        "type": "track",
+        "title": "Ice Cream Man",
+        "duration": "3:18"
+      },
+      {
+        "position": "B6",
+        "type": "track",
+        "title": "On Fire",
+        "duration": "3:01"
+      }
+    ]
   },
   {
-    "id": "10748263-51",
+    "id": "10748263-58",
     "releaseId": "10748263",
     "masterId": 302,
     "artist": "Black Sabbath",
@@ -1387,10 +5871,60 @@
     "dateAdded": "2026-07-06 17:07:10",
     "notes": "",
     "cover": "https://i.discogs.com/voeFelA0ho9aKgQJPbpul2EnI3zz5ad_llCKfQmxjts/rs:fit/g:sm/q:90/h:592/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY5Njc3/Mi0xNzQ1MDAyNTIz/LTIwNDUuanBlZw.jpeg",
-    "thumb": "https://i.discogs.com/Sr4Q74U4OqD5_3serIwP5AKLAWsPUwZnQmnCArgDXk8/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY5Njc3/Mi0xNzQ1MDAyNTIz/LTIwNDUuanBlZw.jpeg"
+    "thumb": "https://i.discogs.com/ekQAHyqwKS7uIvn9m50C8YEERuJVQPx-Gwu2sZSfOn8/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwNzQ4/MjYzLTE3NDgyNzc3/NjQtMTYxMS5qcGVn.jpeg",
+    "tracklist": [
+      {
+        "position": "A1",
+        "type": "track",
+        "title": "War Pigs / Luke's Wall",
+        "duration": "7:55"
+      },
+      {
+        "position": "A2",
+        "type": "track",
+        "title": "Paranoid",
+        "duration": "2:47"
+      },
+      {
+        "position": "A3",
+        "type": "track",
+        "title": "Planet Caravan",
+        "duration": "4:29"
+      },
+      {
+        "position": "A4",
+        "type": "track",
+        "title": "Iron Man",
+        "duration": "5:54"
+      },
+      {
+        "position": "B1",
+        "type": "track",
+        "title": "Electric Funeral",
+        "duration": "4:49"
+      },
+      {
+        "position": "B2",
+        "type": "track",
+        "title": "Hand Of Doom",
+        "duration": "7:07"
+      },
+      {
+        "position": "B3",
+        "type": "track",
+        "title": "Rat Salad",
+        "duration": "2:29"
+      },
+      {
+        "position": "B4",
+        "type": "track",
+        "title": "Jack The Stripper / Fairies Wear Boots",
+        "duration": "6:13"
+      }
+    ]
   },
   {
-    "id": "30551773-52",
+    "id": "30551773-59",
     "releaseId": "30551773",
     "masterId": 114267,
     "artist": "The Flaming Lips",
@@ -1416,10 +5950,78 @@
     "dateAdded": "2026-07-05 19:42:32",
     "notes": "",
     "cover": "https://i.discogs.com/A07y-GIU1riJyIPnP7VJb8dPK5bsP3jfh7ZQaenz_SE/rs:fit/g:sm/q:90/h:596/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTg2ODI1/LTE2ODAzNDA3Njgt/MjUzOS5qcGVn.jpeg",
-    "thumb": "https://i.discogs.com/VMsiAR6lfBunemOVnrwQAW3x2nXpjozkLK6OGNrv3cI/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTg2ODI1/LTE2ODAzNDA3Njgt/MjUzOS5qcGVn.jpeg"
+    "thumb": "https://i.discogs.com/l94nNwBLsM0rzG1zHwlJZQg_dCha_eXM2QFlqa4xXEk/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMwNTUx/NzczLTE3MjA5MDYy/NDktMzc0OC5qcGVn.jpeg",
+    "tracklist": [
+      {
+        "position": "A1",
+        "type": "track",
+        "title": "Fight Test",
+        "duration": ""
+      },
+      {
+        "position": "A2",
+        "type": "track",
+        "title": "One More Robot/Sympathy 3000-21",
+        "duration": ""
+      },
+      {
+        "position": "A3",
+        "type": "track",
+        "title": "Yoshimi Battles The Pink Robots Pt. 1",
+        "duration": ""
+      },
+      {
+        "position": "A4",
+        "type": "track",
+        "title": "Yoshimi Battles The Pink Robots Pt. 2",
+        "duration": ""
+      },
+      {
+        "position": "A5",
+        "type": "track",
+        "title": "In The Morning Of The Magicians",
+        "duration": ""
+      },
+      {
+        "position": "B1",
+        "type": "track",
+        "title": "Ego Tripping At The Gates Of Hell",
+        "duration": ""
+      },
+      {
+        "position": "B2",
+        "type": "track",
+        "title": "Are You A Hypnotist??",
+        "duration": ""
+      },
+      {
+        "position": "B3",
+        "type": "track",
+        "title": "It's Summertime",
+        "duration": ""
+      },
+      {
+        "position": "B4",
+        "type": "track",
+        "title": "Do You Realize??",
+        "duration": ""
+      },
+      {
+        "position": "B5",
+        "type": "track",
+        "title": "All We Have Is Now",
+        "duration": ""
+      },
+      {
+        "position": "B6",
+        "type": "track",
+        "title": "Approaching Pavonis Mons By Balloon (Utopia Planitia)",
+        "duration": ""
+      }
+    ]
   },
   {
-    "id": "16194546-53",
+    "id": "16194546-60",
     "releaseId": "16194546",
     "masterId": 18442,
     "artist": "The Grateful Dead",
@@ -1446,6 +6048,68 @@
     "dateAdded": "2026-07-05 20:13:59",
     "notes": "",
     "cover": "https://i.discogs.com/CFcbNgcfVEO4kx_FHmw0tyVIeMPlxLmYoOHNTnIOTV4/rs:fit/g:sm/q:90/h:500/w:500/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY4MTk0/NS0xMTk5NDAzMzIz/LmpwZWc.jpeg",
-    "thumb": "https://i.discogs.com/oXYqAYtvTumA-TPuTmhPOeuUEvdOm3QXrynmI2M5Lzo/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY4MTk0/NS0xMTk5NDAzMzIz/LmpwZWc.jpeg"
+    "thumb": "https://i.discogs.com/cl6_OyhJmu3jMW6gMHbgkjpvUC6tq76N-xDX9uwW-xE/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE2MTk0/NTQ2LTE2MDYwMDA5/MjgtNjc0My5qcGVn.jpeg",
+    "tracklist": [
+      {
+        "position": "A1",
+        "type": "track",
+        "title": "Box Of Rain",
+        "duration": "5:18"
+      },
+      {
+        "position": "A2",
+        "type": "track",
+        "title": "Friend Of The Devil",
+        "duration": "3:23"
+      },
+      {
+        "position": "A3",
+        "type": "track",
+        "title": "Sugar Magnolia",
+        "duration": "3:17"
+      },
+      {
+        "position": "A4",
+        "type": "track",
+        "title": "Operator",
+        "duration": "2:23"
+      },
+      {
+        "position": "A5",
+        "type": "track",
+        "title": "Candyman",
+        "duration": "6:11"
+      },
+      {
+        "position": "B1",
+        "type": "track",
+        "title": "Ripple",
+        "duration": "4:07"
+      },
+      {
+        "position": "B2",
+        "type": "track",
+        "title": "Brokedown Palace",
+        "duration": "4:06"
+      },
+      {
+        "position": "B3",
+        "type": "track",
+        "title": "Till The Morning Comes",
+        "duration": "3:06"
+      },
+      {
+        "position": "B4",
+        "type": "track",
+        "title": "Attics Of My Life",
+        "duration": "5:09"
+      },
+      {
+        "position": "B5",
+        "type": "track",
+        "title": "Truckin'",
+        "duration": "5:06"
+      }
+    ]
   }
 ]

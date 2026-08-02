@@ -19,68 +19,151 @@ const api = axios.create({
   headers: {
     Authorization: `Discogs token=${token}`,
     "User-Agent": "JebsRecords/1.0"
-  }
+  },
+  timeout: 20000
 });
 
 function wait(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
 
-async function fetchReleaseData(releaseId) {
+async function apiGet(url) {
+  const response = await api.get(url);
+
+  // Discogs may return rate-limit information in these headers.
+  const remaining = Number(response.headers["x-discogs-ratelimit-remaining"]);
+
+  if (Number.isFinite(remaining) && remaining <= 2) {
+    console.log("Discogs rate limit is low; pausing briefly...");
+    await wait(5000);
+  }
+
+  return response.data;
+}
+
+function normalizeTrack(track) {
+  const normalized = {
+    position: track.position ?? "",
+    type: track.type_ ?? "track",
+    title: track.title ?? "",
+    duration: track.duration ?? ""
+  };
+
+  if (Array.isArray(track.sub_tracks) && track.sub_tracks.length) {
+    normalized.subTracks = track.sub_tracks.map(normalizeTrack);
+  }
+
+  return normalized;
+}
+
+function normalizeTracklist(tracklist) {
+  if (!Array.isArray(tracklist)) {
+    return [];
+  }
+
+  return tracklist
+    .map(normalizeTrack)
+    .filter(track => track.title || track.position);
+}
+
+function findPrimaryImage(images) {
+  if (!Array.isArray(images) || !images.length) {
+    return null;
+  }
+
+  return images.find(image => image.type === "primary") ?? images[0];
+}
+
+async function fetchRelease(releaseId) {
   try {
-    const { data: release } = await api.get(`/releases/${releaseId}`);
-
-    let cover =
-      release.images?.find(image => image.type === "primary")?.uri ??
-      release.images?.[0]?.uri ??
-      release.cover_image ??
-      release.thumb ??
-      "images/placeholder-cover.svg";
-
-    let thumb =
-      release.images?.find(image => image.type === "primary")?.uri150 ??
-      release.images?.[0]?.uri150 ??
-      release.thumb ??
-      cover;
-
-    // Prefer the master release image for cleaner, canonical artwork.
-    if (release.master_id) {
-      await wait(1100);
-
-      try {
-        const { data: master } = await api.get(
-          `/masters/${release.master_id}`
-        );
-
-        const masterImage =
-          master.images?.find(image => image.type === "primary") ??
-          master.images?.[0];
-
-        if (masterImage?.uri) {
-          cover = masterImage.uri;
-          thumb = masterImage.uri150 ?? master.thumb ?? cover;
-        }
-      } catch (error) {
-        console.warn(
-          `Could not load master artwork for ${releaseId}; using release artwork.`
-        );
-      }
-    }
-
-    return {
-      releaseData: release,
-      cover,
-      thumb
-    };
+    return await apiGet(`/releases/${releaseId}`);
   } catch (error) {
-    console.warn(`Could not load release ${releaseId}`);
+    const status = error.response?.status;
+    const detail = status ? `HTTP ${status}` : error.message;
 
+    console.warn(`Could not load release ${releaseId}: ${detail}`);
+    return null;
+  }
+}
+
+async function fetchMasterArtwork(masterId) {
+  if (!masterId) {
+    return null;
+  }
+
+  await wait(1100);
+
+  try {
+    const master = await apiGet(`/masters/${masterId}`);
+    return findPrimaryImage(master.images)?.uri ?? null;
+  } catch (error) {
+    const status = error.response?.status;
+    const detail = status ? `HTTP ${status}` : error.message;
+
+    console.warn(`Could not load master ${masterId}: ${detail}`);
+    return null;
+  }
+}
+
+async function buildRecord(item, index) {
+  const releaseId = item.release_id;
+  const release = await fetchRelease(releaseId);
+
+  if (!release) {
     return {
-      releaseData: {},
+      id: `${releaseId}-${index + 1}`,
+      releaseId,
+      masterId: null,
+      artist: item.Artist,
+      title: item.Title,
+      year: item.Released,
+      country: "",
+      genres: [],
+      styles: [],
+      labels: [],
+      label: item.Label,
+      format: item.Format,
+      rating: item.Rating,
+      dateAdded: item["Date Added"],
+      notes: item["Collection Notes"],
       cover: "images/placeholder-cover.svg",
-      thumb: "images/placeholder-cover.svg"
+      thumb: "images/placeholder-cover.svg",
+      tracklist: []
     };
   }
+
+  const releaseImage = findPrimaryImage(release.images);
+  const masterArtwork = await fetchMasterArtwork(release.master_id);
+
+  const cover =
+    masterArtwork ??
+    releaseImage?.uri ??
+    release.cover_image ??
+    release.thumb ??
+    "images/placeholder-cover.svg";
+
+  return {
+    id: `${releaseId}-${index + 1}`,
+    releaseId,
+    masterId: release.master_id ?? null,
+    artist: item.Artist,
+    title: item.Title,
+    year: item.Released,
+    country: release.country ?? "",
+    genres: release.genres ?? [],
+    styles: release.styles ?? [],
+    labels: release.labels?.map(label => label.name) ?? [],
+    label: item.Label,
+    format: item.Format,
+    rating: item.Rating,
+    dateAdded: item["Date Added"],
+    notes: item["Collection Notes"],
+    cover,
+    thumb: release.thumb ?? cover,
+
+    // Exact track listing for this Discogs release.
+    tracklist: normalizeTracklist(release.tracklist)
+  };
 }
 
 async function importCollection() {
@@ -101,38 +184,27 @@ async function importCollection() {
       `[${index + 1}/${rows.length}] ${item.Artist} — ${item.Title}`
     );
 
-    const { releaseData, cover, thumb } =
-      await fetchReleaseData(item.release_id);
+    const record = await buildRecord(item, index);
+    records.push(record);
 
-    records.push({
-      id: `${item.release_id}-${index + 1}`,
-      releaseId: item.release_id,
-      masterId: releaseData.master_id ?? null,
-      artist: item.Artist,
-      title: item.Title,
-      year: item.Released,
-      country: releaseData.country ?? "",
-      genres: releaseData.genres ?? [],
-      styles: releaseData.styles ?? [],
-      labels: releaseData.labels?.map(label => label.name) ?? [],
-      label: item.Label,
-      format: item.Format,
-      rating: item.Rating,
-      dateAdded: item["Date Added"],
-      notes: item["Collection Notes"],
-      cover,
-      thumb
-    });
-
+    // Keep requests comfortably inside Discogs' API limits.
     await wait(1100);
   }
 
+  fs.mkdirSync(path.dirname(outputPath), { recursive: true });
   fs.writeFileSync(outputPath, JSON.stringify(records, null, 2));
 
-  console.log(`Imported ${records.length} records with artwork.`);
+  const trackCount = records.reduce(
+    (total, record) => total + record.tracklist.length,
+    0
+  );
+
+  console.log(
+    `Imported ${records.length} records with artwork and ${trackCount} tracklist entries.`
+  );
 }
 
 importCollection().catch(error => {
-  console.error(error.message);
+  console.error(error.stack ?? error.message);
   process.exit(1);
 });
